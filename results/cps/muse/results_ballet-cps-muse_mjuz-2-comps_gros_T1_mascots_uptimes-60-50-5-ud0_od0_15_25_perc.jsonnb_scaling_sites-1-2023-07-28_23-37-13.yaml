@@ -1,0 +1,105 @@
+expe_parameters:
+  version_concerto_name: mjuz-2-comps
+  transitions_times_file_name: trans_times_str_cps.json
+  uptimes_file_name: mascots_uptimes-60-50-5-ud0_od0_15_25_perc.json
+  nb_scaling_sites: 1
+  cluster: gros
+global_results:
+  max_deploy_time: 66.13
+  max_update_time: 106.95
+  max_reconf_time: 173.08
+  max_sleeping_time: 0.0
+  max_execution_time: 178.86
+  max_execution_time_deploy: 68.51
+  max_execution_time_update: 110.35
+  global_finished_reconf: true
+details_assemblies_results:
+  database:
+    deploy:
+      total_event_uptime_duration: 12.03204083442688
+      total_event_deploy_duration: 9.67799997329712
+      total_event_sleeping_duration: 0.00020933151245117188
+    update:
+      total_event_uptime_duration: 40.02224111557007
+      total_event_update_duration: 36.55799984931946
+      total_event_sleeping_duration: 1.33514404296875e-05
+  system:
+    deploy:
+      total_event_uptime_duration: 31.65152335166931
+      total_event_deploy_duration: 29.256999969482422
+      total_event_sleeping_duration: 0.0001380443572998047
+    update:
+      total_event_uptime_duration: 65.74385356903076
+      total_event_update_duration: 62.3510000705719
+      total_event_sleeping_duration: 1.52587890625e-05
+  cps0:
+    deploy:
+      total_event_uptime_duration: 68.50974130630493
+      total_event_deploy_duration: 66.13100004196167
+      total_event_sleeping_duration: 2.9325485229492188e-05
+    update:
+      total_event_uptime_duration: 110.35223245620728
+      total_event_update_duration: 106.94700002670288
+      total_event_sleeping_duration: 6.9141387939453125e-06
+  cps1:
+    deploy: {}
+    update: {}
+  cps2:
+    deploy: {}
+    update: {}
+  cps3:
+    deploy: {}
+    update: {}
+  cps4:
+    deploy: {}
+    update: {}
+  cps5:
+    deploy: {}
+    update: {}
+  cps6:
+    deploy: {}
+    update: {}
+  cps7:
+    deploy: {}
+    update: {}
+  cps8:
+    deploy: {}
+    update: {}
+  cps9:
+    deploy: {}
+    update: {}
+  cps10:
+    deploy: {}
+    update: {}
+  cps11:
+    deploy: {}
+    update: {}
+  cps12:
+    deploy: {}
+    update: {}
+  cps13:
+    deploy: {}
+    update: {}
+expe_details:
+  global_finished_reconf: true
+  details:
+    deploy:
+      database:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      system:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      cps0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+    update:
+      database:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      system:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      cps0:
+        finished_reconfiguration: true
+        rounds_reconf: 1

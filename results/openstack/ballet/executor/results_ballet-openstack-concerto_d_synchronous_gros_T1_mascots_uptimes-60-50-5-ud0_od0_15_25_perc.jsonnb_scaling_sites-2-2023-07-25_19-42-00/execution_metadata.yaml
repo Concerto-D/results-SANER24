@@ -1,0 +1,77 @@
+expe_parameters:
+  version_concerto_name: synchronous
+  transitions_times_file_name: trans_times_openstack.json
+  uptimes_file_name: mascots_uptimes-60-50-5-ud0_od0_15_25_perc.json
+  nb_scaling_sites: 2
+  cluster: gros
+expe_details:
+  global_finished_reconf: true
+  details:
+    deploy:
+      mariadbmaster:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      glance0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      glance1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      mariadbworker1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      keystone1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      mariadbworker0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      keystone0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+    update:
+      mariadbmaster:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      glance1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      glance0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      mariadbworker1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      mariadbworker0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      keystone1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      keystone0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova1:
+        finished_reconfiguration: true
+        rounds_reconf: 1

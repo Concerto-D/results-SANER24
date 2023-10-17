@@ -1,0 +1,117 @@
+expe_parameters:
+  version_concerto_name: mjuz-2-comps
+  transitions_times_file_name: trans_times_str_cps.json
+  uptimes_file_name: mascots_uptimes-60-50-5-ud0_od0_15_25_perc.json
+  nb_scaling_sites: 2
+  cluster: gros
+global_results:
+  max_deploy_time: 66.27
+  max_update_time: 107.04
+  max_reconf_time: 173.31
+  max_sleeping_time: 0.0
+  max_execution_time: 179.14
+  max_execution_time_deploy: 68.67
+  max_execution_time_update: 110.47
+  global_finished_reconf: true
+details_assemblies_results:
+  database:
+    deploy:
+      total_event_uptime_duration: 12.00317668914795
+      total_event_deploy_duration: 9.631999969482422
+      total_event_sleeping_duration: 1.5974044799804688e-05
+    update:
+      total_event_uptime_duration: 40.07295846939087
+      total_event_update_duration: 36.55799984931946
+      total_event_sleeping_duration: 1.0967254638671875e-05
+  system:
+    deploy:
+      total_event_uptime_duration: 31.71097707748413
+      total_event_deploy_duration: 29.34500002861023
+      total_event_sleeping_duration: 9.298324584960938e-06
+    update:
+      total_event_uptime_duration: 65.90959024429321
+      total_event_update_duration: 62.45199990272522
+      total_event_sleeping_duration: 1.1920928955078125e-05
+  cps0:
+    deploy:
+      total_event_uptime_duration: 68.66584062576294
+      total_event_deploy_duration: 66.26699995994568
+      total_event_sleeping_duration: 7.3909759521484375e-06
+    update:
+      total_event_uptime_duration: 110.47427678108215
+      total_event_update_duration: 107.04499983787537
+      total_event_sleeping_duration: 1.239776611328125e-05
+  cps1:
+    deploy:
+      total_event_uptime_duration: 58.4419686794281
+      total_event_deploy_duration: 56.007999897003174
+      total_event_sleeping_duration: 6.9141387939453125e-06
+    update:
+      total_event_uptime_duration: 104.31706666946411
+      total_event_update_duration: 100.92000007629395
+      total_event_sleeping_duration: 7.3909759521484375e-06
+  cps2:
+    deploy: {}
+    update: {}
+  cps3:
+    deploy: {}
+    update: {}
+  cps4:
+    deploy: {}
+    update: {}
+  cps5:
+    deploy: {}
+    update: {}
+  cps6:
+    deploy: {}
+    update: {}
+  cps7:
+    deploy: {}
+    update: {}
+  cps8:
+    deploy: {}
+    update: {}
+  cps9:
+    deploy: {}
+    update: {}
+  cps10:
+    deploy: {}
+    update: {}
+  cps11:
+    deploy: {}
+    update: {}
+  cps12:
+    deploy: {}
+    update: {}
+  cps13:
+    deploy: {}
+    update: {}
+expe_details:
+  global_finished_reconf: true
+  details:
+    deploy:
+      database:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      system:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      cps1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      cps0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+    update:
+      database:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      system:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      cps1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      cps0:
+        finished_reconfiguration: true
+        rounds_reconf: 1

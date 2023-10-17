@@ -1,0 +1,57 @@
+behavior_deploy-mariadbmaster:
+  end: 60.92835068702698
+  start: 7.061816930770874
+behavior_interrupt-mariadbmaster:
+  end: 3.718579053878784
+  start: 0.5310735702514648
+behavior_update-mariadbmaster:
+  end: 7.061248064041138
+  start: 3.719069242477417
+event_loading_state:
+  end: 0.5159955024719238
+  start: 0.5152053833007812
+event_saving_state:
+  end: 120.09575843811035
+  start: 120.09423685073853
+event_update:
+  end: 60.92994832992554
+  start: 0.5301775932312012
+event_uptime:
+  end: 60.93058204650879
+  start: 0.5151607990264893
+event_uptime_wait_all:
+  end: 120.0941812992096
+  start: 60.93120789527893
+instruction_push_b_0-mariadbmaster-interrupt:
+  end: 0.531221866607666
+  start: 0.5308341979980469
+instruction_push_b_1-mariadbmaster-update:
+  end: 0.5313239097595215
+  start: 0.531257152557373
+instruction_push_b_2-mariadbmaster-deploy:
+  end: 0.531440258026123
+  start: 0.5313551425933838
+instruction_wait_3-mariadbmaster:
+  end: 60.92917490005493
+  start: 0.5314719676971436
+instruction_waitall_4:
+  end: 120.09414649009705
+  start: 60.93179154396057
+transition_bootstrap:
+  end: 33.05104088783264
+  start: 7.064470052719116
+transition_deploy:
+  end: 60.91552996635437
+  start: 48.60178351402283
+transition_interrupt:
+  end: 3.7057666778564453
+  start: 3.181976079940796
+transition_register:
+  end: 48.58761739730835
+  start: 45.831517934799194
+transition_start:
+  end: 45.81221342086792
+  start: 33.07537245750427
+transition_unconfigure:
+  end: 7.048691034317017
+  start: 3.72117280960083

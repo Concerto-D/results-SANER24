@@ -1,0 +1,66 @@
+behavior_deploy-nova3:
+  end: 417.2126386165619
+  start: 199.31513810157776
+behavior_interrupt-nova3:
+  end: 0.961395263671875
+  start: 0.4651806354522705
+behavior_update-nova3:
+  end: 121.63578581809998
+  start: 118.20058822631836
+event_loading_state:
+  end: 0.449817419052124
+  start: 0.449129581451416
+event_saving_state:
+  end: 417.5281879901886
+  start: 417.5269584655762
+event_update:
+  end: 417.2127914428711
+  start: 0.4589688777923584
+event_uptime:
+  end: 417.2128207683563
+  start: 0.4490854740142822
+event_uptime_wait_all:
+  end: 417.52690029144287
+  start: 417.2128541469574
+instruction_push_b_0-nova3-interrupt:
+  end: 0.4653751850128174
+  start: 0.464968204498291
+instruction_push_b_2-nova3-update:
+  end: 118.20065760612488
+  start: 118.20053839683533
+instruction_push_b_4-nova3-deploy:
+  end: 199.31520891189575
+  start: 199.31508946418762
+instruction_wait_1-mariadbworker3_True:
+  end: 118.20048642158508
+  start: 0.46543145179748535
+instruction_wait_3-keystone3_True:
+  end: 199.3150351047516
+  start: 118.20069217681885
+instruction_wait_5-nova3:
+  end: 417.2127592563629
+  start: 199.31524181365967
+instruction_waitall_6:
+  end: 417.52684926986694
+  start: 417.2128872871399
+transition_cell_setup:
+  end: 237.04962682724
+  start: 199.31602382659912
+transition_deploy:
+  end: 417.1963725090027
+  start: 292.27913546562195
+transition_interrupt:
+  end: 0.9536364078521729
+  start: 0.47148752212524414
+transition_ready0:
+  end: 233.36417150497437
+  start: 199.31648135185242
+transition_ready1:
+  end: 278.78173422813416
+  start: 199.3155722618103
+transition_start:
+  end: 292.26843786239624
+  start: 278.80455207824707
+transition_unpull:
+  end: 121.54184579849243
+  start: 118.25698709487915

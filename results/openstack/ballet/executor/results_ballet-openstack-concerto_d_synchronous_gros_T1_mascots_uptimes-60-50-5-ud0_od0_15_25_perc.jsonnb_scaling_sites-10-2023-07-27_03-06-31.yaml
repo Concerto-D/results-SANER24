@@ -1,0 +1,2473 @@
+expe_parameters:
+  version_concerto_name: synchronous
+  transitions_times_file_name: trans_times_openstack.json
+  uptimes_file_name: mascots_uptimes-60-50-5-ud0_od0_15_25_perc.json
+  nb_scaling_sites: 10
+  cluster: gros
+global_results:
+  max_deploy_time: 306.3
+  max_update_time: 417.75
+  max_reconf_time: 722.73
+  max_sleeping_time: 0.04
+  max_execution_time: 722.75
+  max_execution_time_deploy: 306.31
+  max_execution_time_update: 417.8
+  global_finished_reconf: false
+global_synchronization_results:
+  max_deploy_sync_time: 0.64
+  max_update_sync_time: 218.45
+  max_reconf_sync_time: 218.45
+  max_sleeping_sync_time: 0
+  max_execution_sync_time: 3701.85
+details_assemblies_results:
+  mariadbmaster:
+    deploy:
+      total_event_uptime_duration: 58.65826749801636
+      total_event_deploy_duration: 58.650084495544434
+      total_instruction_wait_12-mariadbmaster_duration: 58.64412522315979
+      total_behavior_deploy-mariadbmaster_duration: 58.64292120933533
+      total_event_uptime_wait_all_duration: 28.548086881637573
+      total_instruction_waitall_13_duration: 28.547484397888184
+      total_transition_bootstrap_duration: 25.982133865356445
+      total_transition_start_duration: 12.735581636428833
+      total_transition_deploy_duration: 12.286646842956543
+      total_transition_configure1_duration: 4.804629564285278
+      total_transition_configure0_duration: 3.319255828857422
+      total_transition_register_duration: 2.7677347660064697
+      total_instruction_add_0-mariadbmaster-MariadbMaster_duration: 0.0043964385986328125
+      total_event_saving_state_duration: 0.0014221668243408203
+      total_instruction_conn_1-mariadbmaster-service-mariadbworker0-master_service_duration: 0.00011897087097167969
+      total_event_loading_state_duration: 0.00010538101196289062
+      total_instruction_conn_9-mariadbmaster-service-mariadbworker8-master_service_duration: 8.392333984375e-05
+      total_instruction_conn_5-mariadbmaster-service-mariadbworker4-master_service_duration: 8.344650268554688e-05
+      total_instruction_conn_10-mariadbmaster-service-mariadbworker9-master_service_duration: 7.987022399902344e-05
+      total_instruction_push_b_11-mariadbmaster-deploy_duration: 7.772445678710938e-05
+      total_instruction_conn_2-mariadbmaster-service-mariadbworker1-master_service_duration: 7.390975952148438e-05
+      total_instruction_conn_7-mariadbmaster-service-mariadbworker6-master_service_duration: 7.009506225585938e-05
+      total_instruction_conn_8-mariadbmaster-service-mariadbworker7-master_service_duration: 6.937980651855469e-05
+      total_instruction_conn_4-mariadbmaster-service-mariadbworker3-master_service_duration: 6.580352783203125e-05
+      total_instruction_conn_3-mariadbmaster-service-mariadbworker2-master_service_duration: 6.4849853515625e-05
+      total_instruction_conn_6-mariadbmaster-service-mariadbworker5-master_service_duration: 6.270408630371094e-05
+      total_event_sleeping_duration: 1.6927719116210938e-05
+    update:
+      total_event_uptime_duration: 59.41731023788452
+      total_event_update_duration: 59.40907621383667
+      total_instruction_wait_3-mariadbmaster_duration: 59.404199838638306
+      total_event_uptime_wait_all_duration: 59.28115129470825
+      total_instruction_waitall_4_duration: 59.2810754776001
+      total_behavior_deploy-mariadbmaster_duration: 53.833335638046265
+      total_transition_bootstrap_duration: 25.981376886367798
+      total_transition_start_duration: 12.727210998535156
+      total_transition_deploy_duration: 12.307538986206055
+      total_behavior_update-mariadbmaster_duration: 3.3599495887756348
+      total_transition_unconfigure_duration: 3.34096360206604
+      total_transition_register_duration: 2.7573976516723633
+      total_behavior_interrupt-mariadbmaster_duration: 2.2103359699249268
+      total_transition_interrupt_duration: 0.5241189002990723
+      total_event_saving_state_duration: 0.0015044212341308594
+      total_event_loading_state_duration: 0.0007104873657226562
+      total_instruction_push_b_0-mariadbmaster-interrupt_duration: 0.00021147727966308594
+      total_instruction_push_b_1-mariadbmaster-update_duration: 6.890296936035156e-05
+      total_instruction_push_b_2-mariadbmaster-deploy_duration: 6.079673767089844e-05
+      total_event_sleeping_duration: 1.6927719116210938e-05
+  keystone0:
+    deploy:
+      total_event_uptime_duration: 164.9811134338379
+      total_event_deploy_duration: 164.96875143051147
+      total_instruction_wait_6-keystone0_duration: 164.9674870967865
+      total_behavior_deploy-keystone0_duration: 164.96708154678345
+      total_event_uptime_wait_all_duration: 141.69189143180847
+      total_instruction_waitall_7_duration: 141.691819190979
+      total_transition_deploy_duration: 77.70954418182373
+      total_transition_pull_duration: 3.3447988033294678
+      total_event_saving_state_duration: 0.0010619163513183594
+      total_instruction_add_0-keystone0-Keystone_duration: 0.0002396106719970703
+      total_instruction_conn_1-keystone0-worker_service-mariadbworker0-service_duration: 0.00012445449829101562
+      total_event_loading_state_duration: 0.00011205673217773438
+      total_instruction_push_b_5-keystone0-deploy_duration: 8.797645568847656e-05
+      total_instruction_conn_3-keystone0-service-nova0-keystone_service_duration: 8.535385131835938e-05
+      total_instruction_conn_4-keystone0-service-neutron0-keystone_service_duration: 7.605552673339844e-05
+      total_instruction_conn_2-keystone0-service-glance0-keystone_service_duration: 6.651878356933594e-05
+      total_event_sleeping_duration: 1.430511474609375e-05
+    update:
+      total_event_uptime_wait_all_duration: 218.33939027786255
+      total_instruction_waitall_4_duration: 218.3393154144287
+      total_event_uptime_duration: 199.6024763584137
+      total_event_update_duration: 199.59337830543518
+      total_instruction_wait_1-mariadbworker0_True_duration: 118.50116968154907
+      total_instruction_wait_3-keystone0_duration: 81.08664298057556
+      total_behavior_deploy-keystone0_duration: 81.08657670021057
+      total_transition_deploy_duration: 77.70490312576294
+      total_behavior_stop-keystone0_duration: 4.097326755523682
+      total_transition_turnoff_duration: 3.7652909755706787
+      total_transition_pull_duration: 3.350029945373535
+      total_event_saving_state_duration: 0.0009629726409912109
+      total_event_loading_state_duration: 0.0007140636444091797
+      total_instruction_push_b_0-keystone0-stop_duration: 0.000225067138671875
+      total_instruction_push_b_2-keystone0-deploy_duration: 0.0001266002655029297
+      total_event_sleeping_duration: 1.3113021850585938e-05
+  glance0:
+    deploy:
+      total_event_uptime_duration: 227.79869198799133
+      total_event_deploy_duration: 227.78637623786926
+      total_instruction_wait_4-glance0_duration: 227.78546166419983
+      total_behavior_deploy-glance0_duration: 227.78503918647766
+      total_transition_deploy_duration: 62.82380294799805
+      total_transition_pull2_duration: 15.736922264099121
+      total_transition_pull1_duration: 7.193694353103638
+      total_transition_pull0_duration: 5.025954484939575
+      total_event_uptime_wait_all_duration: 0.3179764747619629
+      total_instruction_waitall_5_duration: 0.31788063049316406
+      total_event_saving_state_duration: 0.001092672348022461
+      total_event_sleeping_duration: 0.000247955322265625
+      total_instruction_add_0-glance0-Glance_duration: 0.00022077560424804688
+      total_instruction_conn_1-glance0-worker_service-mariadbworker0-service_duration: 0.00010156631469726562
+      total_event_loading_state_duration: 9.489059448242188e-05
+      total_instruction_push_b_3-glance0-deploy_duration: 8.630752563476562e-05
+      total_instruction_conn_2-glance0-keystone_service-keystone0-service_duration: 7.700920104980469e-05
+    update:
+      total_event_uptime_duration: 278.1971092224121
+      total_event_update_duration: 278.1885528564453
+      total_instruction_wait_1-mariadbworker0_True_duration: 118.20892930030823
+      total_instruction_wait_2-keystone0_True_duration: 81.37905478477478
+      total_instruction_wait_4-glance0_duration: 78.59453272819519
+      total_behavior_deploy-glance0_duration: 78.59449219703674
+      total_transition_deploy_duration: 62.824193477630615
+      total_transition_pull2_duration: 15.731269598007202
+      total_transition_pull1_duration: 7.172520637512207
+      total_transition_pull0_duration: 5.05237603187561
+      total_behavior_uninstall-glance0_duration: 3.7748448848724365
+      total_transition_turnoff_duration: 3.763659715652466
+      total_event_uptime_wait_all_duration: 0.009589195251464844
+      total_instruction_waitall_5_duration: 0.009512186050415039
+      total_instruction_push_b_0-glance0-uninstall_duration: 0.004975795745849609
+      total_event_saving_state_duration: 0.0009429454803466797
+      total_event_loading_state_duration: 0.0006723403930664062
+      total_instruction_push_b_3-glance0-deploy_duration: 0.00013303756713867188
+      total_event_sleeping_duration: 1.3828277587890625e-05
+  mariadbworker0:
+    deploy:
+      total_event_uptime_wait_all_duration: 219.6787669658661
+      total_instruction_waitall_8_duration: 219.67829012870789
+      total_event_uptime_duration: 86.79512119293213
+      total_event_deploy_duration: 86.78354263305664
+      total_instruction_wait_7-mariadbworker0_duration: 86.78224420547485
+      total_behavior_deploy-mariadbworker0_duration: 86.78127479553223
+      total_transition_bootstrap_duration: 25.970945358276367
+      total_transition_start_duration: 12.743054866790771
+      total_transition_deploy_duration: 12.316559553146362
+      total_transition_configure1_duration: 4.790647268295288
+      total_transition_configure0_duration: 3.339775562286377
+      total_transition_register_duration: 2.7676267623901367
+      total_event_saving_state_duration: 0.0013279914855957031
+      total_instruction_add_0-mariadbworker0-MariadbWorker_duration: 0.00019693374633789062
+      total_event_loading_state_duration: 9.34600830078125e-05
+      total_instruction_conn_5-mariadbworker0-service-neutron0-worker_service_duration: 8.416175842285156e-05
+      total_instruction_conn_1-mariadbworker0-master_service-mariadbmaster-service_duration: 8.273124694824219e-05
+      total_instruction_push_b_6-mariadbworker0-deploy_duration: 7.748603820800781e-05
+      total_instruction_conn_4-mariadbworker0-service-nova0-mariadbworker_service_duration: 7.605552673339844e-05
+      total_instruction_conn_3-mariadbworker0-service-glance0-worker_service_duration: 7.295608520507812e-05
+      total_instruction_conn_2-mariadbworker0-service-keystone0-worker_service_duration: 6.580352783203125e-05
+      total_event_sleeping_duration: 1.430511474609375e-05
+    update:
+      total_instruction_waitall_5_duration: 3482.1730988025665
+      total_event_uptime_wait_all_duration: 3482.1730847358704
+      total_event_uptime_duration: 118.13253259658813
+      total_event_update_duration: 118.1198103427887
+      total_instruction_wait_2-mariadbmaster_True_duration: 59.48728942871094
+      total_instruction_wait_4-mariadbworker0_duration: 58.63170123100281
+      total_behavior_deploy-mariadbworker0_duration: 58.63165855407715
+      total_transition_bootstrap_duration: 25.9791100025177
+      total_transition_start_duration: 12.728996992111206
+      total_transition_deploy_duration: 12.295984745025635
+      total_transition_configure1_duration: 4.789864540100098
+      total_behavior_update-mariadbworker0_duration: 3.6955392360687256
+      total_transition_configure0_duration: 3.3301162719726562
+      total_transition_unconfigure_duration: 3.2848873138427734
+      total_transition_register_duration: 2.759033679962158
+      total_behavior_interrupt-mariadbworker0_duration: 0.870699405670166
+      total_transition_interrupt_duration: 0.4825112819671631
+      total_event_saving_state_duration: 0.0016825199127197266
+      total_event_loading_state_duration: 0.0007343292236328125
+      total_instruction_push_b_0-mariadbworker0-interrupt_duration: 0.00016951560974121094
+      total_instruction_push_b_3-mariadbworker0-deploy_duration: 0.00011777877807617188
+      total_instruction_push_b_1-mariadbworker0-update_duration: 9.5367431640625e-05
+      total_event_sleeping_duration: 1.5735626220703125e-05
+  nova0:
+    deploy:
+      total_event_uptime_duration: 305.1192843914032
+      total_event_deploy_duration: 305.1081063747406
+      total_instruction_wait_4-nova0_duration: 305.1072471141815
+      total_behavior_deploy-nova0_duration: 305.10688734054565
+      total_transition_deploy_duration: 124.95195817947388
+      total_transition_ready1_duration: 79.48571181297302
+      total_transition_cell_setup_duration: 37.733582735061646
+      total_transition_ready0_duration: 34.019811153411865
+      total_transition_pull1_duration: 15.085987567901611
+      total_transition_start_duration: 13.47933292388916
+      total_transition_pull0_duration: 11.777925968170166
+      total_transition_pull2_duration: 9.495346546173096
+      total_event_uptime_wait_all_duration: 0.6361744403839111
+      total_instruction_waitall_5_duration: 0.636101484298706
+      total_event_saving_state_duration: 0.0012249946594238281
+      total_instruction_add_0-nova0-Nova_duration: 0.0002734661102294922
+      total_event_loading_state_duration: 8.988380432128906e-05
+      total_instruction_conn_1-nova0-mariadbworker_service-mariadbworker0-service_duration: 8.606910705566406e-05
+      total_instruction_conn_2-nova0-keystone_service-keystone0-service_duration: 8.249282836914062e-05
+      total_instruction_push_b_3-nova0-deploy_duration: 8.058547973632812e-05
+      total_event_sleeping_duration: 1.6927719116210938e-05
+    update:
+      total_event_uptime_duration: 417.63068532943726
+      total_event_update_duration: 417.62247681617737
+      total_instruction_wait_5-nova0_duration: 217.93700456619263
+      total_behavior_deploy-nova0_duration: 217.9369978904724
+      total_transition_deploy_duration: 124.96148777008057
+      total_instruction_wait_1-mariadbworker0_True_duration: 118.21309399604797
+      total_instruction_wait_3-keystone0_True_duration: 81.46743655204773
+      total_transition_ready1_duration: 79.46520280838013
+      total_transition_cell_setup_duration: 37.72893762588501
+      total_transition_ready0_duration: 34.03823661804199
+      total_transition_start_duration: 13.4712815284729
+      total_behavior_update-nova0_duration: 3.3940858840942383
+      total_transition_unpull_duration: 3.284728527069092
+      total_behavior_interrupt-nova0_duration: 0.5006086826324463
+      total_transition_interrupt_duration: 0.4835667610168457
+      total_event_uptime_wait_all_duration: 0.3197150230407715
+      total_instruction_waitall_6_duration: 0.31964612007141113
+      total_event_saving_state_duration: 0.0012707710266113281
+      total_event_loading_state_duration: 0.0006999969482421875
+      total_instruction_push_b_0-nova0-interrupt_duration: 0.00021767616271972656
+      total_instruction_push_b_2-nova0-update_duration: 0.00012350082397460938
+      total_instruction_push_b_4-nova0-deploy_duration: 0.00011467933654785156
+      total_event_sleeping_duration: 1.9073486328125e-05
+  neutron0:
+    deploy:
+      total_event_uptime_duration: 306.3078992366791
+      total_event_deploy_duration: 306.29665327072144
+      total_instruction_wait_4-neutron0_duration: 306.29584074020386
+      total_behavior_deploy-neutron0_duration: 306.29548382759094
+      total_transition_deploy_duration: 141.2420208454132
+      total_transition_pull1_duration: 20.61663818359375
+      total_transition_pull2_duration: 19.41055703163147
+      total_transition_pull0_duration: 8.429064750671387
+      total_event_uptime_wait_all_duration: 0.3210928440093994
+      total_instruction_waitall_5_duration: 0.32099294662475586
+      total_event_saving_state_duration: 0.0009405612945556641
+      total_instruction_add_0-neutron0-Neutron_duration: 0.00022554397583007812
+      total_event_loading_state_duration: 9.393692016601562e-05
+      total_instruction_conn_1-neutron0-worker_service-mariadbworker0-service_duration: 8.392333984375e-05
+      total_instruction_push_b_3-neutron0-deploy_duration: 6.961822509765625e-05
+      total_instruction_conn_2-neutron0-keystone_service-keystone0-service_duration: 6.914138793945312e-05
+      total_event_sleeping_duration: 2.1457672119140625e-05
+    update:
+      total_event_uptime_duration: 361.7240264415741
+      total_event_update_duration: 361.71617364883423
+      total_behavior_deploy-neutron0_duration: 161.92317247390747
+      total_instruction_wait_4-neutron0_duration: 161.92315793037415
+      total_transition_deploy_duration: 141.24361872673035
+      total_instruction_wait_1-mariadbworker0_True_duration: 118.31987810134888
+      total_instruction_wait_2-keystone0_True_duration: 81.468266248703
+      total_transition_pull1_duration: 20.636776208877563
+      total_transition_pull2_duration: 19.405232667922974
+      total_transition_pull0_duration: 8.399403810501099
+      total_behavior_uninstall-neutron0_duration: 3.773836612701416
+      total_transition_turnoff_duration: 3.765218496322632
+      total_event_uptime_wait_all_duration: 0.3270692825317383
+      total_instruction_waitall_5_duration: 0.3269996643066406
+      total_event_saving_state_duration: 0.0008945465087890625
+      total_event_loading_state_duration: 0.0006392002105712891
+      total_instruction_push_b_0-neutron0-uninstall_duration: 0.00023436546325683594
+      total_instruction_push_b_3-neutron0-deploy_duration: 0.00012111663818359375
+      total_event_sleeping_duration: 1.3589859008789062e-05
+  keystone1:
+    deploy:
+      total_event_uptime_duration: 164.7648754119873
+      total_event_deploy_duration: 164.75703692436218
+      total_instruction_wait_6-keystone1_duration: 164.75154972076416
+      total_behavior_deploy-keystone1_duration: 164.75109243392944
+      total_event_uptime_wait_all_duration: 141.3086473941803
+      total_instruction_waitall_7_duration: 141.30855178833008
+      total_transition_deploy_duration: 77.66566228866577
+      total_transition_pull_duration: 3.3447811603546143
+      total_event_saving_state_duration: 0.0010578632354736328
+      total_instruction_add_0-keystone1-Keystone_duration: 0.00022029876708984375
+      total_instruction_conn_1-keystone1-worker_service-mariadbworker1-service_duration: 0.00010132789611816406
+      total_event_loading_state_duration: 9.608268737792969e-05
+      total_instruction_conn_2-keystone1-service-glance1-keystone_service_duration: 8.249282836914062e-05
+      total_instruction_push_b_5-keystone1-deploy_duration: 7.891654968261719e-05
+      total_instruction_conn_3-keystone1-service-nova1-keystone_service_duration: 7.367134094238281e-05
+      total_instruction_conn_4-keystone1-service-neutron1-keystone_service_duration: 7.152557373046875e-05
+      total_event_sleeping_duration: 1.5497207641601562e-05
+    update:
+      total_event_uptime_wait_all_duration: 218.3954360485077
+      total_instruction_waitall_4_duration: 218.39535284042358
+      total_event_uptime_duration: 199.55580043792725
+      total_event_update_duration: 199.54687547683716
+      total_instruction_wait_1-mariadbworker1_True_duration: 118.4928069114685
+      total_instruction_wait_3-keystone1_duration: 81.04910206794739
+      total_behavior_deploy-keystone1_duration: 81.04907393455505
+      total_transition_deploy_duration: 77.67236161231995
+      total_behavior_stop-keystone1_duration: 4.100269556045532
+      total_transition_turnoff_duration: 3.7657389640808105
+      total_transition_pull_duration: 3.340315341949463
+      total_event_saving_state_duration: 0.0010764598846435547
+      total_event_loading_state_duration: 0.0008029937744140625
+      total_instruction_push_b_0-keystone1-stop_duration: 0.00023317337036132812
+      total_instruction_push_b_2-keystone1-deploy_duration: 0.0001125335693359375
+      total_event_sleeping_duration: 1.4066696166992188e-05
+  glance1:
+    deploy:
+      total_event_uptime_duration: 227.82992124557495
+      total_event_deploy_duration: 227.82190775871277
+      total_instruction_wait_4-glance1_duration: 227.8163194656372
+      total_behavior_deploy-glance1_duration: 227.81591844558716
+      total_transition_deploy_duration: 62.77223181724548
+      total_transition_pull2_duration: 15.73167109489441
+      total_transition_pull1_duration: 7.163008689880371
+      total_transition_pull0_duration: 5.036898851394653
+      total_event_uptime_wait_all_duration: 0.629051923751831
+      total_instruction_waitall_5_duration: 0.6289794445037842
+      total_event_sleeping_duration: 0.0013320446014404297
+      total_event_saving_state_duration: 0.0009772777557373047
+      total_instruction_add_0-glance1-Glance_duration: 0.00027823448181152344
+      total_instruction_conn_1-glance1-worker_service-mariadbworker1-service_duration: 0.00011396408081054688
+      total_instruction_push_b_3-glance1-deploy_duration: 0.00010156631469726562
+      total_event_loading_state_duration: 9.846687316894531e-05
+      total_instruction_conn_2-glance1-keystone_service-keystone1-service_duration: 8.726119995117188e-05
+    update:
+      total_event_uptime_duration: 278.3760118484497
+      total_event_update_duration: 278.36766958236694
+      total_instruction_wait_1-mariadbworker1_True_duration: 118.34222459793091
+      total_instruction_wait_2-keystone1_True_duration: 81.4113118648529
+      total_instruction_wait_4-glance1_duration: 78.60903477668762
+      total_behavior_deploy-glance1_duration: 78.60902166366577
+      total_transition_deploy_duration: 62.81901478767395
+      total_transition_pull2_duration: 15.751829147338867
+      total_transition_pull1_duration: 7.16296648979187
+      total_transition_pull0_duration: 5.025911092758179
+      total_behavior_uninstall-glance1_duration: 3.776393413543701
+      total_transition_turnoff_duration: 3.765612840652466
+      total_event_uptime_wait_all_duration: 0.3173396587371826
+      total_instruction_waitall_5_duration: 0.31727051734924316
+      total_instruction_push_b_0-glance1-uninstall_duration: 0.004607677459716797
+      total_event_saving_state_duration: 0.0008909702301025391
+      total_event_loading_state_duration: 0.0007164478302001953
+      total_instruction_push_b_3-glance1-deploy_duration: 0.00013208389282226562
+      total_event_sleeping_duration: 1.4543533325195312e-05
+  mariadbworker1:
+    deploy:
+      total_event_uptime_wait_all_duration: 219.57978558540344
+      total_instruction_waitall_8_duration: 219.57915806770325
+      total_event_uptime_duration: 86.79219818115234
+      total_event_deploy_duration: 86.77969336509705
+      total_instruction_wait_7-mariadbworker1_duration: 86.77848768234253
+      total_behavior_deploy-mariadbworker1_duration: 86.77747511863708
+      total_transition_bootstrap_duration: 25.981317281723022
+      total_transition_start_duration: 12.73492980003357
+      total_transition_deploy_duration: 12.293501138687134
+      total_transition_configure1_duration: 4.793706655502319
+      total_transition_configure0_duration: 3.349667549133301
+      total_transition_register_duration: 2.7570760250091553
+      total_event_saving_state_duration: 0.0016248226165771484
+      total_instruction_add_0-mariadbworker1-MariadbWorker_duration: 0.0002167224884033203
+      total_event_loading_state_duration: 0.00011420249938964844
+      total_instruction_conn_1-mariadbworker1-master_service-mariadbmaster-service_duration: 8.821487426757812e-05
+      total_instruction_conn_5-mariadbworker1-service-neutron0-worker_service_duration: 7.653236389160156e-05
+      total_instruction_push_b_6-mariadbworker1-deploy_duration: 7.128715515136719e-05
+      total_instruction_conn_4-mariadbworker1-service-nova0-mariadbworker_service_duration: 6.699562072753906e-05
+      total_instruction_conn_2-mariadbworker1-service-keystone0-worker_service_duration: 6.67572021484375e-05
+      total_instruction_conn_3-mariadbworker1-service-glance0-worker_service_duration: 6.389617919921875e-05
+      total_event_sleeping_duration: 1.3113021850585938e-05
+    update:
+      total_event_uptime_wait_all_duration: 299.69166016578674
+      total_instruction_waitall_5_duration: 299.69159388542175
+      total_event_uptime_duration: 118.18302130699158
+      total_event_update_duration: 118.16983032226562
+      total_instruction_wait_2-mariadbmaster_True_duration: 59.54922580718994
+      total_instruction_wait_4-mariadbworker1_duration: 58.61980891227722
+      total_behavior_deploy-mariadbworker1_duration: 58.61970520019531
+      total_transition_bootstrap_duration: 25.987069129943848
+      total_transition_start_duration: 12.72511076927185
+      total_transition_deploy_duration: 12.293912172317505
+      total_transition_configure1_duration: 4.7905168533325195
+      total_behavior_update-mariadbworker1_duration: 3.923847198486328
+      total_transition_configure0_duration: 3.3373525142669678
+      total_transition_unconfigure_duration: 3.2848453521728516
+      total_transition_register_duration: 2.7589004039764404
+      total_behavior_interrupt-mariadbworker1_duration: 0.8612673282623291
+      total_transition_interrupt_duration: 0.4832799434661865
+      total_event_saving_state_duration: 0.0013341903686523438
+      total_event_loading_state_duration: 0.000743865966796875
+      total_instruction_push_b_0-mariadbworker1-interrupt_duration: 0.00022268295288085938
+      total_instruction_push_b_3-mariadbworker1-deploy_duration: 0.00010895729064941406
+      total_instruction_push_b_1-mariadbworker1-update_duration: 8.0108642578125e-05
+      total_event_sleeping_duration: 1.3589859008789062e-05
+  nova1:
+    deploy:
+      total_event_uptime_duration: 304.7071633338928
+      total_event_deploy_duration: 304.69577717781067
+      total_instruction_wait_4-nova1_duration: 304.6949484348297
+      total_behavior_deploy-nova1_duration: 304.6946222782135
+      total_transition_deploy_duration: 124.95385336875916
+      total_transition_ready1_duration: 79.47850894927979
+      total_transition_cell_setup_duration: 37.733734369277954
+      total_transition_ready0_duration: 33.9974160194397
+      total_transition_pull1_duration: 15.06732702255249
+      total_transition_start_duration: 13.469623327255249
+      total_transition_pull0_duration: 11.778075218200684
+      total_transition_pull2_duration: 9.49166202545166
+      total_event_uptime_wait_all_duration: 0.32228517532348633
+      total_instruction_waitall_5_duration: 0.3222165107727051
+      total_event_saving_state_duration: 0.0012521743774414062
+      total_instruction_add_0-nova1-Nova_duration: 0.00022220611572265625
+      total_instruction_conn_1-nova1-mariadbworker_service-mariadbworker1-service_duration: 0.00010037422180175781
+      total_event_loading_state_duration: 8.821487426757812e-05
+      total_instruction_push_b_3-nova1-deploy_duration: 7.224082946777344e-05
+      total_instruction_conn_2-nova1-keystone_service-keystone1-service_duration: 6.771087646484375e-05
+      total_event_sleeping_duration: 1.5497207641601562e-05
+    update:
+      total_event_uptime_duration: 417.75899958610535
+      total_event_update_duration: 417.75093150138855
+      total_instruction_wait_5-nova1_duration: 217.92477202415466
+      total_behavior_deploy-nova1_duration: 217.92476797103882
+      total_transition_deploy_duration: 124.94592785835266
+      total_instruction_wait_1-mariadbworker1_True_duration: 118.25910925865173
+      total_instruction_wait_3-keystone1_True_duration: 81.56211376190186
+      total_transition_ready1_duration: 79.46556568145752
+      total_transition_cell_setup_duration: 37.72686147689819
+      total_transition_ready0_duration: 34.03243613243103
+      total_transition_start_duration: 13.469473361968994
+      total_behavior_update-nova1_duration: 3.4152331352233887
+      total_transition_unpull_duration: 3.2845780849456787
+      total_behavior_interrupt-nova1_duration: 0.49573826789855957
+      total_transition_interrupt_duration: 0.4819936752319336
+      total_event_uptime_wait_all_duration: 0.31567978858947754
+      total_instruction_waitall_6_duration: 0.31558775901794434
+      total_event_sleeping_duration: 0.03813505172729492
+      total_event_saving_state_duration: 0.001188039779663086
+      total_event_loading_state_duration: 0.0006771087646484375
+      total_instruction_push_b_0-nova1-interrupt_duration: 0.00021004676818847656
+      total_instruction_push_b_4-nova1-deploy_duration: 0.00011920928955078125
+      total_instruction_push_b_2-nova1-update_duration: 0.00011277198791503906
+  neutron1:
+    deploy:
+      total_event_uptime_duration: 305.9882571697235
+      total_event_deploy_duration: 305.97698855400085
+      total_instruction_wait_4-neutron1_duration: 305.97609853744507
+      total_behavior_deploy-neutron1_duration: 305.97576117515564
+      total_transition_deploy_duration: 141.2332694530487
+      total_transition_pull1_duration: 20.60905170440674
+      total_transition_pull2_duration: 19.410532236099243
+      total_transition_pull0_duration: 8.424779176712036
+      total_event_uptime_wait_all_duration: 0.31995630264282227
+      total_instruction_waitall_5_duration: 0.31989216804504395
+      total_event_saving_state_duration: 0.0009336471557617188
+      total_instruction_add_0-neutron1-Neutron_duration: 0.00016188621520996094
+      total_instruction_conn_1-neutron1-worker_service-mariadbworker1-service_duration: 0.00012111663818359375
+      total_event_loading_state_duration: 8.749961853027344e-05
+      total_instruction_push_b_3-neutron1-deploy_duration: 6.818771362304688e-05
+      total_instruction_conn_2-neutron1-keystone_service-keystone1-service_duration: 6.699562072753906e-05
+      total_event_sleeping_duration: 1.3113021850585938e-05
+    update:
+      total_event_uptime_duration: 361.702965259552
+      total_event_update_duration: 361.6908686161041
+      total_behavior_deploy-neutron1_duration: 161.89556169509888
+      total_instruction_wait_4-neutron1_duration: 161.8955521583557
+      total_transition_deploy_duration: 141.23686027526855
+      total_instruction_wait_1-mariadbworker1_True_duration: 118.38311862945557
+      total_instruction_wait_2-keystone1_True_duration: 81.41150093078613
+      total_transition_pull1_duration: 20.617813110351562
+      total_transition_pull2_duration: 19.42570686340332
+      total_transition_pull0_duration: 8.39423155784607
+      total_behavior_uninstall-neutron1_duration: 3.779411554336548
+      total_transition_turnoff_duration: 3.7646634578704834
+      total_event_uptime_wait_all_duration: 0.3238983154296875
+      total_instruction_waitall_5_duration: 0.32382798194885254
+      total_event_saving_state_duration: 0.0009467601776123047
+      total_event_loading_state_duration: 0.0006442070007324219
+      total_instruction_push_b_0-neutron1-uninstall_duration: 0.00021004676818847656
+      total_instruction_push_b_3-neutron1-deploy_duration: 0.00012993812561035156
+      total_event_sleeping_duration: 1.9788742065429688e-05
+  keystone2:
+    deploy:
+      total_event_uptime_duration: 164.38364362716675
+      total_event_deploy_duration: 164.3758704662323
+      total_instruction_wait_6-keystone2_duration: 164.3705713748932
+      total_behavior_deploy-keystone2_duration: 164.37018966674805
+      total_event_uptime_wait_all_duration: 141.29602599143982
+      total_instruction_waitall_7_duration: 141.29589200019836
+      total_transition_deploy_duration: 77.71166253089905
+      total_transition_pull_duration: 3.349881172180176
+      total_event_saving_state_duration: 0.00102996826171875
+      total_instruction_add_0-keystone2-Keystone_duration: 0.000213623046875
+      total_instruction_conn_1-keystone2-worker_service-mariadbworker2-service_duration: 0.00010585784912109375
+      total_event_loading_state_duration: 9.870529174804688e-05
+      total_instruction_push_b_5-keystone2-deploy_duration: 7.43865966796875e-05
+      total_instruction_conn_4-keystone2-service-neutron2-keystone_service_duration: 6.532669067382812e-05
+      total_instruction_conn_2-keystone2-service-glance2-keystone_service_duration: 6.4849853515625e-05
+      total_instruction_conn_3-keystone2-service-nova2-keystone_service_duration: 6.389617919921875e-05
+      total_event_sleeping_duration: 4.744529724121094e-05
+    update:
+      total_event_uptime_wait_all_duration: 218.25450468063354
+      total_instruction_waitall_4_duration: 218.25442695617676
+      total_event_uptime_duration: 199.46524024009705
+      total_event_update_duration: 199.4522955417633
+      total_instruction_wait_1-mariadbworker2_True_duration: 118.35569930076599
+      total_instruction_wait_3-keystone2_duration: 81.09570908546448
+      total_behavior_deploy-keystone2_duration: 81.09568619728088
+      total_transition_deploy_duration: 77.7126395702362
+      total_behavior_stop-keystone2_duration: 4.101822137832642
+      total_transition_turnoff_duration: 3.7649967670440674
+      total_transition_pull_duration: 3.34116268157959
+      total_event_saving_state_duration: 0.0009448528289794922
+      total_event_loading_state_duration: 0.0007462501525878906
+      total_instruction_push_b_0-keystone2-stop_duration: 0.00017523765563964844
+      total_instruction_push_b_2-keystone2-deploy_duration: 0.00016188621520996094
+      total_event_sleeping_duration: 2.0503997802734375e-05
+  glance2:
+    deploy:
+      total_event_uptime_duration: 227.20224046707153
+      total_event_deploy_duration: 227.18954372406006
+      total_instruction_wait_4-glance2_duration: 227.18856763839722
+      total_behavior_deploy-glance2_duration: 227.18819093704224
+      total_transition_deploy_duration: 62.822553873062134
+      total_transition_pull2_duration: 15.731658220291138
+      total_transition_pull1_duration: 7.188551187515259
+      total_transition_pull0_duration: 5.020809650421143
+      total_event_uptime_wait_all_duration: 0.6266465187072754
+      total_instruction_waitall_5_duration: 0.6265769004821777
+      total_event_saving_state_duration: 0.0009257793426513672
+      total_instruction_add_0-glance2-Glance_duration: 0.00025081634521484375
+      total_event_loading_state_duration: 9.632110595703125e-05
+      total_instruction_conn_1-glance2-worker_service-mariadbworker2-service_duration: 8.7738037109375e-05
+      total_instruction_conn_2-glance2-keystone_service-keystone2-service_duration: 8.463859558105469e-05
+      total_instruction_push_b_3-glance2-deploy_duration: 8.249282836914062e-05
+      total_event_sleeping_duration: 1.4066696166992188e-05
+    update:
+      total_event_uptime_duration: 278.08818459510803
+      total_event_update_duration: 278.07568430900574
+      total_instruction_wait_1-mariadbworker2_True_duration: 118.24554657936096
+      total_instruction_wait_2-keystone2_True_duration: 81.25613570213318
+      total_behavior_deploy-glance2_duration: 78.57307744026184
+      total_instruction_wait_4-glance2_duration: 78.57303643226624
+      total_transition_deploy_duration: 62.80602264404297
+      total_transition_pull2_duration: 15.727776288986206
+      total_transition_pull1_duration: 7.158871650695801
+      total_transition_pull0_duration: 5.039560317993164
+      total_behavior_uninstall-glance2_duration: 3.7752397060394287
+      total_transition_turnoff_duration: 3.765113115310669
+      total_event_uptime_wait_all_duration: 0.31836438179016113
+      total_instruction_waitall_5_duration: 0.31829261779785156
+      total_event_saving_state_duration: 0.0009207725524902344
+      total_event_loading_state_duration: 0.0007138252258300781
+      total_instruction_push_b_0-glance2-uninstall_duration: 0.0002791881561279297
+      total_instruction_push_b_3-glance2-deploy_duration: 0.00015115737915039062
+      total_event_sleeping_duration: 1.5020370483398438e-05
+  mariadbworker2:
+    deploy:
+      total_event_uptime_wait_all_duration: 219.60193490982056
+      total_instruction_waitall_8_duration: 219.60186219215393
+      total_event_uptime_duration: 86.35900926589966
+      total_event_deploy_duration: 86.35116338729858
+      total_instruction_wait_7-mariadbworker2_duration: 86.34530091285706
+      total_behavior_deploy-mariadbworker2_duration: 86.34466123580933
+      total_transition_bootstrap_duration: 25.985546588897705
+      total_transition_start_duration: 12.730133295059204
+      total_transition_deploy_duration: 12.290059804916382
+      total_transition_configure1_duration: 4.808207988739014
+      total_transition_configure0_duration: 3.319139242172241
+      total_transition_register_duration: 2.7713027000427246
+      total_event_saving_state_duration: 0.0013833045959472656
+      total_instruction_add_0-mariadbworker2-MariadbWorker_duration: 0.0002684593200683594
+      total_instruction_conn_1-mariadbworker2-master_service-mariadbmaster-service_duration: 0.0002541542053222656
+      total_event_sleeping_duration: 0.00015592575073242188
+      total_event_loading_state_duration: 9.894371032714844e-05
+      total_instruction_push_b_6-mariadbworker2-deploy_duration: 9.584426879882812e-05
+      total_instruction_conn_4-mariadbworker2-service-nova0-mariadbworker_service_duration: 8.845329284667969e-05
+      total_instruction_conn_2-mariadbworker2-service-keystone0-worker_service_duration: 8.821487426757812e-05
+      total_instruction_conn_3-mariadbworker2-service-glance0-worker_service_duration: 8.749961853027344e-05
+      total_instruction_conn_5-mariadbworker2-service-neutron0-worker_service_duration: 8.630752563476562e-05
+    update:
+      total_event_uptime_wait_all_duration: 299.5461914539337
+      total_instruction_waitall_5_duration: 299.5461235046387
+      total_event_uptime_duration: 118.09103393554688
+      total_event_update_duration: 118.08222460746765
+      total_instruction_wait_2-mariadbmaster_True_duration: 59.447792053222656
+      total_behavior_deploy-mariadbworker2_duration: 58.62931847572327
+      total_instruction_wait_4-mariadbworker2_duration: 58.62930202484131
+      total_transition_bootstrap_duration: 25.98161482810974
+      total_transition_start_duration: 12.727031469345093
+      total_transition_deploy_duration: 12.294170618057251
+      total_transition_configure1_duration: 4.794734954833984
+      total_behavior_update-mariadbworker2_duration: 3.760382652282715
+      total_transition_configure0_duration: 3.3366622924804688
+      total_transition_unconfigure_duration: 3.2850470542907715
+      total_transition_register_duration: 2.7621254920959473
+      total_behavior_interrupt-mariadbworker2_duration: 0.862755537033081
+      total_transition_interrupt_duration: 0.4828369617462158
+      total_event_saving_state_duration: 0.0014281272888183594
+      total_event_loading_state_duration: 0.0007143020629882812
+      total_instruction_push_b_0-mariadbworker2-interrupt_duration: 0.00017881393432617188
+      total_instruction_push_b_3-mariadbworker2-deploy_duration: 0.0001361370086669922
+      total_instruction_push_b_1-mariadbworker2-update_duration: 6.985664367675781e-05
+      total_event_sleeping_duration: 1.7642974853515625e-05
+  nova2:
+    deploy:
+      total_event_uptime_duration: 304.198273897171
+      total_event_deploy_duration: 304.1861741542816
+      total_instruction_wait_4-nova2_duration: 304.18525409698486
+      total_behavior_deploy-nova2_duration: 304.18488359451294
+      total_transition_deploy_duration: 124.88265442848206
+      total_transition_ready1_duration: 79.47830200195312
+      total_transition_cell_setup_duration: 37.733479022979736
+      total_transition_ready0_duration: 34.02002787590027
+      total_transition_pull1_duration: 15.081008434295654
+      total_transition_start_duration: 13.469651222229004
+      total_transition_pull0_duration: 11.778102397918701
+      total_transition_pull2_duration: 9.49550485610962
+      total_event_uptime_wait_all_duration: 0.6363039016723633
+      total_instruction_waitall_5_duration: 0.6362226009368896
+      total_event_saving_state_duration: 0.001306772232055664
+      total_instruction_add_0-nova2-Nova_duration: 0.0002498626708984375
+      total_instruction_conn_1-nova2-mariadbworker_service-mariadbworker2-service_duration: 0.0001227855682373047
+      total_event_loading_state_duration: 9.703636169433594e-05
+      total_instruction_push_b_3-nova2-deploy_duration: 8.058547973632812e-05
+      total_instruction_conn_2-nova2-keystone_service-keystone2-service_duration: 7.605552673339844e-05
+      total_event_sleeping_duration: 4.4345855712890625e-05
+    update:
+      total_event_uptime_duration: 417.4561138153076
+      total_event_update_duration: 417.4481198787689
+      total_instruction_wait_5-nova2_duration: 217.94242978096008
+      total_behavior_deploy-nova2_duration: 217.94242477416992
+      total_transition_deploy_duration: 124.95347738265991
+      total_instruction_wait_1-mariadbworker2_True_duration: 118.32935285568237
+      total_instruction_wait_3-keystone2_True_duration: 81.17132067680359
+      total_transition_ready1_duration: 79.4671733379364
+      total_transition_cell_setup_duration: 37.73351573944092
+      total_transition_ready0_duration: 34.04031205177307
+      total_transition_start_duration: 13.469634294509888
+      total_behavior_update-nova2_duration: 3.404772996902466
+      total_transition_unpull_duration: 3.2847726345062256
+      total_behavior_interrupt-nova2_duration: 0.4925692081451416
+      total_transition_interrupt_duration: 0.4819309711456299
+      total_event_uptime_wait_all_duration: 0.31622886657714844
+      total_instruction_waitall_6_duration: 0.3161342144012451
+      total_event_saving_state_duration: 0.001253366470336914
+      total_event_loading_state_duration: 0.000701904296875
+      total_instruction_push_b_0-nova2-interrupt_duration: 0.0002219676971435547
+      total_instruction_push_b_2-nova2-update_duration: 0.00013875961303710938
+      total_instruction_push_b_4-nova2-deploy_duration: 0.00012969970703125
+      total_event_sleeping_duration: 1.71661376953125e-05
+  neutron2:
+    deploy:
+      total_event_uptime_duration: 305.6062014102936
+      total_event_deploy_duration: 305.59485483169556
+      total_instruction_wait_4-neutron2_duration: 305.59406781196594
+      total_behavior_deploy-neutron2_duration: 305.59370851516724
+      total_transition_deploy_duration: 141.23637461662292
+      total_transition_pull1_duration: 20.616501331329346
+      total_transition_pull2_duration: 19.405211687088013
+      total_transition_pull0_duration: 8.41457200050354
+      total_event_uptime_wait_all_duration: 0.3460102081298828
+      total_instruction_waitall_5_duration: 0.34592294692993164
+      total_event_saving_state_duration: 0.0009262561798095703
+      total_instruction_add_0-neutron2-Neutron_duration: 0.0001609325408935547
+      total_instruction_conn_1-neutron2-worker_service-mariadbworker2-service_duration: 0.0001220703125
+      total_event_loading_state_duration: 8.7738037109375e-05
+      total_instruction_push_b_3-neutron2-deploy_duration: 6.985664367675781e-05
+      total_instruction_conn_2-neutron2-keystone_service-keystone2-service_duration: 6.67572021484375e-05
+      total_event_sleeping_duration: 1.9788742065429688e-05
+    update:
+      total_event_uptime_duration: 361.6575653553009
+      total_event_update_duration: 361.6495888233185
+      total_instruction_wait_4-neutron2_duration: 161.89868712425232
+      total_behavior_deploy-neutron2_duration: 161.89868569374084
+      total_transition_deploy_duration: 141.21936106681824
+      total_instruction_wait_1-mariadbworker2_True_duration: 118.13316822052002
+      total_instruction_wait_2-keystone2_True_duration: 81.61292505264282
+      total_transition_pull1_duration: 20.636871099472046
+      total_transition_pull2_duration: 19.40521788597107
+      total_transition_pull0_duration: 8.39261794090271
+      total_behavior_uninstall-neutron2_duration: 3.7792129516601562
+      total_transition_turnoff_duration: 3.7653629779815674
+      total_event_uptime_wait_all_duration: 0.3231627941131592
+      total_instruction_waitall_5_duration: 0.3230922222137451
+      total_instruction_push_b_0-neutron2-uninstall_duration: 0.004254341125488281
+      total_event_saving_state_duration: 0.0008718967437744141
+      total_event_loading_state_duration: 0.0006253719329833984
+      total_instruction_push_b_3-neutron2-deploy_duration: 0.00011754035949707031
+      total_event_sleeping_duration: 1.4066696166992188e-05
+  keystone3:
+    deploy:
+      total_event_uptime_duration: 164.09086179733276
+      total_event_deploy_duration: 164.08318710327148
+      total_instruction_wait_6-keystone3_duration: 164.07763957977295
+      total_behavior_deploy-keystone3_duration: 164.07723450660706
+      total_event_uptime_wait_all_duration: 141.4664249420166
+      total_instruction_waitall_7_duration: 141.4663496017456
+      total_transition_deploy_duration: 77.70180892944336
+      total_transition_pull_duration: 3.3447513580322266
+      total_instruction_add_0-keystone3-Keystone_duration: 0.004602193832397461
+      total_event_saving_state_duration: 0.0012171268463134766
+      total_instruction_conn_1-keystone3-worker_service-mariadbworker3-service_duration: 0.00015616416931152344
+      total_event_loading_state_duration: 9.799003601074219e-05
+      total_instruction_push_b_5-keystone3-deploy_duration: 8.511543273925781e-05
+      total_instruction_conn_2-keystone3-service-glance3-keystone_service_duration: 8.058547973632812e-05
+      total_instruction_conn_4-keystone3-service-neutron3-keystone_service_duration: 7.510185241699219e-05
+      total_instruction_conn_3-keystone3-service-nova3-keystone_service_duration: 7.486343383789062e-05
+      total_event_sleeping_duration: 2.3126602172851562e-05
+    update:
+      total_event_uptime_wait_all_duration: 218.16932773590088
+      total_instruction_waitall_4_duration: 218.1692578792572
+      total_event_uptime_duration: 199.14944410324097
+      total_event_update_duration: 199.14103984832764
+      total_instruction_wait_1-mariadbworker3_True_duration: 118.03086709976196
+      total_instruction_wait_3-keystone3_duration: 81.1051652431488
+      total_behavior_deploy-keystone3_duration: 81.10509991645813
+      total_transition_deploy_duration: 77.72541761398315
+      total_behavior_stop-keystone3_duration: 4.100375413894653
+      total_transition_turnoff_duration: 3.7651405334472656
+      total_transition_pull_duration: 3.3476974964141846
+      total_instruction_push_b_0-keystone3-stop_duration: 0.004515171051025391
+      total_event_saving_state_duration: 0.0009450912475585938
+      total_event_loading_state_duration: 0.0007174015045166016
+      total_instruction_push_b_2-keystone3-deploy_duration: 0.0001347064971923828
+      total_event_sleeping_duration: 2.6464462280273438e-05
+  glance3:
+    deploy:
+      total_event_uptime_duration: 226.93004536628723
+      total_event_deploy_duration: 226.921733379364
+      total_instruction_wait_4-glance3_duration: 226.91647171974182
+      total_behavior_deploy-glance3_duration: 226.91608810424805
+      total_transition_deploy_duration: 62.81824064254761
+      total_transition_pull2_duration: 15.722765445709229
+      total_transition_pull1_duration: 7.162919759750366
+      total_transition_pull0_duration: 5.041316747665405
+      total_event_uptime_wait_all_duration: 0.6270506381988525
+      total_instruction_waitall_5_duration: 0.6269798278808594
+      total_event_saving_state_duration: 0.00095367431640625
+      total_instruction_add_0-glance3-Glance_duration: 0.0002124309539794922
+      total_event_loading_state_duration: 0.00011038780212402344
+      total_instruction_push_b_3-glance3-deploy_duration: 9.250640869140625e-05
+      total_instruction_conn_1-glance3-worker_service-mariadbworker3-service_duration: 8.702278137207031e-05
+      total_instruction_conn_2-glance3-keystone_service-keystone3-service_duration: 8.630752563476562e-05
+      total_event_sleeping_duration: 1.5497207641601562e-05
+    update:
+      total_event_uptime_duration: 277.83336782455444
+      total_event_update_duration: 277.8245029449463
+      total_instruction_wait_1-mariadbworker3_True_duration: 118.14359092712402
+      total_instruction_wait_2-keystone3_True_duration: 81.06183862686157
+      total_instruction_wait_4-glance3_duration: 78.61407804489136
+      total_behavior_deploy-glance3_duration: 78.61407017707825
+      total_transition_deploy_duration: 62.81887459754944
+      total_transition_pull2_duration: 15.755983829498291
+      total_transition_pull1_duration: 7.163794040679932
+      total_transition_pull0_duration: 5.0207414627075195
+      total_behavior_uninstall-glance3_duration: 3.7749485969543457
+      total_transition_turnoff_duration: 3.7651922702789307
+      total_event_uptime_wait_all_duration: 0.3163113594055176
+      total_instruction_waitall_5_duration: 0.3162381649017334
+      total_event_saving_state_duration: 0.0009732246398925781
+      total_event_loading_state_duration: 0.0006678104400634766
+      total_instruction_push_b_0-glance3-uninstall_duration: 0.0003383159637451172
+      total_instruction_push_b_3-glance3-deploy_duration: 0.00011110305786132812
+      total_event_sleeping_duration: 1.5497207641601562e-05
+  mariadbworker3:
+    deploy:
+      total_event_uptime_wait_all_duration: 219.22939491271973
+      total_instruction_waitall_8_duration: 219.22932243347168
+      total_event_uptime_duration: 86.24440097808838
+      total_event_deploy_duration: 86.23140335083008
+      total_instruction_wait_7-mariadbworker3_duration: 86.23017263412476
+      total_behavior_deploy-mariadbworker3_duration: 86.22967910766602
+      total_transition_bootstrap_duration: 25.981188535690308
+      total_transition_start_duration: 12.7141432762146
+      total_transition_deploy_duration: 12.299889087677002
+      total_transition_configure1_duration: 4.8043341636657715
+      total_transition_configure0_duration: 3.3450825214385986
+      total_transition_register_duration: 2.767549991607666
+      total_event_saving_state_duration: 0.0013394355773925781
+      total_instruction_add_0-mariadbworker3-MariadbWorker_duration: 0.0001842975616455078
+      total_instruction_conn_1-mariadbworker3-master_service-mariadbmaster-service_duration: 0.00010800361633300781
+      total_event_loading_state_duration: 9.322166442871094e-05
+      total_instruction_conn_2-mariadbworker3-service-keystone0-worker_service_duration: 8.440017700195312e-05
+      total_instruction_conn_4-mariadbworker3-service-nova0-mariadbworker_service_duration: 7.939338684082031e-05
+      total_instruction_push_b_6-mariadbworker3-deploy_duration: 7.891654968261719e-05
+      total_instruction_conn_3-mariadbworker3-service-glance0-worker_service_duration: 7.748603820800781e-05
+      total_instruction_conn_5-mariadbworker3-service-neutron0-worker_service_duration: 7.700920104980469e-05
+      total_event_sleeping_duration: 1.4066696166992188e-05
+    update:
+      total_event_uptime_wait_all_duration: 299.27870988845825
+      total_instruction_waitall_5_duration: 299.2786235809326
+      total_event_uptime_duration: 117.92969608306885
+      total_event_update_duration: 117.9208984375
+      total_instruction_wait_2-mariadbmaster_True_duration: 59.28342533111572
+      total_instruction_wait_4-mariadbworker3_duration: 58.632176876068115
+      total_behavior_deploy-mariadbworker3_duration: 58.63217115402222
+      total_transition_bootstrap_duration: 25.959630966186523
+      total_transition_start_duration: 12.734415531158447
+      total_transition_deploy_duration: 12.298565864562988
+      total_transition_configure1_duration: 4.801742315292358
+      total_behavior_update-mariadbworker3_duration: 3.8948328495025635
+      total_transition_configure0_duration: 3.3395915031433105
+      total_transition_unconfigure_duration: 3.284769058227539
+      total_transition_register_duration: 2.7666540145874023
+      total_behavior_interrupt-mariadbworker3_duration: 0.5361459255218506
+      total_transition_interrupt_duration: 0.4836139678955078
+      total_event_saving_state_duration: 0.0015950202941894531
+      total_event_loading_state_duration: 0.0008032321929931641
+      total_instruction_push_b_0-mariadbworker3-interrupt_duration: 0.00023365020751953125
+      total_instruction_push_b_3-mariadbworker3-deploy_duration: 0.00011754035949707031
+      total_instruction_push_b_1-mariadbworker3-update_duration: 7.557868957519531e-05
+      total_event_sleeping_duration: 2.0503997802734375e-05
+  nova3:
+    deploy:
+      total_event_uptime_duration: 304.14686727523804
+      total_event_deploy_duration: 304.13561487197876
+      total_instruction_wait_4-nova3_duration: 304.13481044769287
+      total_behavior_deploy-nova3_duration: 304.1344783306122
+      total_transition_deploy_duration: 124.9541699886322
+      total_transition_ready1_duration: 79.48589730262756
+      total_transition_cell_setup_duration: 37.73362946510315
+      total_transition_ready0_duration: 34.01983380317688
+      total_transition_pull1_duration: 15.080848455429077
+      total_transition_start_duration: 13.469634294509888
+      total_transition_pull0_duration: 11.777858972549438
+      total_transition_pull2_duration: 9.49531102180481
+      total_event_uptime_wait_all_duration: 0.3247957229614258
+      total_instruction_waitall_5_duration: 0.3247103691101074
+      total_event_saving_state_duration: 0.001323699951171875
+      total_instruction_add_0-nova3-Nova_duration: 0.0002028942108154297
+      total_instruction_conn_1-nova3-mariadbworker_service-mariadbworker3-service_duration: 9.799003601074219e-05
+      total_event_loading_state_duration: 8.7738037109375e-05
+      total_instruction_push_b_3-nova3-deploy_duration: 7.224082946777344e-05
+      total_instruction_conn_2-nova3-keystone_service-keystone3-service_duration: 6.651878356933594e-05
+      total_event_sleeping_duration: 1.52587890625e-05
+    update:
+      total_event_uptime_duration: 417.05038237571716
+      total_event_update_duration: 417.04239559173584
+      total_instruction_wait_5-nova3_duration: 217.9407217502594
+      total_behavior_deploy-nova3_duration: 217.94071054458618
+      total_transition_deploy_duration: 124.96128797531128
+      total_instruction_wait_1-mariadbworker3_True_duration: 117.97871470451355
+      total_instruction_wait_3-keystone3_True_duration: 81.11802101135254
+      total_transition_ready1_duration: 79.46531367301941
+      total_transition_cell_setup_duration: 37.73359704017639
+      total_transition_ready0_duration: 34.040268421173096
+      total_transition_start_duration: 13.46972107887268
+      total_behavior_update-nova3_duration: 3.370257616043091
+      total_transition_unpull_duration: 3.2848503589630127
+      total_behavior_interrupt-nova3_duration: 0.5014278888702393
+      total_transition_interrupt_duration: 0.4819967746734619
+      total_event_uptime_wait_all_duration: 0.31574344635009766
+      total_instruction_waitall_6_duration: 0.3156776428222656
+      total_instruction_push_b_0-nova3-interrupt_duration: 0.004323005676269531
+      total_event_saving_state_duration: 0.0012526512145996094
+      total_event_loading_state_duration: 0.0007195472717285156
+      total_instruction_push_b_2-nova3-update_duration: 0.00012755393981933594
+      total_instruction_push_b_4-nova3-deploy_duration: 0.00011563301086425781
+      total_event_sleeping_duration: 1.7642974853515625e-05
+  neutron3:
+    deploy:
+      total_event_uptime_duration: 305.3098213672638
+      total_event_deploy_duration: 305.30240058898926
+      total_instruction_wait_4-neutron3_duration: 305.2974193096161
+      total_behavior_deploy-neutron3_duration: 305.29707503318787
+      total_transition_deploy_duration: 141.21429562568665
+      total_transition_pull1_duration: 20.63682198524475
+      total_transition_pull2_duration: 19.40524411201477
+      total_transition_pull0_duration: 8.39458155632019
+      total_event_uptime_wait_all_duration: 0.3239619731903076
+      total_instruction_waitall_5_duration: 0.3238966464996338
+      total_event_saving_state_duration: 0.0009312629699707031
+      total_instruction_conn_1-neutron3-worker_service-mariadbworker3-service_duration: 0.00029754638671875
+      total_instruction_add_0-neutron3-Neutron_duration: 0.0001747608184814453
+      total_instruction_push_b_3-neutron3-deploy_duration: 9.751319885253906e-05
+      total_instruction_conn_2-neutron3-keystone_service-keystone3-service_duration: 9.489059448242188e-05
+      total_event_loading_state_duration: 9.083747863769531e-05
+      total_event_sleeping_duration: 4.601478576660156e-05
+    update:
+      total_event_uptime_duration: 361.03817534446716
+      total_event_update_duration: 361.025918006897
+      total_instruction_wait_4-neutron3_duration: 161.9262444972992
+      total_behavior_deploy-neutron3_duration: 161.9262363910675
+      total_transition_deploy_duration: 141.23622226715088
+      total_instruction_wait_1-mariadbworker3_True_duration: 118.06803107261658
+      total_instruction_wait_2-keystone3_True_duration: 81.03080248832703
+      total_transition_pull1_duration: 20.6418194770813
+      total_transition_pull2_duration: 19.396458625793457
+      total_transition_pull0_duration: 8.394297122955322
+      total_behavior_uninstall-neutron3_duration: 3.77976131439209
+      total_transition_turnoff_duration: 3.7651901245117188
+      total_event_uptime_wait_all_duration: 0.3239860534667969
+      total_instruction_waitall_5_duration: 0.32391357421875
+      total_event_saving_state_duration: 0.0009260177612304688
+      total_event_loading_state_duration: 0.0006494522094726562
+      total_instruction_push_b_0-neutron3-uninstall_duration: 0.00025153160095214844
+      total_instruction_push_b_3-neutron3-deploy_duration: 0.00012111663818359375
+      total_event_sleeping_duration: 1.4543533325195312e-05
+  keystone4:
+    deploy:
+      total_event_uptime_duration: 164.43178057670593
+      total_event_deploy_duration: 164.42406702041626
+      total_instruction_wait_6-keystone4_duration: 164.418719291687
+      total_behavior_deploy-keystone4_duration: 164.4183156490326
+      total_event_uptime_wait_all_duration: 141.37262153625488
+      total_instruction_waitall_7_duration: 141.3725278377533
+      total_transition_deploy_duration: 77.70715975761414
+      total_transition_pull_duration: 3.3445987701416016
+      total_event_saving_state_duration: 0.000946044921875
+      total_instruction_conn_1-keystone4-worker_service-mariadbworker4-service_duration: 0.0002033710479736328
+      total_instruction_add_0-keystone4-Keystone_duration: 0.00017404556274414062
+      total_event_loading_state_duration: 9.560585021972656e-05
+      total_instruction_push_b_5-keystone4-deploy_duration: 7.915496826171875e-05
+      total_instruction_conn_3-keystone4-service-nova4-keystone_service_duration: 6.890296936035156e-05
+      total_instruction_conn_2-keystone4-service-glance4-keystone_service_duration: 6.771087646484375e-05
+      total_instruction_conn_4-keystone4-service-neutron4-keystone_service_duration: 6.604194641113281e-05
+      total_event_sleeping_duration: 1.52587890625e-05
+    update:
+      total_event_uptime_wait_all_duration: 218.1071014404297
+      total_instruction_waitall_4_duration: 218.10702681541443
+      total_event_uptime_duration: 198.8360459804535
+      total_event_update_duration: 198.82255291938782
+      total_instruction_wait_1-mariadbworker4_True_duration: 117.77905488014221
+      total_instruction_wait_3-keystone4_duration: 81.04281449317932
+      total_behavior_deploy-keystone4_duration: 81.04273986816406
+      total_transition_deploy_duration: 77.65625095367432
+      total_behavior_stop-keystone4_duration: 4.109497308731079
+      total_transition_turnoff_duration: 3.7657854557037354
+      total_transition_pull_duration: 3.343585968017578
+      total_event_saving_state_duration: 0.001062154769897461
+      total_event_loading_state_duration: 0.0008053779602050781
+      total_instruction_push_b_0-keystone4-stop_duration: 0.0001728534698486328
+      total_instruction_push_b_2-keystone4-deploy_duration: 0.00012373924255371094
+      total_event_sleeping_duration: 1.5735626220703125e-05
+  glance4:
+    deploy:
+      total_event_uptime_duration: 227.22472286224365
+      total_event_deploy_duration: 227.2128448486328
+      total_instruction_wait_4-glance4_duration: 227.21204924583435
+      total_behavior_deploy-glance4_duration: 227.211674451828
+      total_transition_deploy_duration: 62.81459403038025
+      total_transition_pull2_duration: 15.731698989868164
+      total_transition_pull1_duration: 7.183331251144409
+      total_transition_pull0_duration: 5.020798921585083
+      total_event_uptime_wait_all_duration: 0.625952959060669
+      total_instruction_waitall_5_duration: 0.6258666515350342
+      total_event_saving_state_duration: 0.0009152889251708984
+      total_instruction_add_0-glance4-Glance_duration: 0.0001850128173828125
+      total_event_loading_state_duration: 0.00010991096496582031
+      total_instruction_conn_1-glance4-worker_service-mariadbworker4-service_duration: 8.440017700195312e-05
+      total_instruction_push_b_3-glance4-deploy_duration: 7.414817810058594e-05
+      total_instruction_conn_2-glance4-keystone_service-keystone4-service_duration: 6.651878356933594e-05
+      total_event_sleeping_duration: 1.3828277587890625e-05
+    update:
+      total_event_uptime_duration: 277.46335530281067
+      total_event_update_duration: 277.4547989368439
+      total_instruction_wait_1-mariadbworker4_True_duration: 118.10605764389038
+      total_instruction_wait_2-keystone4_True_duration: 80.80857229232788
+      total_instruction_wait_4-glance4_duration: 78.53504824638367
+      total_behavior_deploy-glance4_duration: 78.53504252433777
+      total_transition_deploy_duration: 62.76074028015137
+      total_transition_pull2_duration: 15.731452226638794
+      total_transition_pull1_duration: 7.163187742233276
+      total_transition_pull0_duration: 5.046332597732544
+      total_behavior_uninstall-glance4_duration: 3.7754714488983154
+      total_transition_turnoff_duration: 3.7651543617248535
+      total_event_uptime_wait_all_duration: 0.6267976760864258
+      total_instruction_waitall_5_duration: 0.6267280578613281
+      total_event_saving_state_duration: 0.0009131431579589844
+      total_event_loading_state_duration: 0.0007307529449462891
+      total_instruction_push_b_0-glance4-uninstall_duration: 0.00027370452880859375
+      total_instruction_push_b_3-glance4-deploy_duration: 0.00011181831359863281
+      total_event_sleeping_duration: 3.0040740966796875e-05
+  mariadbworker4:
+    deploy:
+      total_event_uptime_wait_all_duration: 219.35411763191223
+      total_instruction_waitall_8_duration: 219.35403203964233
+      total_event_uptime_duration: 86.35574293136597
+      total_event_deploy_duration: 86.34792447090149
+      total_instruction_wait_7-mariadbworker4_duration: 86.34247016906738
+      total_behavior_deploy-mariadbworker4_duration: 86.34207153320312
+      total_transition_bootstrap_duration: 25.969918966293335
+      total_transition_start_duration: 12.747739315032959
+      total_transition_deploy_duration: 12.298062086105347
+      total_transition_configure1_duration: 4.814059019088745
+      total_transition_configure0_duration: 3.319317102432251
+      total_transition_register_duration: 2.766937732696533
+      total_event_saving_state_duration: 0.0013947486877441406
+      total_instruction_add_0-mariadbworker4-MariadbWorker_duration: 0.000247955322265625
+      total_event_loading_state_duration: 0.0001201629638671875
+      total_instruction_conn_1-mariadbworker4-master_service-mariadbmaster-service_duration: 8.654594421386719e-05
+      total_instruction_push_b_6-mariadbworker4-deploy_duration: 6.985664367675781e-05
+      total_instruction_conn_5-mariadbworker4-service-neutron0-worker_service_duration: 6.747245788574219e-05
+      total_instruction_conn_4-mariadbworker4-service-nova0-mariadbworker_service_duration: 6.723403930664062e-05
+      total_instruction_conn_2-mariadbworker4-service-keystone0-worker_service_duration: 6.67572021484375e-05
+      total_instruction_conn_3-mariadbworker4-service-glance0-worker_service_duration: 6.4849853515625e-05
+      total_event_sleeping_duration: 1.7642974853515625e-05
+    update:
+      total_event_uptime_wait_all_duration: 299.4447033405304
+      total_instruction_waitall_5_duration: 299.4446280002594
+      total_event_uptime_duration: 117.76733350753784
+      total_event_update_duration: 117.75831890106201
+      total_instruction_wait_2-mariadbmaster_True_duration: 59.12274527549744
+      total_instruction_wait_4-mariadbworker4_duration: 58.630279779434204
+      total_behavior_deploy-mariadbworker4_duration: 58.630181550979614
+      total_transition_bootstrap_duration: 25.977872610092163
+      total_transition_start_duration: 12.728618860244751
+      total_transition_deploy_duration: 12.303851842880249
+      total_transition_configure1_duration: 4.787744045257568
+      total_behavior_update-mariadbworker4_duration: 3.742483139038086
+      total_transition_configure0_duration: 3.3396501541137695
+      total_transition_unconfigure_duration: 3.2847671508789062
+      total_transition_register_duration: 2.766265392303467
+      total_behavior_interrupt-mariadbworker4_duration: 0.5391051769256592
+      total_transition_interrupt_duration: 0.48323559761047363
+      total_instruction_push_b_0-mariadbworker4-interrupt_duration: 0.004751682281494141
+      total_event_saving_state_duration: 0.0015485286712646484
+      total_event_loading_state_duration: 0.0009582042694091797
+      total_instruction_push_b_3-mariadbworker4-deploy_duration: 0.00011920928955078125
+      total_instruction_push_b_1-mariadbworker4-update_duration: 7.987022399902344e-05
+      total_event_sleeping_duration: 1.3589859008789062e-05
+  nova4:
+    deploy:
+      total_event_uptime_duration: 304.2784352302551
+      total_event_deploy_duration: 304.2709882259369
+      total_instruction_wait_4-nova4_duration: 304.2660083770752
+      total_behavior_deploy-nova4_duration: 304.2656569480896
+      total_transition_deploy_duration: 124.95889139175415
+      total_transition_ready1_duration: 79.46476817131042
+      total_transition_cell_setup_duration: 37.73359990119934
+      total_transition_ready0_duration: 34.05381727218628
+      total_transition_pull1_duration: 15.10643982887268
+      total_transition_start_duration: 13.469581604003906
+      total_transition_pull0_duration: 11.757596015930176
+      total_transition_pull2_duration: 9.500394821166992
+      total_event_uptime_wait_all_duration: 0.32404375076293945
+      total_instruction_waitall_5_duration: 0.3239626884460449
+      total_instruction_add_0-nova4-Nova_duration: 0.004374504089355469
+      total_event_saving_state_duration: 0.0012738704681396484
+      total_instruction_conn_1-nova4-mariadbworker_service-mariadbworker4-service_duration: 0.00011110305786132812
+      total_event_loading_state_duration: 9.298324584960938e-05
+      total_instruction_push_b_3-nova4-deploy_duration: 7.414817810058594e-05
+      total_instruction_conn_2-nova4-keystone_service-keystone4-service_duration: 6.747245788574219e-05
+      total_event_sleeping_duration: 1.2636184692382812e-05
+    update:
+      total_event_uptime_duration: 416.93646001815796
+      total_event_update_duration: 416.9243149757385
+      total_instruction_wait_5-nova4_duration: 217.9265580177307
+      total_behavior_deploy-nova4_duration: 217.92655158042908
+      total_transition_deploy_duration: 124.95440602302551
+      total_instruction_wait_1-mariadbworker4_True_duration: 118.00411295890808
+      total_instruction_wait_3-keystone4_True_duration: 80.99278903007507
+      total_transition_ready1_duration: 79.4662971496582
+      total_transition_cell_setup_duration: 37.73353338241577
+      total_transition_ready0_duration: 34.04008626937866
+      total_transition_start_duration: 13.46531343460083
+      total_behavior_update-nova4_duration: 3.513367176055908
+      total_transition_unpull_duration: 3.2851979732513428
+      total_behavior_interrupt-nova4_duration: 0.4953310489654541
+      total_transition_interrupt_duration: 0.4830634593963623
+      total_event_uptime_wait_all_duration: 0.31870031356811523
+      total_instruction_waitall_6_duration: 0.3186323642730713
+      total_event_saving_state_duration: 0.001253366470336914
+      total_event_loading_state_duration: 0.0006895065307617188
+      total_instruction_push_b_0-nova4-interrupt_duration: 0.0001933574676513672
+      total_instruction_push_b_2-nova4-update_duration: 0.00011754035949707031
+      total_instruction_push_b_4-nova4-deploy_duration: 0.00011658668518066406
+      total_event_sleeping_duration: 1.5497207641601562e-05
+  neutron4:
+    deploy:
+      total_event_uptime_duration: 305.64653611183167
+      total_event_deploy_duration: 305.6392729282379
+      total_instruction_wait_4-neutron4_duration: 305.6344048976898
+      total_behavior_deploy-neutron4_duration: 305.6340346336365
+      total_transition_deploy_duration: 141.23626160621643
+      total_transition_pull1_duration: 20.61631941795349
+      total_transition_pull2_duration: 19.405441999435425
+      total_transition_pull0_duration: 8.414687156677246
+      total_event_uptime_wait_all_duration: 0.3247489929199219
+      total_instruction_waitall_5_duration: 0.32468509674072266
+      total_instruction_add_0-neutron4-Neutron_duration: 0.00404667854309082
+      total_event_saving_state_duration: 0.0009160041809082031
+      total_instruction_conn_1-neutron4-worker_service-mariadbworker4-service_duration: 0.00013303756713867188
+      total_event_loading_state_duration: 9.059906005859375e-05
+      total_instruction_conn_2-neutron4-keystone_service-keystone4-service_duration: 6.747245788574219e-05
+      total_instruction_push_b_3-neutron4-deploy_duration: 6.651878356933594e-05
+      total_event_sleeping_duration: 1.5735626220703125e-05
+    update:
+      total_event_uptime_duration: 360.75898575782776
+      total_event_update_duration: 360.7510154247284
+      total_instruction_wait_4-neutron4_duration: 161.91206121444702
+      total_behavior_deploy-neutron4_duration: 161.9120569229126
+      total_transition_deploy_duration: 141.23618602752686
+      total_instruction_wait_1-mariadbworker4_True_duration: 117.8227105140686
+      total_instruction_wait_2-keystone4_True_duration: 81.01150846481323
+      total_transition_pull1_duration: 20.63692355155945
+      total_transition_pull2_duration: 19.402809143066406
+      total_transition_pull0_duration: 8.394454956054688
+      total_behavior_uninstall-neutron4_duration: 3.780320405960083
+      total_transition_turnoff_duration: 3.765134334564209
+      total_event_uptime_wait_all_duration: 0.3258209228515625
+      total_instruction_waitall_5_duration: 0.32575345039367676
+      total_instruction_push_b_0-neutron4-uninstall_duration: 0.0042552947998046875
+      total_event_saving_state_duration: 0.0008840560913085938
+      total_event_loading_state_duration: 0.0006313323974609375
+      total_instruction_push_b_3-neutron4-deploy_duration: 0.00011897087097167969
+      total_event_sleeping_duration: 1.4066696166992188e-05
+  keystone5:
+    deploy:
+      total_event_uptime_duration: 164.00266194343567
+      total_event_deploy_duration: 163.99456095695496
+      total_instruction_wait_6-keystone5_duration: 163.9891312122345
+      total_behavior_deploy-keystone5_duration: 163.988707780838
+      total_event_uptime_wait_all_duration: 141.74396181106567
+      total_instruction_waitall_7_duration: 141.7438883781433
+      total_transition_deploy_duration: 77.70151853561401
+      total_transition_pull_duration: 3.3495564460754395
+      total_instruction_add_0-keystone5-Keystone_duration: 0.004329204559326172
+      total_event_saving_state_duration: 0.0011096000671386719
+      total_event_sleeping_duration: 0.0005824565887451172
+      total_instruction_conn_1-keystone5-worker_service-mariadbworker5-service_duration: 0.00021839141845703125
+      total_event_loading_state_duration: 0.00011277198791503906
+      total_instruction_push_b_5-keystone5-deploy_duration: 9.679794311523438e-05
+      total_instruction_conn_2-keystone5-service-glance5-keystone_service_duration: 9.179115295410156e-05
+      total_instruction_conn_4-keystone5-service-neutron5-keystone_service_duration: 7.677078247070312e-05
+      total_instruction_conn_3-keystone5-service-nova5-keystone_service_duration: 7.414817810058594e-05
+    update:
+      total_event_uptime_wait_all_duration: 218.45237255096436
+      total_instruction_waitall_4_duration: 218.45230650901794
+      total_event_uptime_duration: 199.17769479751587
+      total_event_update_duration: 199.16351342201233
+      total_instruction_wait_1-mariadbworker5_True_duration: 118.09387946128845
+      total_behavior_deploy-keystone5_duration: 81.06882667541504
+      total_instruction_wait_3-keystone5_duration: 81.06882619857788
+      total_transition_deploy_duration: 77.7037444114685
+      total_behavior_stop-keystone5_duration: 4.116270065307617
+      total_transition_turnoff_duration: 3.763495683670044
+      total_transition_pull_duration: 3.3402416706085205
+      total_event_saving_state_duration: 0.0010826587677001953
+      total_event_loading_state_duration: 0.0007154941558837891
+      total_instruction_push_b_0-keystone5-stop_duration: 0.0002040863037109375
+      total_instruction_push_b_2-keystone5-deploy_duration: 0.000141143798828125
+      total_event_sleeping_duration: 1.6450881958007812e-05
+  glance5:
+    deploy:
+      total_event_uptime_duration: 226.88629794120789
+      total_event_deploy_duration: 226.87385320663452
+      total_instruction_wait_4-glance5_duration: 226.87273573875427
+      total_behavior_deploy-glance5_duration: 226.8723349571228
+      total_transition_deploy_duration: 62.8179235458374
+      total_transition_pull2_duration: 15.72946286201477
+      total_transition_pull1_duration: 7.168025732040405
+      total_transition_pull0_duration: 5.041248321533203
+      total_event_uptime_wait_all_duration: 0.6269023418426514
+      total_instruction_waitall_5_duration: 0.6268360614776611
+      total_event_saving_state_duration: 0.0009710788726806641
+      total_instruction_add_0-glance5-Glance_duration: 0.00019621849060058594
+      total_instruction_conn_1-glance5-worker_service-mariadbworker5-service_duration: 0.00013327598571777344
+      total_event_loading_state_duration: 0.00012087821960449219
+      total_instruction_conn_2-glance5-keystone_service-keystone5-service_duration: 9.942054748535156e-05
+      total_instruction_push_b_3-glance5-deploy_duration: 8.559226989746094e-05
+      total_event_sleeping_duration: 1.2159347534179688e-05
+    update:
+      total_event_uptime_duration: 277.95251297950745
+      total_event_update_duration: 277.9384160041809
+      total_instruction_wait_1-mariadbworker5_True_duration: 117.9492883682251
+      total_instruction_wait_2-keystone5_True_duration: 81.38199639320374
+      total_behavior_deploy-glance5_duration: 78.6063802242279
+      total_instruction_wait_4-glance5_duration: 78.60635900497437
+      total_transition_deploy_duration: 62.81520199775696
+      total_transition_pull2_duration: 15.75183391571045
+      total_transition_pull1_duration: 7.160972356796265
+      total_transition_pull0_duration: 5.020859956741333
+      total_behavior_uninstall-glance5_duration: 3.780555009841919
+      total_transition_turnoff_duration: 3.765425443649292
+      total_event_uptime_wait_all_duration: 0.6264925003051758
+      total_instruction_waitall_5_duration: 0.6264233589172363
+      total_event_saving_state_duration: 0.0009238719940185547
+      total_event_loading_state_duration: 0.000732421875
+      total_instruction_push_b_0-glance5-uninstall_duration: 0.00021028518676757812
+      total_instruction_push_b_3-glance5-deploy_duration: 0.0001552104949951172
+      total_event_sleeping_duration: 1.4066696166992188e-05
+  mariadbworker5:
+    deploy:
+      total_event_uptime_wait_all_duration: 219.42425179481506
+      total_instruction_waitall_8_duration: 219.42417097091675
+      total_event_uptime_duration: 86.32731747627258
+      total_event_deploy_duration: 86.31953883171082
+      total_instruction_wait_7-mariadbworker5_duration: 86.31370639801025
+      total_behavior_deploy-mariadbworker5_duration: 86.3131034374237
+      total_transition_bootstrap_duration: 25.955150365829468
+      total_transition_start_duration: 12.736426591873169
+      total_transition_deploy_duration: 12.289938926696777
+      total_transition_configure1_duration: 4.790423154830933
+      total_transition_configure0_duration: 3.339611768722534
+      total_transition_register_duration: 2.781015396118164
+      total_instruction_add_0-mariadbworker5-MariadbWorker_duration: 0.0042688846588134766
+      total_event_saving_state_duration: 0.0014176368713378906
+      total_instruction_conn_1-mariadbworker5-master_service-mariadbmaster-service_duration: 0.0001556873321533203
+      total_event_loading_state_duration: 9.799003601074219e-05
+      total_instruction_push_b_6-mariadbworker5-deploy_duration: 7.62939453125e-05
+      total_instruction_conn_2-mariadbworker5-service-keystone0-worker_service_duration: 6.914138793945312e-05
+      total_instruction_conn_5-mariadbworker5-service-neutron0-worker_service_duration: 6.842613220214844e-05
+      total_instruction_conn_4-mariadbworker5-service-nova0-mariadbworker_service_duration: 6.341934204101562e-05
+      total_instruction_conn_3-mariadbworker5-service-glance0-worker_service_duration: 6.270408630371094e-05
+      total_event_sleeping_duration: 1.5735626220703125e-05
+    update:
+      total_event_uptime_wait_all_duration: 299.742210149765
+      total_instruction_waitall_5_duration: 299.7421314716339
+      total_event_uptime_duration: 117.86251211166382
+      total_event_update_duration: 117.85399627685547
+      total_instruction_wait_2-mariadbmaster_True_duration: 59.21915674209595
+      total_instruction_wait_4-mariadbworker5_duration: 58.62974762916565
+      total_behavior_deploy-mariadbworker5_duration: 58.629727363586426
+      total_transition_bootstrap_duration: 25.976233959197998
+      total_transition_start_duration: 12.725427389144897
+      total_transition_deploy_duration: 12.305670738220215
+      total_transition_configure1_duration: 4.798097133636475
+      total_behavior_update-mariadbworker5_duration: 3.9646902084350586
+      total_transition_configure0_duration: 3.339613914489746
+      total_transition_unconfigure_duration: 3.2846086025238037
+      total_transition_register_duration: 2.7600667476654053
+      total_behavior_interrupt-mariadbworker5_duration: 0.5370488166809082
+      total_transition_interrupt_duration: 0.4824955463409424
+      total_event_saving_state_duration: 0.0015506744384765625
+      total_event_loading_state_duration: 0.0007762908935546875
+      total_instruction_push_b_0-mariadbworker5-interrupt_duration: 0.0002295970916748047
+      total_instruction_push_b_3-mariadbworker5-deploy_duration: 0.00011587142944335938
+      total_instruction_push_b_1-mariadbworker5-update_duration: 9.5367431640625e-05
+      total_event_sleeping_duration: 1.5020370483398438e-05
+  nova5:
+    deploy:
+      total_event_uptime_duration: 304.24632573127747
+      total_event_deploy_duration: 304.235146522522
+      total_instruction_wait_4-nova5_duration: 304.2343511581421
+      total_behavior_deploy-nova5_duration: 304.2340188026428
+      total_transition_deploy_duration: 124.95315432548523
+      total_transition_ready1_duration: 79.4856390953064
+      total_transition_cell_setup_duration: 37.73362636566162
+      total_transition_ready0_duration: 34.024961948394775
+      total_transition_pull1_duration: 15.086113691329956
+      total_transition_start_duration: 13.4695303440094
+      total_transition_pull0_duration: 11.7831392288208
+      total_transition_pull2_duration: 9.495316505432129
+      total_event_uptime_wait_all_duration: 0.6441323757171631
+      total_instruction_waitall_5_duration: 0.6440625190734863
+      total_event_saving_state_duration: 0.001232147216796875
+      total_instruction_add_0-nova5-Nova_duration: 0.0002124309539794922
+      total_event_loading_state_duration: 8.606910705566406e-05
+      total_instruction_conn_1-nova5-mariadbworker_service-mariadbworker5-service_duration: 8.0108642578125e-05
+      total_instruction_push_b_3-nova5-deploy_duration: 6.699562072753906e-05
+      total_instruction_conn_2-nova5-keystone_service-keystone5-service_duration: 6.556510925292969e-05
+      total_event_sleeping_duration: 2.7179718017578125e-05
+    update:
+      total_event_uptime_duration: 417.3197441101074
+      total_event_update_duration: 417.3116886615753
+      total_instruction_wait_5-nova5_duration: 217.95368218421936
+      total_behavior_deploy-nova5_duration: 217.95367813110352
+      total_transition_deploy_duration: 124.95966935157776
+      total_instruction_wait_1-mariadbworker5_True_duration: 117.83355402946472
+      total_instruction_wait_3-keystone5_True_duration: 81.51946592330933
+      total_transition_ready1_duration: 79.47042083740234
+      total_transition_cell_setup_duration: 37.73354196548462
+      total_transition_ready0_duration: 34.040321588516235
+      total_transition_start_duration: 13.469570875167847
+      total_behavior_update-nova5_duration: 3.4098901748657227
+      total_transition_unpull_duration: 3.2846970558166504
+      total_behavior_interrupt-nova5_duration: 0.5042779445648193
+      total_transition_interrupt_duration: 0.483518123626709
+      total_event_uptime_wait_all_duration: 0.3366262912750244
+      total_instruction_waitall_6_duration: 0.3365604877471924
+      total_event_saving_state_duration: 0.0013425350189208984
+      total_event_loading_state_duration: 0.0007007122039794922
+      total_instruction_push_b_0-nova5-interrupt_duration: 0.00021767616271972656
+      total_instruction_push_b_4-nova5-deploy_duration: 0.00012111663818359375
+      total_instruction_push_b_2-nova5-update_duration: 0.00011754035949707031
+      total_event_sleeping_duration: 2.6702880859375e-05
+  neutron5:
+    deploy:
+      total_event_uptime_duration: 305.5558023452759
+      total_event_deploy_duration: 305.548495054245
+      total_instruction_wait_4-neutron5_duration: 305.54352951049805
+      total_behavior_deploy-neutron5_duration: 305.54315209388733
+      total_transition_deploy_duration: 141.23628664016724
+      total_transition_pull1_duration: 20.641983032226562
+      total_transition_pull2_duration: 19.410420656204224
+      total_transition_pull0_duration: 8.39423680305481
+      total_event_uptime_wait_all_duration: 0.32385730743408203
+      total_instruction_waitall_5_duration: 0.32378721237182617
+      total_event_saving_state_duration: 0.0009443759918212891
+      total_instruction_add_0-neutron5-Neutron_duration: 0.00020647048950195312
+      total_instruction_conn_1-neutron5-worker_service-mariadbworker5-service_duration: 0.000118255615234375
+      total_event_loading_state_duration: 0.00011277198791503906
+      total_instruction_push_b_3-neutron5-deploy_duration: 8.606910705566406e-05
+      total_event_sleeping_duration: 7.557868957519531e-05
+      total_instruction_conn_2-neutron5-keystone_service-keystone5-service_duration: 6.961822509765625e-05
+    update:
+      total_event_uptime_duration: 361.2418658733368
+      total_event_update_duration: 361.2297914028168
+      total_instruction_wait_4-neutron5_duration: 161.92512965202332
+      total_behavior_deploy-neutron5_duration: 161.9251012802124
+      total_transition_deploy_duration: 141.23613786697388
+      total_instruction_wait_1-mariadbworker5_True_duration: 117.88115119934082
+      total_instruction_wait_2-keystone5_True_duration: 81.42283391952515
+      total_transition_pull1_duration: 20.64209532737732
+      total_transition_pull2_duration: 19.395540714263916
+      total_transition_pull0_duration: 8.394277811050415
+      total_behavior_uninstall-neutron5_duration: 3.777697801589966
+      total_transition_turnoff_duration: 3.7651257514953613
+      total_event_uptime_wait_all_duration: 0.32350587844848633
+      total_instruction_waitall_5_duration: 0.3234384059906006
+      total_event_saving_state_duration: 0.0009522438049316406
+      total_event_loading_state_duration: 0.0006349086761474609
+      total_instruction_push_b_0-neutron5-uninstall_duration: 0.00020623207092285156
+      total_instruction_push_b_3-neutron5-deploy_duration: 0.00011038780212402344
+      total_event_sleeping_duration: 1.5497207641601562e-05
+  keystone6:
+    deploy:
+      total_event_uptime_duration: 164.26606273651123
+      total_event_deploy_duration: 164.25364112854004
+      total_instruction_wait_6-keystone6_duration: 164.2525234222412
+      total_behavior_deploy-keystone6_duration: 164.25211024284363
+      total_event_uptime_wait_all_duration: 141.37121081352234
+      total_instruction_waitall_7_duration: 141.37111568450928
+      total_transition_deploy_duration: 77.71102952957153
+      total_transition_pull_duration: 3.339503049850464
+      total_event_saving_state_duration: 0.00107574462890625
+      total_instruction_add_0-keystone6-Keystone_duration: 0.00019311904907226562
+      total_instruction_conn_1-keystone6-worker_service-mariadbworker6-service_duration: 0.00011014938354492188
+      total_event_loading_state_duration: 9.989738464355469e-05
+      total_instruction_conn_4-keystone6-service-neutron6-keystone_service_duration: 8.034706115722656e-05
+      total_instruction_push_b_5-keystone6-deploy_duration: 7.939338684082031e-05
+      total_instruction_conn_2-keystone6-service-glance6-keystone_service_duration: 7.82012939453125e-05
+      total_instruction_conn_3-keystone6-service-nova6-keystone_service_duration: 7.724761962890625e-05
+      total_event_sleeping_duration: 1.8835067749023438e-05
+    update:
+      total_event_uptime_wait_all_duration: 218.18091917037964
+      total_instruction_waitall_4_duration: 218.18078565597534
+      total_event_uptime_duration: 198.62845373153687
+      total_event_update_duration: 198.61971807479858
+      total_instruction_wait_1-mariadbworker6_True_duration: 117.5293402671814
+      total_instruction_wait_3-keystone6_duration: 81.08523106575012
+      total_behavior_deploy-keystone6_duration: 81.08517980575562
+      total_transition_deploy_duration: 77.71282577514648
+      total_behavior_stop-keystone6_duration: 4.101411581039429
+      total_transition_turnoff_duration: 3.766186237335205
+      total_transition_pull_duration: 3.338444948196411
+      total_event_saving_state_duration: 0.001066446304321289
+      total_event_loading_state_duration: 0.0006716251373291016
+      total_instruction_push_b_0-keystone6-stop_duration: 0.0002276897430419922
+      total_instruction_push_b_2-keystone6-deploy_duration: 0.00011396408081054688
+      total_event_sleeping_duration: 2.0742416381835938e-05
+  glance6:
+    deploy:
+      total_event_uptime_duration: 227.14882349967957
+      total_event_deploy_duration: 227.14111971855164
+      total_instruction_wait_4-glance6_duration: 227.13596272468567
+      total_behavior_deploy-glance6_duration: 227.1355791091919
+      total_transition_deploy_duration: 62.827739000320435
+      total_transition_pull2_duration: 15.731555461883545
+      total_transition_pull1_duration: 7.162957668304443
+      total_transition_pull0_duration: 5.041245937347412
+      total_event_uptime_wait_all_duration: 0.6269943714141846
+      total_instruction_waitall_5_duration: 0.6269080638885498
+      total_instruction_add_0-glance6-Glance_duration: 0.004250049591064453
+      total_event_saving_state_duration: 0.0010426044464111328
+      total_instruction_conn_1-glance6-worker_service-mariadbworker6-service_duration: 0.00021600723266601562
+      total_instruction_conn_2-glance6-keystone_service-keystone6-service_duration: 9.942054748535156e-05
+      total_event_loading_state_duration: 9.775161743164062e-05
+      total_instruction_push_b_3-glance6-deploy_duration: 8.20159912109375e-05
+      total_event_sleeping_duration: 1.430511474609375e-05
+    update:
+      total_event_uptime_duration: 277.26894903182983
+      total_event_update_duration: 277.26063418388367
+      total_instruction_wait_1-mariadbworker6_True_duration: 117.81825375556946
+      total_instruction_wait_2-keystone6_True_duration: 80.83154511451721
+      total_instruction_wait_4-glance6_duration: 78.60585570335388
+      total_behavior_deploy-glance6_duration: 78.60580325126648
+      total_transition_deploy_duration: 62.81895208358765
+      total_transition_pull2_duration: 15.748422145843506
+      total_transition_pull1_duration: 7.173473119735718
+      total_transition_pull0_duration: 5.041196823120117
+      total_behavior_uninstall-glance6_duration: 3.7736458778381348
+      total_transition_turnoff_duration: 3.7652087211608887
+      total_event_uptime_wait_all_duration: 0.31760668754577637
+      total_instruction_waitall_5_duration: 0.31751155853271484
+      total_instruction_push_b_0-glance6-uninstall_duration: 0.004473209381103516
+      total_event_saving_state_duration: 0.0009391307830810547
+      total_event_loading_state_duration: 0.0006937980651855469
+      total_instruction_push_b_3-glance6-deploy_duration: 0.00011229515075683594
+      total_event_sleeping_duration: 1.52587890625e-05
+  mariadbworker6:
+    deploy:
+      total_event_uptime_wait_all_duration: 219.36798667907715
+      total_instruction_waitall_8_duration: 219.3673644065857
+      total_event_uptime_duration: 86.19979286193848
+      total_event_deploy_duration: 86.1916983127594
+      total_instruction_wait_7-mariadbworker6_duration: 86.18608665466309
+      total_behavior_deploy-mariadbworker6_duration: 86.18497920036316
+      total_transition_bootstrap_duration: 25.96453022956848
+      total_transition_start_duration: 12.721912622451782
+      total_transition_deploy_duration: 12.2897789478302
+      total_transition_configure1_duration: 4.803057432174683
+      total_transition_configure0_duration: 3.3166966438293457
+      total_transition_register_duration: 2.7584550380706787
+      total_instruction_add_0-mariadbworker6-MariadbWorker_duration: 0.004583597183227539
+      total_event_saving_state_duration: 0.0013866424560546875
+      total_event_loading_state_duration: 0.00012636184692382812
+      total_instruction_conn_1-mariadbworker6-master_service-mariadbmaster-service_duration: 0.00012445449829101562
+      total_instruction_push_b_6-mariadbworker6-deploy_duration: 8.273124694824219e-05
+      total_instruction_conn_4-mariadbworker6-service-nova0-mariadbworker_service_duration: 7.62939453125e-05
+      total_instruction_conn_3-mariadbworker6-service-glance0-worker_service_duration: 7.557868957519531e-05
+      total_instruction_conn_5-mariadbworker6-service-neutron0-worker_service_duration: 7.534027099609375e-05
+      total_instruction_conn_2-mariadbworker6-service-keystone0-worker_service_duration: 7.200241088867188e-05
+      total_event_sleeping_duration: 1.5974044799804688e-05
+    update:
+      total_event_uptime_wait_all_duration: 299.23676681518555
+      total_instruction_waitall_5_duration: 299.23661375045776
+      total_event_uptime_duration: 117.50466561317444
+      total_event_update_duration: 117.49574637413025
+      total_instruction_wait_2-mariadbmaster_True_duration: 58.87194871902466
+      total_behavior_deploy-mariadbworker6_duration: 58.61837553977966
+      total_instruction_wait_4-mariadbworker6_duration: 58.61834955215454
+      total_transition_bootstrap_duration: 25.981312036514282
+      total_transition_start_duration: 12.732985496520996
+      total_transition_deploy_duration: 12.301137208938599
+      total_transition_configure1_duration: 4.780855178833008
+      total_behavior_update-mariadbworker6_duration: 3.937520742416382
+      total_transition_configure0_duration: 3.3424830436706543
+      total_transition_unconfigure_duration: 3.2853782176971436
+      total_transition_register_duration: 2.756774663925171
+      total_behavior_interrupt-mariadbworker6_duration: 0.5303318500518799
+      total_transition_interrupt_duration: 0.4816873073577881
+      total_instruction_push_b_0-mariadbworker6-interrupt_duration: 0.00484919548034668
+      total_event_saving_state_duration: 0.0012769699096679688
+      total_event_loading_state_duration: 0.0008206367492675781
+      total_instruction_push_b_3-mariadbworker6-deploy_duration: 0.00015282630920410156
+      total_instruction_push_b_1-mariadbworker6-update_duration: 7.271766662597656e-05
+      total_event_sleeping_duration: 1.33514404296875e-05
+  nova6:
+    deploy:
+      total_event_uptime_duration: 304.17034125328064
+      total_event_deploy_duration: 304.1587882041931
+      total_instruction_wait_4-nova6_duration: 304.15784096717834
+      total_behavior_deploy-nova6_duration: 304.15749740600586
+      total_transition_deploy_duration: 124.96109938621521
+      total_transition_ready1_duration: 79.46006941795349
+      total_transition_cell_setup_duration: 37.743762493133545
+      total_transition_ready0_duration: 34.01989722251892
+      total_transition_pull1_duration: 15.101236581802368
+      total_transition_start_duration: 13.466179370880127
+      total_transition_pull0_duration: 11.757723093032837
+      total_transition_pull2_duration: 9.495492696762085
+      total_event_uptime_wait_all_duration: 0.6377196311950684
+      total_instruction_waitall_5_duration: 0.637627363204956
+      total_event_saving_state_duration: 0.0012853145599365234
+      total_instruction_add_0-nova6-Nova_duration: 0.000186920166015625
+      total_instruction_conn_1-nova6-mariadbworker_service-mariadbworker6-service_duration: 0.00012493133544921875
+      total_event_loading_state_duration: 8.797645568847656e-05
+      total_instruction_conn_2-nova6-keystone_service-keystone6-service_duration: 7.414817810058594e-05
+      total_instruction_push_b_3-nova6-deploy_duration: 6.842613220214844e-05
+      total_event_sleeping_duration: 1.6689300537109375e-05
+    update:
+      total_event_uptime_duration: 416.48635625839233
+      total_event_update_duration: 416.47836422920227
+      total_behavior_deploy-nova6_duration: 217.93610191345215
+      total_instruction_wait_5-nova6_duration: 217.93609285354614
+      total_transition_deploy_duration: 124.95620441436768
+      total_instruction_wait_1-mariadbworker6_True_duration: 117.70094990730286
+      total_instruction_wait_3-keystone6_True_duration: 80.83635020256042
+      total_transition_ready1_duration: 79.4653639793396
+      total_transition_cell_setup_duration: 37.73367786407471
+      total_transition_ready0_duration: 34.03535747528076
+      total_transition_start_duration: 13.469564437866211
+      total_behavior_update-nova6_duration: 3.501596689224243
+      total_transition_unpull_duration: 3.2846968173980713
+      total_behavior_interrupt-nova6_duration: 0.49918627738952637
+      total_transition_interrupt_duration: 0.4832429885864258
+      total_event_uptime_wait_all_duration: 0.3160674571990967
+      total_instruction_waitall_6_duration: 0.31600165367126465
+      total_instruction_push_b_0-nova6-interrupt_duration: 0.004302978515625
+      total_event_saving_state_duration: 0.0012242794036865234
+      total_event_loading_state_duration: 0.0007159709930419922
+      total_instruction_push_b_2-nova6-update_duration: 0.00011467933654785156
+      total_instruction_push_b_4-nova6-deploy_duration: 0.00011277198791503906
+      total_event_sleeping_duration: 1.4543533325195312e-05
+  neutron6:
+    deploy:
+      total_event_uptime_duration: 305.55741930007935
+      total_event_deploy_duration: 305.545462846756
+      total_instruction_wait_4-neutron6_duration: 305.5446870326996
+      total_behavior_deploy-neutron6_duration: 305.5443596839905
+      total_transition_deploy_duration: 141.23590660095215
+      total_transition_pull1_duration: 20.616409063339233
+      total_transition_pull2_duration: 19.40516424179077
+      total_transition_pull0_duration: 8.414677143096924
+      total_event_uptime_wait_all_duration: 0.3231842517852783
+      total_instruction_waitall_5_duration: 0.3231215476989746
+      total_event_saving_state_duration: 0.0008907318115234375
+      total_instruction_add_0-neutron6-Neutron_duration: 0.00017213821411132812
+      total_event_loading_state_duration: 8.654594421386719e-05
+      total_instruction_conn_1-neutron6-worker_service-mariadbworker6-service_duration: 8.082389831542969e-05
+      total_instruction_push_b_3-neutron6-deploy_duration: 7.152557373046875e-05
+      total_instruction_conn_2-neutron6-keystone_service-keystone6-service_duration: 6.67572021484375e-05
+      total_event_sleeping_duration: 1.9311904907226562e-05
+    update:
+      total_event_uptime_duration: 360.5104353427887
+      total_event_update_duration: 360.49829149246216
+      total_behavior_deploy-neutron6_duration: 161.91428685188293
+      total_instruction_wait_4-neutron6_duration: 161.91425108909607
+      total_transition_deploy_duration: 141.23616242408752
+      total_instruction_wait_1-mariadbworker6_True_duration: 117.59885859489441
+      total_instruction_wait_2-keystone6_True_duration: 80.98439383506775
+      total_transition_pull1_duration: 20.636846780776978
+      total_transition_pull2_duration: 19.405423402786255
+      total_transition_pull0_duration: 8.394434928894043
+      total_behavior_uninstall-neutron6_duration: 3.77980637550354
+      total_transition_turnoff_duration: 3.7655155658721924
+      total_event_uptime_wait_all_duration: 0.32518601417541504
+      total_instruction_waitall_5_duration: 0.3251199722290039
+      total_event_saving_state_duration: 0.0009090900421142578
+      total_event_loading_state_duration: 0.000667572021484375
+      total_instruction_push_b_0-neutron6-uninstall_duration: 0.0002162456512451172
+      total_instruction_push_b_3-neutron6-deploy_duration: 0.00020503997802734375
+      total_event_sleeping_duration: 0.00019431114196777344
+  keystone7:
+    deploy:
+      total_event_uptime_duration: 164.2024326324463
+      total_event_deploy_duration: 164.19473028182983
+      total_instruction_wait_6-keystone7_duration: 164.18943548202515
+      total_behavior_deploy-keystone7_duration: 164.1890106201172
+      total_event_uptime_wait_all_duration: 141.51572275161743
+      total_instruction_waitall_7_duration: 141.5156557559967
+      total_transition_deploy_duration: 77.70267033576965
+      total_transition_pull_duration: 3.3549375534057617
+      total_event_saving_state_duration: 0.001020669937133789
+      total_instruction_conn_1-keystone7-worker_service-mariadbworker7-service_duration: 0.00031638145446777344
+      total_instruction_add_0-keystone7-Keystone_duration: 0.0001747608184814453
+      total_instruction_conn_2-keystone7-service-glance7-keystone_service_duration: 0.00010418891906738281
+      total_event_loading_state_duration: 9.679794311523438e-05
+      total_instruction_push_b_5-keystone7-deploy_duration: 8.630752563476562e-05
+      total_instruction_conn_3-keystone7-service-nova7-keystone_service_duration: 8.225440979003906e-05
+      total_instruction_conn_4-keystone7-service-neutron7-keystone_service_duration: 7.128715515136719e-05
+      total_event_sleeping_duration: 1.6689300537109375e-05
+    update:
+      total_event_uptime_wait_all_duration: 218.4494149684906
+      total_instruction_waitall_4_duration: 218.44934844970703
+      total_event_uptime_duration: 198.6111388206482
+      total_event_update_duration: 198.59776663780212
+      total_instruction_wait_1-mariadbworker7_True_duration: 117.58393383026123
+      total_instruction_wait_3-keystone7_duration: 81.01296997070312
+      total_behavior_deploy-keystone7_duration: 81.01294207572937
+      total_transition_deploy_duration: 77.63784289360046
+      total_behavior_stop-keystone7_duration: 4.099932670593262
+      total_transition_turnoff_duration: 3.764240026473999
+      total_transition_pull_duration: 3.3434014320373535
+      total_event_saving_state_duration: 0.0009889602661132812
+      total_event_loading_state_duration: 0.0006899833679199219
+      total_instruction_push_b_0-keystone7-stop_duration: 0.00020265579223632812
+      total_instruction_push_b_2-keystone7-deploy_duration: 0.00011229515075683594
+      total_event_sleeping_duration: 1.430511474609375e-05
+  glance7:
+    deploy:
+      total_event_uptime_duration: 227.33319187164307
+      total_event_deploy_duration: 227.32514786720276
+      total_instruction_wait_4-glance7_duration: 227.31971549987793
+      total_behavior_deploy-glance7_duration: 227.3193120956421
+      total_transition_deploy_duration: 62.818894386291504
+      total_transition_pull2_duration: 15.731534481048584
+      total_transition_pull1_duration: 7.161707878112793
+      total_transition_pull0_duration: 5.0413291454315186
+      total_event_uptime_wait_all_duration: 0.3181002140045166
+      total_instruction_waitall_5_duration: 0.3180239200592041
+      total_instruction_conn_1-glance7-worker_service-mariadbworker7-service_duration: 0.004624843597412109
+      total_event_saving_state_duration: 0.001001596450805664
+      total_instruction_add_0-glance7-Glance_duration: 0.00016450881958007812
+      total_instruction_conn_2-glance7-keystone_service-keystone7-service_duration: 0.00014781951904296875
+      total_event_loading_state_duration: 0.00010943412780761719
+      total_instruction_push_b_3-glance7-deploy_duration: 7.963180541992188e-05
+      total_event_sleeping_duration: 1.2636184692382812e-05
+    update:
+      total_event_uptime_duration: 277.4422788619995
+      total_event_update_duration: 277.42975521087646
+      total_instruction_wait_1-mariadbworker7_True_duration: 117.43711876869202
+      total_instruction_wait_2-keystone7_True_duration: 81.39916467666626
+      total_instruction_wait_4-glance7_duration: 78.59274363517761
+      total_behavior_deploy-glance7_duration: 78.5926423072815
+      total_transition_deploy_duration: 62.82417631149292
+      total_transition_pull2_duration: 15.728343486785889
+      total_transition_pull1_duration: 7.162933111190796
+      total_transition_pull0_duration: 5.0410473346710205
+      total_behavior_uninstall-glance7_duration: 3.776416063308716
+      total_transition_turnoff_duration: 3.7659971714019775
+      total_event_uptime_wait_all_duration: 0.6265513896942139
+      total_instruction_waitall_5_duration: 0.6264562606811523
+      total_event_saving_state_duration: 0.0009515285491943359
+      total_event_loading_state_duration: 0.0007205009460449219
+      total_instruction_push_b_0-glance7-uninstall_duration: 0.00021147727966308594
+      total_instruction_push_b_3-glance7-deploy_duration: 0.00011849403381347656
+      total_event_sleeping_duration: 1.4066696166992188e-05
+  mariadbworker7:
+    deploy:
+      total_event_uptime_wait_all_duration: 219.46283316612244
+      total_instruction_waitall_8_duration: 219.46225214004517
+      total_event_uptime_duration: 86.14859747886658
+      total_event_deploy_duration: 86.1354992389679
+      total_instruction_wait_7-mariadbworker7_duration: 86.1340913772583
+      total_behavior_deploy-mariadbworker7_duration: 86.13241982460022
+      total_transition_bootstrap_duration: 25.95459508895874
+      total_transition_start_duration: 12.725605487823486
+      total_transition_deploy_duration: 12.290037870407104
+      total_transition_configure1_duration: 4.788300275802612
+      total_transition_configure0_duration: 3.3394391536712646
+      total_transition_register_duration: 2.7524380683898926
+      total_event_saving_state_duration: 0.0013759136199951172
+      total_instruction_add_0-mariadbworker7-MariadbWorker_duration: 0.00021338462829589844
+      total_event_loading_state_duration: 0.0001380443572998047
+      total_instruction_conn_3-mariadbworker7-service-glance0-worker_service_duration: 0.00010347366333007812
+      total_instruction_push_b_6-mariadbworker7-deploy_duration: 9.655952453613281e-05
+      total_instruction_conn_1-mariadbworker7-master_service-mariadbmaster-service_duration: 9.584426879882812e-05
+      total_instruction_conn_5-mariadbworker7-service-neutron0-worker_service_duration: 8.893013000488281e-05
+      total_instruction_conn_2-mariadbworker7-service-keystone0-worker_service_duration: 7.987022399902344e-05
+      total_instruction_conn_4-mariadbworker7-service-nova0-mariadbworker_service_duration: 7.963180541992188e-05
+      total_event_sleeping_duration: 1.3589859008789062e-05
+    update:
+      total_event_uptime_wait_all_duration: 299.5765767097473
+      total_instruction_waitall_5_duration: 299.5765037536621
+      total_event_uptime_duration: 117.42793440818787
+      total_event_update_duration: 117.41886639595032
+      total_instruction_wait_2-mariadbmaster_True_duration: 58.79023838043213
+      total_instruction_wait_4-mariadbworker7_duration: 58.62337136268616
+      total_behavior_deploy-mariadbworker7_duration: 58.623353004455566
+      total_transition_bootstrap_duration: 25.98261070251465
+      total_transition_start_duration: 12.729690551757812
+      total_transition_deploy_duration: 12.29079556465149
+      total_transition_configure1_duration: 4.786725997924805
+      total_behavior_update-mariadbworker7_duration: 3.8448970317840576
+      total_transition_configure0_duration: 3.3381917476654053
+      total_transition_unconfigure_duration: 3.282935619354248
+      total_transition_register_duration: 2.7671215534210205
+      total_behavior_interrupt-mariadbworker7_duration: 0.5395805835723877
+      total_transition_interrupt_duration: 0.4836916923522949
+      total_event_saving_state_duration: 0.0015411376953125
+      total_event_loading_state_duration: 0.0008256435394287109
+      total_instruction_push_b_0-mariadbworker7-interrupt_duration: 0.000217437744140625
+      total_instruction_push_b_3-mariadbworker7-deploy_duration: 0.00011682510375976562
+      total_instruction_push_b_1-mariadbworker7-update_duration: 9.298324584960938e-05
+      total_event_sleeping_duration: 1.2159347534179688e-05
+  nova7:
+    deploy:
+      total_event_uptime_duration: 304.11144638061523
+      total_event_deploy_duration: 304.09991240501404
+      total_instruction_wait_4-nova7_duration: 304.099080324173
+      total_behavior_deploy-nova7_duration: 304.0987310409546
+      total_transition_deploy_duration: 124.95617365837097
+      total_transition_ready1_duration: 79.4817910194397
+      total_transition_cell_setup_duration: 37.735332012176514
+      total_transition_ready0_duration: 34.02412676811218
+      total_transition_pull1_duration: 15.080991744995117
+      total_transition_start_duration: 13.469642877578735
+      total_transition_pull0_duration: 11.777936697006226
+      total_transition_pull2_duration: 9.495446920394897
+      total_event_uptime_wait_all_duration: 0.3242216110229492
+      total_instruction_waitall_5_duration: 0.32415223121643066
+      total_event_saving_state_duration: 0.0012729167938232422
+      total_instruction_add_0-nova7-Nova_duration: 0.00023293495178222656
+      total_event_loading_state_duration: 9.298324584960938e-05
+      total_instruction_conn_1-nova7-mariadbworker_service-mariadbworker7-service_duration: 8.463859558105469e-05
+      total_instruction_push_b_3-nova7-deploy_duration: 6.961822509765625e-05
+      total_instruction_conn_2-nova7-keystone_service-keystone7-service_duration: 6.866455078125e-05
+      total_event_sleeping_duration: 1.5735626220703125e-05
+    update:
+      total_event_uptime_duration: 416.7004692554474
+      total_event_update_duration: 416.6924240589142
+      total_behavior_deploy-nova7_duration: 217.89425349235535
+      total_instruction_wait_5-nova7_duration: 217.89423036575317
+      total_transition_deploy_duration: 124.96468472480774
+      total_instruction_wait_1-mariadbworker7_True_duration: 117.64327955245972
+      total_instruction_wait_3-keystone7_True_duration: 81.14988231658936
+      total_transition_ready1_duration: 79.42368364334106
+      total_transition_cell_setup_duration: 37.72873520851135
+      total_transition_ready0_duration: 34.04438233375549
+      total_transition_start_duration: 13.465615510940552
+      total_behavior_update-nova7_duration: 3.489455461502075
+      total_transition_unpull_duration: 3.2846035957336426
+      total_behavior_interrupt-nova7_duration: 0.5012459754943848
+      total_transition_interrupt_duration: 0.4817073345184326
+      total_event_uptime_wait_all_duration: 0.3206946849822998
+      total_instruction_waitall_6_duration: 0.3206288814544678
+      total_instruction_push_b_0-nova7-interrupt_duration: 0.004361867904663086
+      total_event_saving_state_duration: 0.0013241767883300781
+      total_event_loading_state_duration: 0.0006577968597412109
+      total_instruction_push_b_4-nova7-deploy_duration: 0.00013875961303710938
+      total_instruction_push_b_2-nova7-update_duration: 0.000125885009765625
+      total_event_sleeping_duration: 1.5497207641601562e-05
+  neutron7:
+    deploy:
+      total_event_uptime_duration: 305.42418479919434
+      total_event_deploy_duration: 305.4129807949066
+      total_instruction_wait_4-neutron7_duration: 305.4122037887573
+      total_behavior_deploy-neutron7_duration: 305.41186022758484
+      total_transition_deploy_duration: 141.24138283729553
+      total_transition_pull1_duration: 20.616571187973022
+      total_transition_pull2_duration: 19.394416332244873
+      total_transition_pull0_duration: 8.424771308898926
+      total_event_uptime_wait_all_duration: 0.32412171363830566
+      total_instruction_waitall_5_duration: 0.32405567169189453
+      total_event_saving_state_duration: 0.0009305477142333984
+      total_instruction_add_0-neutron7-Neutron_duration: 0.0001659393310546875
+      total_instruction_conn_1-neutron7-worker_service-mariadbworker7-service_duration: 0.00012183189392089844
+      total_event_loading_state_duration: 8.630752563476562e-05
+      total_instruction_push_b_3-neutron7-deploy_duration: 6.818771362304688e-05
+      total_instruction_conn_2-neutron7-keystone_service-keystone7-service_duration: 6.532669067382812e-05
+      total_event_sleeping_duration: 1.71661376953125e-05
+    update:
+      total_event_uptime_duration: 360.6739296913147
+      total_event_update_duration: 360.6613702774048
+      total_behavior_deploy-neutron7_duration: 161.91844367980957
+      total_instruction_wait_4-neutron7_duration: 161.9184067249298
+      total_transition_deploy_duration: 141.23557901382446
+      total_instruction_wait_1-mariadbworker7_True_duration: 117.47981977462769
+      total_instruction_wait_2-keystone7_True_duration: 81.2624032497406
+      total_transition_pull1_duration: 20.63678216934204
+      total_transition_pull2_duration: 19.414801120758057
+      total_transition_pull0_duration: 8.389559745788574
+      total_behavior_uninstall-neutron7_duration: 3.7772843837738037
+      total_transition_turnoff_duration: 3.765101671218872
+      total_event_uptime_wait_all_duration: 0.6379690170288086
+      total_instruction_waitall_5_duration: 0.6378989219665527
+      total_event_saving_state_duration: 0.0009477138519287109
+      total_event_loading_state_duration: 0.0006339550018310547
+      total_instruction_push_b_0-neutron7-uninstall_duration: 0.00021505355834960938
+      total_instruction_push_b_3-neutron7-deploy_duration: 0.000152587890625
+      total_event_sleeping_duration: 3.361701965332031e-05
+  keystone8:
+    deploy:
+      total_event_uptime_duration: 164.05819010734558
+      total_event_deploy_duration: 164.05035209655762
+      total_instruction_wait_6-keystone8_duration: 164.04489302635193
+      total_behavior_deploy-keystone8_duration: 164.04446649551392
+      total_event_uptime_wait_all_duration: 141.47884130477905
+      total_instruction_waitall_7_duration: 141.47877407073975
+      total_transition_deploy_duration: 77.6994514465332
+      total_transition_pull_duration: 3.339534044265747
+      total_event_saving_state_duration: 0.0009846687316894531
+      total_instruction_conn_1-keystone8-worker_service-mariadbworker8-service_duration: 0.00021123886108398438
+      total_instruction_add_0-keystone8-Keystone_duration: 0.00020003318786621094
+      total_event_loading_state_duration: 0.00010895729064941406
+      total_instruction_conn_2-keystone8-service-glance8-keystone_service_duration: 0.00010156631469726562
+      total_instruction_push_b_5-keystone8-deploy_duration: 8.368492126464844e-05
+      total_instruction_conn_4-keystone8-service-neutron8-keystone_service_duration: 8.273124694824219e-05
+      total_instruction_conn_3-keystone8-service-nova8-keystone_service_duration: 6.222724914550781e-05
+      total_event_sleeping_duration: 1.3589859008789062e-05
+    update:
+      total_event_uptime_wait_all_duration: 218.21038222312927
+      total_instruction_waitall_4_duration: 218.2103078365326
+      total_event_uptime_duration: 198.67689871788025
+      total_event_update_duration: 198.6643533706665
+      total_instruction_wait_1-mariadbworker8_True_duration: 117.57951855659485
+      total_behavior_deploy-keystone8_duration: 81.08389949798584
+      total_instruction_wait_3-keystone8_duration: 81.08389925956726
+      total_transition_deploy_duration: 77.70315623283386
+      total_behavior_stop-keystone8_duration: 4.098079204559326
+      total_transition_turnoff_duration: 3.7651872634887695
+      total_transition_pull_duration: 3.336487293243408
+      total_event_saving_state_duration: 0.0010156631469726562
+      total_event_loading_state_duration: 0.0007140636444091797
+      total_instruction_push_b_0-keystone8-stop_duration: 0.00027871131896972656
+      total_instruction_push_b_2-keystone8-deploy_duration: 0.00019240379333496094
+      total_event_sleeping_duration: 1.4781951904296875e-05
+  glance8:
+    deploy:
+      total_event_uptime_duration: 227.24145984649658
+      total_event_deploy_duration: 227.23340559005737
+      total_instruction_wait_4-glance8_duration: 227.2280662059784
+      total_behavior_deploy-glance8_duration: 227.22766828536987
+      total_transition_deploy_duration: 62.818989276885986
+      total_transition_pull2_duration: 15.736684083938599
+      total_transition_pull1_duration: 7.163114309310913
+      total_transition_pull0_duration: 5.0463643074035645
+      total_event_uptime_wait_all_duration: 0.31787729263305664
+      total_instruction_waitall_5_duration: 0.31780266761779785
+      total_instruction_add_0-glance8-Glance_duration: 0.0046041011810302734
+      total_event_saving_state_duration: 0.000982522964477539
+      total_instruction_conn_1-glance8-worker_service-mariadbworker8-service_duration: 0.00016951560974121094
+      total_event_loading_state_duration: 0.00011467933654785156
+      total_instruction_push_b_3-glance8-deploy_duration: 7.486343383789062e-05
+      total_instruction_conn_2-glance8-keystone_service-keystone8-service_duration: 6.961822509765625e-05
+      total_event_sleeping_duration: 2.0503997802734375e-05
+    update:
+      total_event_uptime_duration: 277.37285828590393
+      total_event_update_duration: 277.3604197502136
+      total_instruction_wait_1-mariadbworker8_True_duration: 117.61561679840088
+      total_instruction_wait_2-keystone8_True_duration: 81.12710738182068
+      total_behavior_deploy-glance8_duration: 78.61684608459473
+      total_instruction_wait_4-glance8_duration: 78.61684370040894
+      total_transition_deploy_duration: 62.824487924575806
+      total_transition_pull2_duration: 15.753000020980835
+      total_transition_pull1_duration: 7.167547941207886
+      total_transition_pull0_duration: 5.020751714706421
+      total_behavior_uninstall-glance8_duration: 3.7740633487701416
+      total_transition_turnoff_duration: 3.765643835067749
+      total_event_uptime_wait_all_duration: 0.6277966499328613
+      total_instruction_waitall_5_duration: 0.6277260780334473
+      total_event_sleeping_duration: 0.0010364055633544922
+      total_event_saving_state_duration: 0.0009305477142333984
+      total_event_loading_state_duration: 0.0007381439208984375
+      total_instruction_push_b_0-glance8-uninstall_duration: 0.0002548694610595703
+      total_instruction_push_b_3-glance8-deploy_duration: 0.0001068115234375
+  mariadbworker8:
+    deploy:
+      total_event_uptime_wait_all_duration: 219.35021209716797
+      total_instruction_waitall_8_duration: 219.3501431941986
+      total_event_uptime_duration: 86.19089698791504
+      total_event_deploy_duration: 86.17914748191833
+      total_instruction_wait_7-mariadbworker8_duration: 86.17781901359558
+      total_behavior_deploy-mariadbworker8_duration: 86.17739248275757
+      total_transition_bootstrap_duration: 25.97479510307312
+      total_transition_start_duration: 12.753291845321655
+      total_transition_deploy_duration: 12.303024291992188
+      total_transition_configure1_duration: 4.792676210403442
+      total_transition_configure0_duration: 3.3447091579437256
+      total_transition_register_duration: 2.7616100311279297
+      total_event_saving_state_duration: 0.0013527870178222656
+      total_instruction_add_0-mariadbworker8-MariadbWorker_duration: 0.0002014636993408203
+      total_instruction_conn_1-mariadbworker8-master_service-mariadbmaster-service_duration: 0.00011658668518066406
+      total_event_loading_state_duration: 9.632110595703125e-05
+      total_instruction_conn_5-mariadbworker8-service-neutron0-worker_service_duration: 7.772445678710938e-05
+      total_instruction_push_b_6-mariadbworker8-deploy_duration: 7.104873657226562e-05
+      total_instruction_conn_2-mariadbworker8-service-keystone0-worker_service_duration: 6.699562072753906e-05
+      total_instruction_conn_4-mariadbworker8-service-nova0-mariadbworker_service_duration: 6.67572021484375e-05
+      total_instruction_conn_3-mariadbworker8-service-glance0-worker_service_duration: 6.437301635742188e-05
+      total_event_sleeping_duration: 1.4543533325195312e-05
+    update:
+      total_event_uptime_wait_all_duration: 299.41045093536377
+      total_instruction_waitall_5_duration: 299.4103560447693
+      total_event_uptime_duration: 117.32539963722229
+      total_event_update_duration: 117.31657433509827
+      total_instruction_wait_2-mariadbmaster_True_duration: 58.70117211341858
+      total_behavior_deploy-mariadbworker8_duration: 58.609638690948486
+      total_instruction_wait_4-mariadbworker8_duration: 58.60963463783264
+      total_transition_bootstrap_duration: 25.95875859260559
+      total_transition_start_duration: 12.736294269561768
+      total_transition_deploy_duration: 12.290253400802612
+      total_transition_configure1_duration: 4.787177324295044
+      total_behavior_update-mariadbworker8_duration: 3.9086554050445557
+      total_transition_configure0_duration: 3.3411459922790527
+      total_transition_unconfigure_duration: 3.2852962017059326
+      total_transition_register_duration: 2.756951332092285
+      total_behavior_interrupt-mariadbworker8_duration: 0.5471832752227783
+      total_transition_interrupt_duration: 0.48217320442199707
+      total_instruction_push_b_0-mariadbworker8-interrupt_duration: 0.005131244659423828
+      total_event_saving_state_duration: 0.001619100570678711
+      total_event_loading_state_duration: 0.0008826255798339844
+      total_instruction_push_b_3-mariadbworker8-deploy_duration: 0.00016736984252929688
+      total_instruction_push_b_1-mariadbworker8-update_duration: 8.797645568847656e-05
+      total_event_sleeping_duration: 1.6927719116210938e-05
+  nova8:
+    deploy:
+      total_event_uptime_duration: 304.18020486831665
+      total_event_deploy_duration: 304.172842502594
+      total_instruction_wait_4-nova8_duration: 304.1679811477661
+      total_behavior_deploy-nova8_duration: 304.16764283180237
+      total_transition_deploy_duration: 124.85978055000305
+      total_transition_ready1_duration: 79.48555207252502
+      total_transition_cell_setup_duration: 37.73353290557861
+      total_transition_ready0_duration: 34.019776582717896
+      total_transition_pull1_duration: 15.101260900497437
+      total_transition_start_duration: 13.463383913040161
+      total_transition_pull0_duration: 11.757721185684204
+      total_transition_pull2_duration: 9.49529504776001
+      total_event_uptime_wait_all_duration: 0.32323169708251953
+      total_instruction_waitall_5_duration: 0.3231639862060547
+      total_event_saving_state_duration: 0.0012180805206298828
+      total_instruction_add_0-nova8-Nova_duration: 0.0002124309539794922
+      total_instruction_conn_1-nova8-mariadbworker_service-mariadbworker8-service_duration: 0.00012612342834472656
+      total_event_loading_state_duration: 8.654594421386719e-05
+      total_instruction_push_b_3-nova8-deploy_duration: 6.842613220214844e-05
+      total_instruction_conn_2-nova8-keystone_service-keystone8-service_duration: 6.67572021484375e-05
+      total_event_sleeping_duration: 1.4066696166992188e-05
+    update:
+      total_event_uptime_duration: 416.66308188438416
+      total_event_update_duration: 416.6548738479614
+      total_behavior_deploy-nova8_duration: 217.94130063056946
+      total_instruction_wait_5-nova8_duration: 217.9412808418274
+      total_transition_deploy_duration: 124.95608377456665
+      total_instruction_wait_1-mariadbworker8_True_duration: 117.51718163490295
+      total_instruction_wait_3-keystone8_True_duration: 81.19132971763611
+      total_transition_ready1_duration: 79.46021842956543
+      total_transition_cell_setup_duration: 37.7285521030426
+      total_transition_ready0_duration: 34.04024839401245
+      total_transition_start_duration: 13.47014594078064
+      total_behavior_update-nova8_duration: 3.3863463401794434
+      total_transition_unpull_duration: 3.2847838401794434
+      total_behavior_interrupt-nova8_duration: 0.49881935119628906
+      total_transition_interrupt_duration: 0.4820089340209961
+      total_event_uptime_wait_all_duration: 0.3152158260345459
+      total_instruction_waitall_6_duration: 0.31514906883239746
+      total_event_saving_state_duration: 0.001275777816772461
+      total_event_loading_state_duration: 0.0006885528564453125
+      total_instruction_push_b_0-nova8-interrupt_duration: 0.00021576881408691406
+      total_instruction_push_b_4-nova8-deploy_duration: 0.0001380443572998047
+      total_instruction_push_b_2-nova8-update_duration: 0.00011754035949707031
+      total_event_sleeping_duration: 1.5735626220703125e-05
+  neutron8:
+    deploy:
+      total_event_uptime_duration: 305.34968614578247
+      total_event_deploy_duration: 305.3423421382904
+      total_instruction_wait_4-neutron8_duration: 305.33742594718933
+      total_behavior_deploy-neutron8_duration: 305.33707880973816
+      total_transition_deploy_duration: 141.23624086380005
+      total_transition_pull1_duration: 20.616342306137085
+      total_transition_pull2_duration: 19.425549268722534
+      total_transition_pull0_duration: 8.394259691238403
+      total_event_uptime_wait_all_duration: 0.32213592529296875
+      total_instruction_waitall_5_duration: 0.3220541477203369
+      total_event_saving_state_duration: 0.0009212493896484375
+      total_instruction_add_0-neutron8-Neutron_duration: 0.00018906593322753906
+      total_instruction_conn_1-neutron8-worker_service-mariadbworker8-service_duration: 9.918212890625e-05
+      total_event_loading_state_duration: 8.726119995117188e-05
+      total_instruction_push_b_3-neutron8-deploy_duration: 7.2479248046875e-05
+      total_instruction_conn_2-neutron8-keystone_service-keystone8-service_duration: 7.033348083496094e-05
+      total_event_sleeping_duration: 2.1219253540039062e-05
+    update:
+      total_event_uptime_duration: 360.85937786102295
+      total_event_update_duration: 360.84743762016296
+      total_instruction_wait_4-neutron8_duration: 161.9168267250061
+      total_behavior_deploy-neutron8_duration: 161.91681957244873
+      total_transition_deploy_duration: 141.2351517677307
+      total_instruction_wait_1-mariadbworker8_True_duration: 117.35305333137512
+      total_instruction_wait_2-keystone8_True_duration: 81.57687282562256
+      total_transition_pull1_duration: 20.640821933746338
+      total_transition_pull2_duration: 19.405248165130615
+      total_transition_pull0_duration: 8.409867763519287
+      total_behavior_uninstall-neutron8_duration: 3.7761096954345703
+      total_transition_turnoff_duration: 3.765580654144287
+      total_event_uptime_wait_all_duration: 0.32283902168273926
+      total_instruction_waitall_5_duration: 0.3227670192718506
+      total_event_saving_state_duration: 0.0009334087371826172
+      total_event_loading_state_duration: 0.0006418228149414062
+      total_instruction_push_b_0-neutron8-uninstall_duration: 0.000194549560546875
+      total_instruction_push_b_3-neutron8-deploy_duration: 0.00011730194091796875
+      total_event_sleeping_duration: 1.811981201171875e-05
+  keystone9:
+    deploy:
+      total_event_uptime_duration: 164.13554167747498
+      total_event_deploy_duration: 164.12361812591553
+      total_instruction_wait_6-keystone9_duration: 164.12253189086914
+      total_behavior_deploy-keystone9_duration: 164.12211275100708
+      total_event_uptime_wait_all_duration: 141.59696769714355
+      total_instruction_waitall_7_duration: 141.5968930721283
+      total_transition_deploy_duration: 77.70473837852478
+      total_transition_pull_duration: 3.3394956588745117
+      total_event_saving_state_duration: 0.0015850067138671875
+      total_instruction_add_0-keystone9-Keystone_duration: 0.0001823902130126953
+      total_event_loading_state_duration: 0.00011134147644042969
+      total_instruction_conn_1-keystone9-worker_service-mariadbworker9-service_duration: 9.274482727050781e-05
+      total_instruction_conn_4-keystone9-service-neutron9-keystone_service_duration: 8.916854858398438e-05
+      total_instruction_push_b_5-keystone9-deploy_duration: 8.606910705566406e-05
+      total_instruction_conn_2-keystone9-service-glance9-keystone_service_duration: 6.67572021484375e-05
+      total_instruction_conn_3-keystone9-service-nova9-keystone_service_duration: 6.556510925292969e-05
+      total_event_sleeping_duration: 2.0265579223632812e-05
+    update:
+      total_event_uptime_wait_all_duration: 218.28531050682068
+      total_instruction_waitall_4_duration: 218.28524160385132
+      total_event_uptime_duration: 198.44456005096436
+      total_event_update_duration: 198.4350938796997
+      total_instruction_wait_1-mariadbworker9_True_duration: 117.34869575500488
+      total_instruction_wait_3-keystone9_duration: 81.08094215393066
+      total_behavior_deploy-keystone9_duration: 81.08093500137329
+      total_transition_deploy_duration: 77.7041985988617
+      total_behavior_stop-keystone9_duration: 3.7941036224365234
+      total_transition_turnoff_duration: 3.7660481929779053
+      total_transition_pull_duration: 3.339538335800171
+      total_event_saving_state_duration: 0.0009245872497558594
+      total_event_loading_state_duration: 0.0008242130279541016
+      total_instruction_push_b_0-keystone9-stop_duration: 0.00021910667419433594
+      total_instruction_push_b_2-keystone9-deploy_duration: 0.00011301040649414062
+      total_event_sleeping_duration: 2.6464462280273438e-05
+  glance9:
+    deploy:
+      total_event_uptime_duration: 227.24628567695618
+      total_event_deploy_duration: 227.23834371566772
+      total_instruction_wait_4-glance9_duration: 227.23300647735596
+      total_behavior_deploy-glance9_duration: 227.23247528076172
+      total_transition_deploy_duration: 62.81900596618652
+      total_transition_pull2_duration: 15.731366157531738
+      total_transition_pull1_duration: 7.183414697647095
+      total_transition_pull0_duration: 5.0206687450408936
+      total_event_uptime_wait_all_duration: 0.3171992301940918
+      total_instruction_waitall_5_duration: 0.31713342666625977
+      total_event_saving_state_duration: 0.0009794235229492188
+      total_instruction_add_0-glance9-Glance_duration: 0.00026607513427734375
+      total_event_loading_state_duration: 0.00012803077697753906
+      total_instruction_conn_1-glance9-worker_service-mariadbworker9-service_duration: 0.00010585784912109375
+      total_instruction_conn_2-glance9-keystone_service-keystone9-service_duration: 8.034706115722656e-05
+      total_instruction_push_b_3-glance9-deploy_duration: 8.0108642578125e-05
+      total_event_sleeping_duration: 1.2874603271484375e-05
+    update:
+      total_event_uptime_duration: 277.09798789024353
+      total_event_update_duration: 277.0854723453522
+      total_instruction_wait_1-mariadbworker9_True_duration: 117.42029881477356
+      total_instruction_wait_2-keystone9_True_duration: 81.04342031478882
+      total_behavior_deploy-glance9_duration: 78.62074565887451
+      total_instruction_wait_4-glance9_duration: 78.62070488929749
+      total_transition_deploy_duration: 62.81900691986084
+      total_transition_pull2_duration: 15.761885166168213
+      total_transition_pull1_duration: 7.168591260910034
+      total_transition_pull0_duration: 5.014989852905273
+      total_behavior_uninstall-glance9_duration: 3.774733781814575
+      total_transition_turnoff_duration: 3.766446828842163
+      total_event_uptime_wait_all_duration: 0.3187530040740967
+      total_instruction_waitall_5_duration: 0.3186812400817871
+      total_event_saving_state_duration: 0.0010459423065185547
+      total_event_loading_state_duration: 0.0006878376007080078
+      total_instruction_push_b_0-glance9-uninstall_duration: 0.0003058910369873047
+      total_instruction_push_b_3-glance9-deploy_duration: 0.00016832351684570312
+      total_event_sleeping_duration: 1.6689300537109375e-05
+  mariadbworker9:
+    deploy:
+      total_event_uptime_wait_all_duration: 219.57359552383423
+      total_instruction_waitall_8_duration: 219.5735194683075
+      total_event_uptime_duration: 86.0413715839386
+      total_event_deploy_duration: 86.02964401245117
+      total_instruction_wait_7-mariadbworker9_duration: 86.02791547775269
+      total_behavior_deploy-mariadbworker9_duration: 86.02713584899902
+      total_transition_bootstrap_duration: 25.971444606781006
+      total_transition_start_duration: 12.730653285980225
+      total_transition_deploy_duration: 12.33396029472351
+      total_transition_configure1_duration: 4.7954957485198975
+      total_transition_configure0_duration: 3.351154088973999
+      total_transition_register_duration: 2.7679452896118164
+      total_event_saving_state_duration: 0.0013234615325927734
+      total_instruction_add_0-mariadbworker9-MariadbWorker_duration: 0.0001919269561767578
+      total_instruction_conn_1-mariadbworker9-master_service-mariadbmaster-service_duration: 0.00010800361633300781
+      total_event_loading_state_duration: 9.465217590332031e-05
+      total_instruction_push_b_6-mariadbworker9-deploy_duration: 9.393692016601562e-05
+      total_instruction_conn_5-mariadbworker9-service-neutron0-worker_service_duration: 7.963180541992188e-05
+      total_instruction_conn_4-mariadbworker9-service-nova0-mariadbworker_service_duration: 7.915496826171875e-05
+      total_instruction_conn_2-mariadbworker9-service-keystone0-worker_service_duration: 7.867813110351562e-05
+      total_instruction_conn_3-mariadbworker9-service-glance0-worker_service_duration: 7.82012939453125e-05
+      total_event_sleeping_duration: 1.6450881958007812e-05
+    update:
+      total_event_uptime_wait_all_duration: 299.32118010520935
+      total_instruction_waitall_5_duration: 299.32111048698425
+      total_event_uptime_duration: 117.36595010757446
+      total_event_update_duration: 117.35686302185059
+      total_instruction_wait_2-mariadbmaster_True_duration: 58.702696800231934
+      total_behavior_deploy-mariadbworker9_duration: 58.648866176605225
+      total_instruction_wait_4-mariadbworker9_duration: 58.64886403083801
+      total_transition_bootstrap_duration: 25.994292736053467
+      total_transition_start_duration: 12.729489088058472
+      total_transition_deploy_duration: 12.299681425094604
+      total_transition_configure1_duration: 4.786691665649414
+      total_behavior_update-mariadbworker9_duration: 3.932983875274658
+      total_transition_configure0_duration: 3.3378524780273438
+      total_transition_unconfigure_duration: 3.285050392150879
+      total_transition_register_duration: 2.7799453735351562
+      total_behavior_interrupt-mariadbworker9_duration: 0.5449080467224121
+      total_transition_interrupt_duration: 0.48299598693847656
+      total_instruction_push_b_0-mariadbworker9-interrupt_duration: 0.004765510559082031
+      total_event_saving_state_duration: 0.0015866756439208984
+      total_event_loading_state_duration: 0.0007348060607910156
+      total_instruction_push_b_3-mariadbworker9-deploy_duration: 0.00011658668518066406
+      total_instruction_push_b_1-mariadbworker9-update_duration: 7.271766662597656e-05
+      total_event_sleeping_duration: 2.4557113647460938e-05
+  nova9:
+    deploy:
+      total_event_uptime_duration: 304.09232687950134
+      total_event_deploy_duration: 304.0848751068115
+      total_instruction_wait_4-nova9_duration: 304.0798044204712
+      total_behavior_deploy-nova9_duration: 304.0794734954834
+      total_transition_deploy_duration: 124.95619750022888
+      total_transition_ready1_duration: 79.4653787612915
+      total_transition_cell_setup_duration: 37.733720541000366
+      total_transition_ready0_duration: 34.03941059112549
+      total_transition_pull1_duration: 15.085891485214233
+      total_transition_start_duration: 13.472758054733276
+      total_transition_pull0_duration: 11.777956008911133
+      total_transition_pull2_duration: 9.50047755241394
+      total_event_uptime_wait_all_duration: 0.3240227699279785
+      total_instruction_waitall_5_duration: 0.32395458221435547
+      total_instruction_add_0-nova9-Nova_duration: 0.0042514801025390625
+      total_event_saving_state_duration: 0.0012750625610351562
+      total_instruction_conn_1-nova9-mariadbworker_service-mariadbworker9-service_duration: 0.0001819133758544922
+      total_instruction_conn_2-nova9-keystone_service-keystone9-service_duration: 0.00010728836059570312
+      total_event_loading_state_duration: 8.559226989746094e-05
+      total_instruction_push_b_3-nova9-deploy_duration: 6.604194641113281e-05
+      total_event_sleeping_duration: 1.5020370483398438e-05
+    update:
+      total_event_uptime_duration: 416.5024003982544
+      total_event_update_duration: 416.4942190647125
+      total_behavior_deploy-nova9_duration: 217.9502191543579
+      total_instruction_wait_5-nova9_duration: 217.95019960403442
+      total_transition_deploy_duration: 124.96685338020325
+      total_instruction_wait_1-mariadbworker9_True_duration: 117.45950245857239
+      total_instruction_wait_3-keystone9_True_duration: 81.0795488357544
+      total_transition_ready1_duration: 79.46879839897156
+      total_transition_cell_setup_duration: 37.73036217689514
+      total_transition_ready0_duration: 34.040194272994995
+      total_transition_start_duration: 13.4717435836792
+      total_behavior_update-nova9_duration: 3.5326175689697266
+      total_transition_unpull_duration: 3.2846932411193848
+      total_behavior_interrupt-nova9_duration: 0.5009787082672119
+      total_transition_interrupt_duration: 0.4818243980407715
+      total_event_uptime_wait_all_duration: 0.31591129302978516
+      total_instruction_waitall_6_duration: 0.3158442974090576
+      total_instruction_push_b_0-nova9-interrupt_duration: 0.004332542419433594
+      total_event_saving_state_duration: 0.0012216567993164062
+      total_event_loading_state_duration: 0.0007152557373046875
+      total_instruction_push_b_2-nova9-update_duration: 0.0001201629638671875
+      total_instruction_push_b_4-nova9-deploy_duration: 0.0001163482666015625
+      total_event_sleeping_duration: 1.3828277587890625e-05
+  neutron9:
+    deploy:
+      total_event_uptime_duration: 305.3826038837433
+      total_event_deploy_duration: 305.371196269989
+      total_instruction_wait_4-neutron9_duration: 305.3702783584595
+      total_behavior_deploy-neutron9_duration: 305.3699240684509
+      total_transition_deploy_duration: 141.24710178375244
+      total_transition_pull1_duration: 20.61598515510559
+      total_transition_pull2_duration: 19.405246019363403
+      total_transition_pull0_duration: 8.414634466171265
+      total_event_uptime_wait_all_duration: 0.32924747467041016
+      total_instruction_waitall_5_duration: 0.32915258407592773
+      total_event_saving_state_duration: 0.0008840560913085938
+      total_instruction_add_0-neutron9-Neutron_duration: 0.00019788742065429688
+      total_instruction_conn_1-neutron9-worker_service-mariadbworker9-service_duration: 0.00012373924255371094
+      total_event_loading_state_duration: 9.393692016601562e-05
+      total_instruction_push_b_3-neutron9-deploy_duration: 7.05718994140625e-05
+      total_instruction_conn_2-neutron9-keystone_service-keystone9-service_duration: 6.723403930664062e-05
+      total_event_sleeping_duration: 2.7418136596679688e-05
+    update:
+      total_event_uptime_duration: 360.45985984802246
+      total_event_update_duration: 360.44787335395813
+      total_instruction_wait_4-neutron9_duration: 161.9230215549469
+      total_behavior_deploy-neutron9_duration: 161.9229907989502
+      total_transition_deploy_duration: 141.232652425766
+      total_instruction_wait_1-mariadbworker9_True_duration: 117.6219699382782
+      total_instruction_wait_2-keystone9_True_duration: 80.9021508693695
+      total_transition_pull1_duration: 20.63754677772522
+      total_transition_pull2_duration: 19.40438723564148
+      total_transition_pull0_duration: 8.39431118965149
+      total_behavior_uninstall-neutron9_duration: 3.780726671218872
+      total_transition_turnoff_duration: 3.764969825744629
+      total_event_uptime_wait_all_duration: 0.6342365741729736
+      total_instruction_waitall_5_duration: 0.6341664791107178
+      total_event_saving_state_duration: 0.0009512901306152344
+      total_event_loading_state_duration: 0.0006747245788574219
+      total_instruction_push_b_0-neutron9-uninstall_duration: 0.00021767616271972656
+      total_instruction_push_b_3-neutron9-deploy_duration: 0.00012230873107910156
+      total_event_sleeping_duration: 1.4066696166992188e-05
+expe_details:
+  global_finished_reconf: false
+  details:
+    deploy:
+      mariadbmaster:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      glance3:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      glance5:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      glance2:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      glance0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      glance8:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      glance4:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      glance7:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      glance6:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      glance9:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      glance1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova3:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova4:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova2:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova7:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova9:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova8:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova5:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova6:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      mariadbworker3:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      keystone3:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      keystone2:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron3:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      mariadbworker4:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      mariadbworker2:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      keystone4:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron2:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      keystone1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      mariadbworker6:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      mariadbworker5:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      keystone6:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      keystone5:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      mariadbworker8:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      mariadbworker7:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron4:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      keystone8:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      keystone7:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron5:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      mariadbworker1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron7:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron8:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron6:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      mariadbworker9:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      keystone9:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron9:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      mariadbworker0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      keystone0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+    update:
+      mariadbmaster:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      glance6:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      glance0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      glance9:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      glance3:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      glance4:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      glance2:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      glance7:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      glance8:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      glance1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      glance5:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron6:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron4:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron3:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron9:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron8:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron7:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron5:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron2:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      mariadbworker6:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      keystone6:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      keystone4:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova6:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      mariadbworker9:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      mariadbworker3:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      mariadbworker8:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      keystone9:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      keystone8:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      keystone3:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      mariadbworker7:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova9:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      mariadbworker4:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova4:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      keystone7:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova3:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova7:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova8:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      mariadbworker2:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      keystone0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      keystone2:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova2:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      mariadbworker1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      keystone1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      mariadbworker5:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      keystone5:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova5:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      mariadbworker0:
+        finished_reconfiguration: false
+        rounds_reconf: 1

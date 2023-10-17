@@ -1,0 +1,78 @@
+behavior_deploy-mariadbmaster:
+  end: 59.16384267807007
+  start: 0.5209214687347412
+event_deploy:
+  end: 59.1647367477417
+  start: 0.5146522521972656
+event_loading_state:
+  end: 0.507178783416748
+  start: 0.5070734024047852
+event_saving_state:
+  end: 87.71540665626526
+  start: 87.71398448944092
+event_uptime:
+  end: 59.165292501449585
+  start: 0.5070250034332275
+event_uptime_wait_all:
+  end: 87.71392703056335
+  start: 59.16584014892578
+instruction_add_0-mariadbmaster-MariadbMaster:
+  end: 0.5191605091094971
+  start: 0.5147640705108643
+instruction_conn_1-mariadbmaster-service-mariadbworker0-master_service:
+  end: 0.5193667411804199
+  start: 0.5192477703094482
+instruction_conn_10-mariadbmaster-service-mariadbworker9-master_service:
+  end: 0.520343542098999
+  start: 0.520263671875
+instruction_conn_2-mariadbmaster-service-mariadbworker1-master_service:
+  end: 0.5194964408874512
+  start: 0.5194225311279297
+instruction_conn_3-mariadbmaster-service-mariadbworker2-master_service:
+  end: 0.519597053527832
+  start: 0.5195322036743164
+instruction_conn_4-mariadbmaster-service-mariadbworker3-master_service:
+  end: 0.5196952819824219
+  start: 0.5196294784545898
+instruction_conn_5-mariadbmaster-service-mariadbworker4-master_service:
+  end: 0.5198118686676025
+  start: 0.519728422164917
+instruction_conn_6-mariadbmaster-service-mariadbworker5-master_service:
+  end: 0.5199072360992432
+  start: 0.5198445320129395
+instruction_conn_7-mariadbmaster-service-mariadbworker6-master_service:
+  end: 0.5200097560882568
+  start: 0.519939661026001
+instruction_conn_8-mariadbmaster-service-mariadbworker7-master_service:
+  end: 0.520111083984375
+  start: 0.5200417041778564
+instruction_conn_9-mariadbmaster-service-mariadbworker8-master_service:
+  end: 0.5202269554138184
+  start: 0.5201430320739746
+instruction_push_b_11-mariadbmaster-deploy:
+  end: 0.5204601287841797
+  start: 0.5203824043273926
+instruction_wait_12-mariadbmaster:
+  end: 59.16462540626526
+  start: 0.5205001831054688
+instruction_waitall_13:
+  end: 87.71389031410217
+  start: 59.16640591621399
+transition_bootstrap:
+  end: 31.30891466140747
+  start: 5.326780796051025
+transition_configure0:
+  end: 3.8405158519744873
+  start: 0.5212600231170654
+transition_configure1:
+  end: 5.326217174530029
+  start: 0.521587610244751
+transition_deploy:
+  end: 59.14642643928528
+  start: 46.859779596328735
+transition_register:
+  end: 46.84177255630493
+  start: 44.07403779029846
+transition_start:
+  end: 44.05525302886963
+  start: 31.319671392440796

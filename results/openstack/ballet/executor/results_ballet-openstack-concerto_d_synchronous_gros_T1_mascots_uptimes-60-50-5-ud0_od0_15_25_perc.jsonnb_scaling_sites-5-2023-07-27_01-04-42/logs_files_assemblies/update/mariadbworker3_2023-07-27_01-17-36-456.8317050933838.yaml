@@ -1,0 +1,66 @@
+behavior_deploy-mariadbworker3:
+  end: 118.10172247886658
+  start: 59.44913411140442
+behavior_interrupt-mariadbworker3:
+  end: 1.351006031036377
+  start: 0.8138949871063232
+behavior_update-mariadbworker3:
+  end: 4.865236282348633
+  start: 1.351604700088501
+event_loading_state:
+  end: 0.8012609481811523
+  start: 0.8005311489105225
+event_saving_state:
+  end: 417.7757000923157
+  start: 417.77408170700073
+event_update:
+  end: 118.10193061828613
+  start: 0.8135969638824463
+event_uptime:
+  end: 118.10196828842163
+  start: 0.8004839420318604
+event_uptime_wait_all:
+  end: 417.7740204334259
+  start: 118.1020028591156
+instruction_push_b_0-mariadbworker3-interrupt:
+  end: 0.8139877319335938
+  start: 0.8138020038604736
+instruction_push_b_1-mariadbworker3-update:
+  end: 0.8141040802001953
+  start: 0.8140273094177246
+instruction_push_b_3-mariadbworker3-deploy:
+  end: 59.449204444885254
+  start: 59.44908595085144
+instruction_wait_2-mariadbmaster_True:
+  end: 59.449034452438354
+  start: 0.8141474723815918
+instruction_wait_4-mariadbworker3:
+  end: 118.10189080238342
+  start: 59.449238300323486
+instruction_waitall_5:
+  end: 417.7739841938019
+  start: 118.10203981399536
+transition_bootstrap:
+  end: 90.23683023452759
+  start: 64.25499987602234
+transition_configure0:
+  end: 62.78955388069153
+  start: 59.4500412940979
+transition_configure1:
+  end: 64.23813796043396
+  start: 59.44955539703369
+transition_deploy:
+  end: 118.09058499336243
+  start: 105.77896785736084
+transition_interrupt:
+  end: 1.3388540744781494
+  start: 0.856133222579956
+transition_register:
+  end: 105.76781988143921
+  start: 103.00358414649963
+transition_start:
+  end: 102.99089741706848
+  start: 90.25970506668091
+transition_unconfigure:
+  end: 4.645920515060425
+  start: 1.3601586818695068

@@ -1,0 +1,531 @@
+expe_parameters:
+  version_concerto_name: mjuz-2-comps
+  transitions_times_file_name: trans_times_openstack.json
+  uptimes_file_name: mascots_uptimes-60-50-5-ud0_od0_15_25_perc.json
+  nb_scaling_sites: 10
+  cluster: gros
+global_results:
+  max_deploy_time: 537.59
+  max_update_time: 556.68
+  max_reconf_time: 1094.24
+  max_sleeping_time: 0.0
+  max_execution_time: 1099.95
+  max_execution_time_deploy: 539.91
+  max_execution_time_update: 560.04
+  global_finished_reconf: true
+details_assemblies_results:
+  mariadbmaster:
+    deploy:
+      total_event_uptime_duration: 67.51182842254639
+      total_event_deploy_duration: 65.18600010871887
+      total_event_sleeping_duration: 4.0531158447265625e-06
+    update:
+      total_event_uptime_duration: 72.63825225830078
+      total_event_update_duration: 69.1690001487732
+      total_event_sleeping_duration: 3.0994415283203125e-06
+  worker0:
+    deploy:
+      total_event_uptime_duration: 302.98203229904175
+      total_event_deploy_duration: 300.67000007629395
+      total_event_sleeping_duration: 3.814697265625e-06
+    update:
+      total_event_uptime_duration: 319.4170615673065
+      total_event_update_duration: 316.00300002098083
+      total_event_sleeping_duration: 3.814697265625e-06
+  nova0:
+    deploy:
+      total_event_uptime_duration: 539.8669719696045
+      total_event_deploy_duration: 537.5369999408722
+      total_event_sleeping_duration: 3.5762786865234375e-06
+    update:
+      total_event_uptime_duration: 560.0331144332886
+      total_event_update_duration: 556.6549999713898
+      total_event_sleeping_duration: 3.814697265625e-06
+  neutron0:
+    deploy:
+      total_event_uptime_duration: 403.79492378234863
+      total_event_deploy_duration: 401.44599986076355
+      total_event_sleeping_duration: 3.5762786865234375e-06
+    update:
+      total_event_uptime_duration: 423.96663188934326
+      total_event_update_duration: 420.5380001068115
+      total_event_sleeping_duration: 4.0531158447265625e-06
+  worker1:
+    deploy:
+      total_event_uptime_duration: 302.99660563468933
+      total_event_deploy_duration: 300.64999985694885
+      total_event_sleeping_duration: 4.0531158447265625e-06
+    update:
+      total_event_uptime_duration: 319.3187680244446
+      total_event_update_duration: 315.8710000514984
+      total_event_sleeping_duration: 4.0531158447265625e-06
+  nova1:
+    deploy:
+      total_event_uptime_duration: 539.9049048423767
+      total_event_deploy_duration: 537.5889999866486
+      total_event_sleeping_duration: 4.76837158203125e-06
+    update:
+      total_event_uptime_duration: 560.042423248291
+      total_event_update_duration: 556.6510000228882
+      total_event_sleeping_duration: 4.0531158447265625e-06
+  neutron1:
+    deploy:
+      total_event_uptime_duration: 403.84036350250244
+      total_event_deploy_duration: 401.5259997844696
+      total_event_sleeping_duration: 3.814697265625e-06
+    update:
+      total_event_uptime_duration: 423.9446482658386
+      total_event_update_duration: 420.49899983406067
+      total_event_sleeping_duration: 3.814697265625e-06
+  worker2:
+    deploy:
+      total_event_uptime_duration: 302.9242181777954
+      total_event_deploy_duration: 300.5679998397827
+      total_event_sleeping_duration: 0.00012135505676269531
+    update:
+      total_event_uptime_duration: 319.33572459220886
+      total_event_update_duration: 315.88100004196167
+      total_event_sleeping_duration: 3.814697265625e-06
+  nova2:
+    deploy:
+      total_event_uptime_duration: 539.8840498924255
+      total_event_deploy_duration: 537.5390000343323
+      total_event_sleeping_duration: 4.291534423828125e-06
+    update:
+      total_event_uptime_duration: 559.9654278755188
+      total_event_update_duration: 556.5889999866486
+      total_event_sleeping_duration: 3.814697265625e-06
+  neutron2:
+    deploy:
+      total_event_uptime_duration: 403.7791998386383
+      total_event_deploy_duration: 401.44000005722046
+      total_event_sleeping_duration: 4.0531158447265625e-06
+    update:
+      total_event_uptime_duration: 423.8935990333557
+      total_event_update_duration: 420.4159998893738
+      total_event_sleeping_duration: 2.47955322265625e-05
+  worker3:
+    deploy:
+      total_event_uptime_duration: 302.9442648887634
+      total_event_deploy_duration: 300.6089999675751
+      total_event_sleeping_duration: 4.5299530029296875e-06
+    update:
+      total_event_uptime_duration: 319.3980247974396
+      total_event_update_duration: 315.9489998817444
+      total_event_sleeping_duration: 6.198883056640625e-06
+  nova3:
+    deploy:
+      total_event_uptime_duration: 539.8318026065826
+      total_event_deploy_duration: 537.4769999980927
+      total_event_sleeping_duration: 5.0067901611328125e-06
+    update:
+      total_event_uptime_duration: 560.0339767932892
+      total_event_update_duration: 556.6760001182556
+      total_event_sleeping_duration: 6.198883056640625e-06
+  neutron3:
+    deploy:
+      total_event_uptime_duration: 403.7335715293884
+      total_event_deploy_duration: 401.3900001049042
+      total_event_sleeping_duration: 5.4836273193359375e-06
+    update:
+      total_event_uptime_duration: 423.9245545864105
+      total_event_update_duration: 420.4630000591278
+      total_event_sleeping_duration: 5.245208740234375e-06
+  worker4:
+    deploy:
+      total_event_uptime_duration: 303.0420250892639
+      total_event_deploy_duration: 300.69199991226196
+      total_event_sleeping_duration: 2.0503997802734375e-05
+    update:
+      total_event_uptime_duration: 319.2881634235382
+      total_event_update_duration: 315.8399999141693
+      total_event_sleeping_duration: 4.5299530029296875e-06
+  nova4:
+    deploy:
+      total_event_uptime_duration: 539.9103653430939
+      total_event_deploy_duration: 537.5859999656677
+      total_event_sleeping_duration: 4.76837158203125e-06
+    update:
+      total_event_uptime_duration: 559.950334072113
+      total_event_update_duration: 556.5939998626709
+      total_event_sleeping_duration: 4.0531158447265625e-06
+  neutron4:
+    deploy:
+      total_event_uptime_duration: 403.77777218818665
+      total_event_deploy_duration: 401.4500000476837
+      total_event_sleeping_duration: 4.5299530029296875e-06
+    update:
+      total_event_uptime_duration: 423.857221364975
+      total_event_update_duration: 420.39800000190735
+      total_event_sleeping_duration: 3.814697265625e-06
+  worker5:
+    deploy:
+      total_event_uptime_duration: 302.9566926956177
+      total_event_deploy_duration: 300.62999987602234
+      total_event_sleeping_duration: 4.291534423828125e-06
+    update:
+      total_event_uptime_duration: 319.4080243110657
+      total_event_update_duration: 315.92899990081787
+      total_event_sleeping_duration: 5.245208740234375e-06
+  nova5:
+    deploy:
+      total_event_uptime_duration: 539.8387913703918
+      total_event_deploy_duration: 537.4989998340607
+      total_event_sleeping_duration: 8.58306884765625e-06
+    update:
+      total_event_uptime_duration: 560.0218727588654
+      total_event_update_duration: 556.5770001411438
+      total_event_sleeping_duration: 4.0531158447265625e-06
+  neutron5:
+    deploy:
+      total_event_uptime_duration: 403.7394495010376
+      total_event_deploy_duration: 401.3989999294281
+      total_event_sleeping_duration: 6.9141387939453125e-06
+    update:
+      total_event_uptime_duration: 423.995769739151
+      total_event_update_duration: 420.52999997138977
+      total_event_sleeping_duration: 8.106231689453125e-06
+  worker6:
+    deploy:
+      total_event_uptime_duration: 302.9244706630707
+      total_event_deploy_duration: 300.5620000362396
+      total_event_sleeping_duration: 4.0531158447265625e-06
+    update:
+      total_event_uptime_duration: 319.33674120903015
+      total_event_update_duration: 315.8970000743866
+      total_event_sleeping_duration: 6.198883056640625e-06
+  nova6:
+    deploy:
+      total_event_uptime_duration: 539.8584609031677
+      total_event_deploy_duration: 537.5039999485016
+      total_event_sleeping_duration: 6.4373016357421875e-06
+    update:
+      total_event_uptime_duration: 559.999285697937
+      total_event_update_duration: 556.5720000267029
+      total_event_sleeping_duration: 4.0531158447265625e-06
+  neutron6:
+    deploy:
+      total_event_uptime_duration: 403.79358983039856
+      total_event_deploy_duration: 401.46600008010864
+      total_event_sleeping_duration: 4.291534423828125e-06
+    update:
+      total_event_uptime_duration: 423.94222235679626
+      total_event_update_duration: 420.5039999485016
+      total_event_sleeping_duration: 4.76837158203125e-06
+  worker7:
+    deploy:
+      total_event_uptime_duration: 302.9761345386505
+      total_event_deploy_duration: 300.6160001754761
+      total_event_sleeping_duration: 4.291534423828125e-06
+    update:
+      total_event_uptime_duration: 319.27643728256226
+      total_event_update_duration: 315.7890000343323
+      total_event_sleeping_duration: 3.814697265625e-06
+  nova7:
+    deploy:
+      total_event_uptime_duration: 539.8366930484772
+      total_event_deploy_duration: 537.5280001163483
+      total_event_sleeping_duration: 4.291534423828125e-06
+    update:
+      total_event_uptime_duration: 559.8707118034363
+      total_event_update_duration: 556.4479999542236
+      total_event_sleeping_duration: 3.814697265625e-06
+  neutron7:
+    deploy:
+      total_event_uptime_duration: 403.74923968315125
+      total_event_deploy_duration: 401.44000005722046
+      total_event_sleeping_duration: 6.198883056640625e-06
+    update:
+      total_event_uptime_duration: 423.7671365737915
+      total_event_update_duration: 420.335000038147
+      total_event_sleeping_duration: 4.5299530029296875e-06
+  worker8:
+    deploy:
+      total_event_uptime_duration: 302.94408416748047
+      total_event_deploy_duration: 300.6010000705719
+      total_event_sleeping_duration: 4.0531158447265625e-06
+    update:
+      total_event_uptime_duration: 319.3226134777069
+      total_event_update_duration: 315.8489999771118
+      total_event_sleeping_duration: 6.4373016357421875e-06
+  nova8:
+    deploy:
+      total_event_uptime_duration: 539.7788100242615
+      total_event_deploy_duration: 537.4539999961853
+      total_event_sleeping_duration: 4.0531158447265625e-06
+    update:
+      total_event_uptime_duration: 559.8957786560059
+      total_event_update_duration: 556.5120000839233
+      total_event_sleeping_duration: 4.0531158447265625e-06
+  neutron8:
+    deploy:
+      total_event_uptime_duration: 403.7379846572876
+      total_event_deploy_duration: 401.39299988746643
+      total_event_sleeping_duration: 4.0531158447265625e-06
+    update:
+      total_event_uptime_duration: 423.8927264213562
+      total_event_update_duration: 420.43099999427795
+      total_event_sleeping_duration: 3.5762786865234375e-06
+  worker9:
+    deploy:
+      total_event_uptime_duration: 302.91426253318787
+      total_event_deploy_duration: 300.5720000267029
+      total_event_sleeping_duration: 4.0531158447265625e-06
+    update:
+      total_event_uptime_duration: 319.42980098724365
+      total_event_update_duration: 315.9690001010895
+      total_event_sleeping_duration: 4.291534423828125e-06
+  nova9:
+    deploy:
+      total_event_uptime_duration: 539.764729976654
+      total_event_deploy_duration: 537.4279999732971
+      total_event_sleeping_duration: 4.0531158447265625e-06
+    update:
+      total_event_uptime_duration: 560.0361022949219
+      total_event_update_duration: 556.6259999275208
+      total_event_sleeping_duration: 7.867813110351562e-06
+  neutron9:
+    deploy:
+      total_event_uptime_duration: 403.67752027511597
+      total_event_deploy_duration: 401.2630000114441
+      total_event_sleeping_duration: 3.814697265625e-06
+    update:
+      total_event_uptime_duration: 423.90607213974
+      total_event_update_duration: 420.4779999256134
+      total_event_sleeping_duration: 4.291534423828125e-06
+  worker10:
+    deploy: {}
+    update: {}
+  nova10:
+    deploy: {}
+    update: {}
+  neutron10:
+    deploy: {}
+    update: {}
+  worker11:
+    deploy: {}
+    update: {}
+  nova11:
+    deploy: {}
+    update: {}
+  neutron11:
+    deploy: {}
+    update: {}
+  worker12:
+    deploy: {}
+    update: {}
+  nova12:
+    deploy: {}
+    update: {}
+  neutron12:
+    deploy: {}
+    update: {}
+  worker13:
+    deploy: {}
+    update: {}
+  nova13:
+    deploy: {}
+    update: {}
+  neutron13:
+    deploy: {}
+    update: {}
+  worker14:
+    deploy: {}
+    update: {}
+  nova14:
+    deploy: {}
+    update: {}
+  neutron14:
+    deploy: {}
+    update: {}
+expe_details:
+  global_finished_reconf: true
+  details:
+    deploy:
+      mariadbmaster:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      worker2:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      worker3:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      worker6:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      worker9:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      worker0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      worker5:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      worker1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      worker8:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      worker7:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      worker4:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron3:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron9:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron5:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron2:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron8:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron7:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron4:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron6:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova9:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova8:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova3:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova5:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova2:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova7:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova6:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova4:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+    update:
+      mariadbmaster:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      worker1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      worker4:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      worker7:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      worker2:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      worker8:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      worker6:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      worker0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      worker3:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      worker5:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      worker9:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron7:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron4:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron2:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron8:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron3:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron9:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron6:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      neutron5:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova7:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova8:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova2:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova4:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova6:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova3:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova5:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      nova9:
+        finished_reconfiguration: true
+        rounds_reconf: 1

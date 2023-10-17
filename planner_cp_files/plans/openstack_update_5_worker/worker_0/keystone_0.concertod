@@ -1,0 +1,3 @@
+pushB(keystone_0, uninstall)
+wait(mariadb_worker_0, interrupt)
+pushB(keystone_0, deploy)

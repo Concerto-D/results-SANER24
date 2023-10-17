@@ -1,0 +1,48 @@
+behavior_deploy-keystone2:
+  end: 165.30416440963745
+  start: 0.6097407341003418
+event_deploy:
+  end: 165.3044195175171
+  start: 0.6038672924041748
+event_loading_state:
+  end: 0.5960476398468018
+  start: 0.5959351062774658
+event_saving_state:
+  end: 306.9801981449127
+  start: 306.97894740104675
+event_uptime:
+  end: 165.3044536113739
+  start: 0.5958795547485352
+event_uptime_wait_all:
+  end: 306.9788918495178
+  start: 165.3044877052307
+instruction_add_0-keystone2-Keystone:
+  end: 0.6084144115447998
+  start: 0.603968620300293
+instruction_conn_1-keystone2-worker_service-mariadbworker2-service:
+  end: 0.6088428497314453
+  start: 0.6085202693939209
+instruction_conn_2-keystone2-service-glance2-keystone_service:
+  end: 0.6090352535247803
+  start: 0.6089291572570801
+instruction_conn_3-keystone2-service-nova2-keystone_service:
+  end: 0.6091325283050537
+  start: 0.6090691089630127
+instruction_conn_4-keystone2-service-neutron2-keystone_service:
+  end: 0.6092572212219238
+  start: 0.6091835498809814
+instruction_push_b_5-keystone2-deploy:
+  end: 0.6093814373016357
+  start: 0.6092953681945801
+instruction_wait_6-keystone2:
+  end: 165.30438089370728
+  start: 0.6094181537628174
+instruction_waitall_7:
+  end: 306.97885608673096
+  start: 165.30452466011047
+transition_deploy:
+  end: 165.28283405303955
+  start: 87.58699750900269
+transition_pull:
+  end: 3.964982509613037
+  start: 0.6100349426269531

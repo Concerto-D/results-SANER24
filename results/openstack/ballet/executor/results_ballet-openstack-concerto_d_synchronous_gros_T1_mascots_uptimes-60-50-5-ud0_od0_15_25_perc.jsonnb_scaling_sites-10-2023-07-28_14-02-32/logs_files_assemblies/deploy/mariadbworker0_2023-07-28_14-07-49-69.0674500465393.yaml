@@ -1,0 +1,63 @@
+behavior_deploy-mariadbworker0:
+  end: 87.1876482963562
+  start: 0.44726109504699707
+event_deploy:
+  end: 87.18844032287598
+  start: 0.4443840980529785
+event_loading_state:
+  end: 0.4292745590209961
+  start: 0.4291555881500244
+event_saving_state:
+  end: 306.44500374794006
+  start: 306.4436094760895
+event_uptime:
+  end: 87.18860960006714
+  start: 0.4290945529937744
+event_uptime_wait_all:
+  end: 306.4435522556305
+  start: 87.18905282020569
+instruction_add_0-mariadbworker0-MariadbWorker:
+  end: 0.44618916511535645
+  start: 0.4459569454193115
+instruction_conn_1-mariadbworker0-master_service-mariadbmaster-service:
+  end: 0.4464607238769531
+  start: 0.44634127616882324
+instruction_conn_2-mariadbworker0-service-keystone0-worker_service:
+  end: 0.4465658664703369
+  start: 0.44649672508239746
+instruction_conn_3-mariadbworker0-service-glance0-worker_service:
+  end: 0.44666147232055664
+  start: 0.44659876823425293
+instruction_conn_4-mariadbworker0-service-nova0-mariadbworker_service:
+  end: 0.4467597007751465
+  start: 0.44669413566589355
+instruction_conn_5-mariadbworker0-service-neutron0-worker_service:
+  end: 0.446866512298584
+  start: 0.4467942714691162
+instruction_push_b_6-mariadbworker0-deploy:
+  end: 0.44696998596191406
+  start: 0.4469008445739746
+instruction_wait_7-mariadbworker0:
+  end: 87.18836259841919
+  start: 0.44700145721435547
+instruction_waitall_8:
+  end: 306.4435167312622
+  start: 87.18910646438599
+transition_bootstrap:
+  end: 31.239485263824463
+  start: 5.249046802520752
+transition_configure0:
+  end: 3.787569761276245
+  start: 0.4480307102203369
+transition_configure1:
+  end: 5.238284111022949
+  start: 0.4476649761199951
+transition_deploy:
+  end: 87.17559957504272
+  start: 74.87632298469543
+transition_register:
+  end: 74.85924410820007
+  start: 72.09619379043579
+transition_start:
+  end: 72.0825788974762
+  start: 59.36023712158203

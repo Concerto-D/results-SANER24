@@ -1,0 +1,1023 @@
+expe_parameters:
+  version_concerto_name: synchronous
+  transitions_times_file_name: trans_times_str_cps.json
+  uptimes_file_name: mascots_uptimes-60-50-5-ud0_od0_15_25_perc.json
+  nb_scaling_sites: 10
+  cluster: gros
+global_results:
+  max_deploy_time: 38.08
+  max_update_time: 79.13
+  max_reconf_time: 117.2
+  max_sleeping_time: 0.0
+  max_execution_time: 117.22
+  max_execution_time_deploy: 38.08
+  max_execution_time_update: 79.14
+  global_finished_reconf: true
+global_synchronization_results:
+  max_deploy_sync_time: 0.31
+  max_update_sync_time: 26.59
+  max_reconf_sync_time: 26.59
+  max_sleeping_sync_time: 0
+  max_execution_sync_time: 44.56
+details_assemblies_results:
+  database:
+    deploy:
+      total_event_uptime_wait_all_duration: 8.616170167922974
+      total_instruction_waitall_4_duration: 8.61610198020935
+      total_event_uptime_duration: 5.792024850845337
+      total_event_deploy_duration: 5.783221006393433
+      total_instruction_wait_3-database_duration: 5.7825586795806885
+      total_behavior_deploy-database_duration: 5.782217502593994
+      total_transition_configure1_duration: 3.444552421569824
+      total_transition_configure0_duration: 1.6274206638336182
+      total_transition_bootstrap_duration: 1.1736350059509277
+      total_transition_deploy_duration: 1.1351954936981201
+      total_event_saving_state_duration: 0.0009055137634277344
+      total_instruction_add_0-database-Database_duration: 0.0001666545867919922
+      total_instruction_conn_1-database-database_service_provide-system-system_service_use_duration: 0.00010180473327636719
+      total_event_loading_state_duration: 9.059906005859375e-05
+      total_instruction_push_b_2-database-deploy_duration: 7.224082946777344e-05
+      total_event_sleeping_duration: 1.239776611328125e-05
+    update:
+      total_event_uptime_duration: 30.245430946350098
+      total_event_update_duration: 30.2362802028656
+      total_instruction_wait_3-database_duration: 30.23560404777527
+      total_behavior_interrupt-database_duration: 18.51127004623413
+      total_transition_interrupt_duration: 17.554188013076782
+      total_event_uptime_wait_all_duration: 13.111556053161621
+      total_instruction_waitall_4_duration: 13.111477613449097
+      total_behavior_update-database_duration: 9.386228799819946
+      total_transition_unconfigure_duration: 9.375412940979004
+      total_behavior_deploy-database_duration: 2.338226318359375
+      total_transition_bootstrap_duration: 1.1824877262115479
+      total_transition_deploy_duration: 1.1283583641052246
+      total_event_saving_state_duration: 0.0009407997131347656
+      total_event_loading_state_duration: 0.0006275177001953125
+      total_instruction_push_b_0-database-interrupt_duration: 0.00022411346435546875
+      total_instruction_push_b_1-database-update_duration: 6.914138793945312e-05
+      total_instruction_push_b_2-database-deploy_duration: 6.008148193359375e-05
+      total_event_sleeping_duration: 3.361701965332031e-05
+  system:
+    deploy:
+      total_event_uptime_duration: 14.238858461380005
+      total_event_deploy_duration: 14.232657194137573
+      total_instruction_wait_13-system_duration: 14.227759599685669
+      total_behavior_deploy-system_duration: 14.22573447227478
+      total_event_uptime_wait_all_duration: 9.46624493598938
+      total_instruction_waitall_14_duration: 9.46558928489685
+      total_transition_deploy_duration: 7.971660852432251
+      total_transition_initiate2_duration: 4.703758239746094
+      total_transition_initiate1_duration: 2.7685389518737793
+      total_transition_initiate0_duration: 2.2685186862945557
+      total_event_saving_state_duration: 0.0012621879577636719
+      total_instruction_add_0-system-System_duration: 0.00020074844360351562
+      total_instruction_conn_1-system-system_service_use-database-database_service_provide_duration: 0.00012421607971191406
+      total_event_loading_state_duration: 0.00010347366333007812
+      total_instruction_push_b_12-system-deploy_duration: 7.224082946777344e-05
+      total_instruction_conn_11-system-system_service_provide-listener9-listener_service_use_duration: 7.152557373046875e-05
+      total_instruction_conn_2-system-system_service_provide-listener0-listener_service_use_duration: 6.771087646484375e-05
+      total_instruction_conn_5-system-system_service_provide-listener3-listener_service_use_duration: 6.723403930664062e-05
+      total_instruction_conn_4-system-system_service_provide-listener2-listener_service_use_duration: 6.651878356933594e-05
+      total_instruction_conn_3-system-system_service_provide-listener1-listener_service_use_duration: 6.413459777832031e-05
+      total_instruction_conn_6-system-system_service_provide-listener4-listener_service_use_duration: 6.341934204101562e-05
+      total_instruction_conn_10-system-system_service_provide-listener8-listener_service_use_duration: 6.246566772460938e-05
+      total_instruction_conn_9-system-system_service_provide-listener7-listener_service_use_duration: 6.151199340820312e-05
+      total_instruction_conn_8-system-system_service_provide-listener6-listener_service_use_duration: 6.103515625e-05
+      total_instruction_conn_7-system-system_service_provide-listener5-listener_service_use_duration: 6.079673767089844e-05
+      total_event_sleeping_duration: 1.430511474609375e-05
+    update:
+      total_event_uptime_duration: 43.17691493034363
+      total_event_update_duration: 43.17016673088074
+      total_instruction_wait_1-database_True_duration: 30.437511205673218
+      total_event_uptime_wait_all_duration: 13.249185562133789
+      total_instruction_waitall_4_duration: 13.249072551727295
+      total_instruction_wait_3-system_duration: 12.729271650314331
+      total_behavior_deploy-system_duration: 12.7290620803833
+      total_transition_deploy_duration: 7.969929456710815
+      total_behavior_update-system_duration: 6.927741527557373
+      total_transition_stop_duration: 6.1040167808532715
+      total_transition_initiate2_duration: 4.715832471847534
+      total_transition_initiate1_duration: 2.7813050746917725
+      total_transition_initiate0_duration: 2.241330623626709
+      total_event_saving_state_duration: 0.0012485980987548828
+      total_event_loading_state_duration: 0.0007081031799316406
+      total_instruction_push_b_0-system-update_duration: 0.00021195411682128906
+      total_instruction_push_b_2-system-deploy_duration: 0.00012063980102539062
+      total_event_sleeping_duration: 1.2159347534179688e-05
+  listener0:
+    deploy:
+      total_event_uptime_duration: 23.50394105911255
+      total_event_deploy_duration: 23.49770426750183
+      total_instruction_wait_5-listener0_duration: 23.49382472038269
+      total_behavior_deploy-listener0_duration: 23.49347496032715
+      total_transition_run_duration: 8.964826822280884
+      total_transition_start_duration: 2.779289722442627
+      total_transition_configure_duration: 2.6288092136383057
+      total_event_uptime_wait_all_duration: 1.702533483505249
+      total_instruction_waitall_6_duration: 1.7024691104888916
+      total_event_saving_state_duration: 0.0009982585906982422
+      total_instruction_add_0-listener0-Listener_duration: 0.0002551078796386719
+      total_instruction_conn_1-listener0-listener_service_use-system-system_service_provide_duration: 0.0001380443572998047
+      total_event_loading_state_duration: 9.250640869140625e-05
+      total_instruction_conn_2-listener0-listener_config_provide-sensor0-sensor_config_use_duration: 7.605552673339844e-05
+      total_instruction_push_b_4-listener0-deploy_duration: 7.510185241699219e-05
+      total_instruction_conn_3-listener0-listener_service_provide-sensor0-sensor_service_use_duration: 6.413459777832031e-05
+      total_event_sleeping_duration: 1.3113021850585938e-05
+    update:
+      total_event_uptime_duration: 54.96054196357727
+      total_event_update_duration: 54.95107364654541
+      total_instruction_wait_1-system_True_duration: 43.322348833084106
+      total_instruction_wait_3-listener0_duration: 11.627840280532837
+      total_behavior_deploy-listener0_duration: 11.62778353691101
+      total_transition_run_duration: 8.965067863464355
+      total_event_uptime_wait_all_duration: 5.969290018081665
+      total_instruction_waitall_4_duration: 5.969218969345093
+      total_behavior_update-listener0_duration: 5.682446718215942
+      total_transition_interrupt_duration: 5.346598148345947
+      total_transition_configure_duration: 2.629420280456543
+      total_event_saving_state_duration: 0.0012011528015136719
+      total_event_loading_state_duration: 0.0007212162017822266
+      total_instruction_push_b_0-listener0-update_duration: 0.0002772808074951172
+      total_instruction_push_b_2-listener0-deploy_duration: 0.0001404285430908203
+      total_event_sleeping_duration: 1.239776611328125e-05
+  sensor0:
+    deploy:
+      total_event_uptime_duration: 24.924219608306885
+      total_event_deploy_duration: 24.917689085006714
+      total_instruction_wait_4-sensor0_duration: 24.91377568244934
+      total_behavior_deploy-sensor0_duration: 24.913390159606934
+      total_transition_provision1_duration: 12.678847551345825
+      total_transition_configure_duration: 3.4295248985290527
+      total_transition_provision0_duration: 1.3573713302612305
+      total_transition_provision2_duration: 1.2572364807128906
+      total_transition_install_duration: 1.1473543643951416
+      total_transition_run_duration: 1.0989480018615723
+      total_event_uptime_wait_all_duration: 0.3065614700317383
+      total_instruction_waitall_5_duration: 0.30649542808532715
+      total_event_saving_state_duration: 0.0013592243194580078
+      total_event_sleeping_duration: 0.0008063316345214844
+      total_instruction_add_0-sensor0-Sensor_duration: 0.00020432472229003906
+      total_instruction_conn_1-sensor0-sensor_config_use-listener0-listener_config_provide_duration: 0.00013637542724609375
+      total_event_loading_state_duration: 9.870529174804688e-05
+      total_instruction_push_b_3-sensor0-deploy_duration: 8.749961853027344e-05
+      total_instruction_conn_2-sensor0-sensor_service_use-listener0-listener_service_provide_duration: 7.867813110351562e-05
+    update:
+      total_event_uptime_duration: 60.682146072387695
+      total_event_update_duration: 60.67538404464722
+      total_instruction_wait_1-listener0_True_duration: 54.92079567909241
+      total_instruction_wait_3-sensor0_duration: 5.751366853713989
+      total_behavior_deploy-sensor0_duration: 5.751361846923828
+      total_transition_configure_duration: 3.4383857250213623
+      total_behavior_pause-sensor0_duration: 2.327221393585205
+      total_transition_pause_duration: 2.3134660720825195
+      total_transition_install_duration: 1.1509573459625244
+      total_transition_run_duration: 1.1071135997772217
+      total_event_uptime_wait_all_duration: 0.3064446449279785
+      total_instruction_waitall_4_duration: 0.3063774108886719
+      total_event_saving_state_duration: 0.0011811256408691406
+      total_event_loading_state_duration: 0.0006771087646484375
+      total_instruction_push_b_0-sensor0-pause_duration: 0.00020122528076171875
+      total_instruction_push_b_2-sensor0-deploy_duration: 0.000110626220703125
+      total_event_sleeping_duration: 1.8835067749023438e-05
+  listener1:
+    deploy:
+      total_event_uptime_duration: 16.203691005706787
+      total_event_deploy_duration: 16.197503089904785
+      total_instruction_wait_5-listener1_duration: 16.19378399848938
+      total_behavior_deploy-listener1_duration: 16.193416118621826
+      total_event_uptime_wait_all_duration: 4.260568141937256
+      total_instruction_waitall_6_duration: 4.260500907897949
+      total_transition_configure_duration: 3.6233932971954346
+      total_transition_start_duration: 2.854038715362549
+      total_transition_run_duration: 2.062171697616577
+      total_event_saving_state_duration: 0.0010724067687988281
+      total_instruction_add_0-listener1-Listener_duration: 0.0002117156982421875
+      total_instruction_conn_1-listener1-listener_service_use-system-system_service_provide_duration: 9.894371032714844e-05
+      total_event_loading_state_duration: 9.274482727050781e-05
+      total_instruction_conn_2-listener1-listener_config_provide-sensor1-sensor_config_use_duration: 9.131431579589844e-05
+      total_instruction_push_b_4-listener1-deploy_duration: 7.176399230957031e-05
+      total_instruction_conn_3-listener1-listener_service_provide-sensor1-sensor_service_use_duration: 6.580352783203125e-05
+      total_event_sleeping_duration: 1.7404556274414062e-05
+    update:
+      total_event_uptime_duration: 49.21190619468689
+      total_event_update_duration: 49.20504713058472
+      total_instruction_wait_1-system_True_duration: 43.48345160484314
+      total_behavior_update-listener1_duration: 9.172298908233643
+      total_transition_interrupt_duration: 8.840484142303467
+      total_event_uptime_wait_all_duration: 8.076072454452515
+      total_instruction_waitall_4_duration: 8.075984477996826
+      total_instruction_wait_3-listener1_duration: 5.71837043762207
+      total_behavior_deploy-listener1_duration: 5.718287467956543
+      total_transition_configure_duration: 3.619943618774414
+      total_transition_run_duration: 2.058389186859131
+      total_instruction_push_b_0-listener1-update_duration: 0.002794027328491211
+      total_event_saving_state_duration: 0.0010180473327636719
+      total_event_loading_state_duration: 0.0006749629974365234
+      total_instruction_push_b_2-listener1-deploy_duration: 0.00011682510375976562
+      total_event_sleeping_duration: 1.4543533325195312e-05
+  sensor1:
+    deploy:
+      total_event_uptime_duration: 20.402381896972656
+      total_event_deploy_duration: 20.393494606018066
+      total_instruction_wait_4-sensor1_duration: 20.39263606071472
+      total_behavior_deploy-sensor1_duration: 20.392274618148804
+      total_transition_provision0_duration: 3.7697761058807373
+      total_transition_run_duration: 3.0891075134277344
+      total_transition_provision2_duration: 2.918627977371216
+      total_transition_configure_duration: 2.7989656925201416
+      total_transition_provision1_duration: 2.318148374557495
+      total_transition_install_duration: 1.6578829288482666
+      total_event_uptime_wait_all_duration: 0.3068697452545166
+      total_instruction_waitall_5_duration: 0.30680203437805176
+      total_event_saving_state_duration: 0.0011012554168701172
+      total_instruction_add_0-sensor1-Sensor_duration: 0.00020813941955566406
+      total_event_loading_state_duration: 0.00011181831359863281
+      total_instruction_conn_1-sensor1-sensor_config_use-listener1-listener_config_provide_duration: 8.678436279296875e-05
+      total_instruction_push_b_3-sensor1-deploy_duration: 7.224082946777344e-05
+      total_instruction_conn_2-sensor1-sensor_service_use-listener1-listener_service_provide_duration: 6.651878356933594e-05
+      total_event_sleeping_duration: 1.049041748046875e-05
+    update:
+      total_event_uptime_duration: 57.05881881713867
+      total_event_update_duration: 57.051987171173096
+      total_instruction_wait_1-listener1_True_duration: 49.45495367050171
+      total_instruction_wait_3-sensor1_duration: 7.593790292739868
+      total_behavior_deploy-sensor1_duration: 7.593778371810913
+      total_transition_run_duration: 3.089160442352295
+      total_behavior_pause-sensor1_duration: 2.9186015129089355
+      total_transition_pause_duration: 2.904764413833618
+      total_transition_configure_duration: 2.7988762855529785
+      total_transition_install_duration: 1.6577494144439697
+      total_event_uptime_wait_all_duration: 0.3067357540130615
+      total_instruction_waitall_4_duration: 0.30666589736938477
+      total_instruction_push_b_0-sensor1-pause_duration: 0.0028166770935058594
+      total_event_saving_state_duration: 0.0011627674102783203
+      total_event_loading_state_duration: 0.0006690025329589844
+      total_instruction_push_b_2-sensor1-deploy_duration: 0.00012159347534179688
+      total_event_sleeping_duration: 1.3113021850585938e-05
+  listener2:
+    deploy:
+      total_event_uptime_duration: 17.177952766418457
+      total_event_deploy_duration: 17.169193983078003
+      total_instruction_wait_5-listener2_duration: 17.168134927749634
+      total_behavior_deploy-listener2_duration: 17.16775345802307
+      total_transition_start_duration: 8.95051884651184
+      total_event_uptime_wait_all_duration: 4.964109897613525
+      total_instruction_waitall_6_duration: 4.964043140411377
+      total_transition_run_duration: 2.677382469177246
+      total_transition_configure_duration: 2.208446979522705
+      total_event_saving_state_duration: 0.00102996826171875
+      total_instruction_add_0-listener2-Listener_duration: 0.0001919269561767578
+      total_instruction_conn_1-listener2-listener_service_use-system-system_service_provide_duration: 0.00010657310485839844
+      total_event_loading_state_duration: 9.179115295410156e-05
+      total_instruction_push_b_4-listener2-deploy_duration: 7.510185241699219e-05
+      total_instruction_conn_2-listener2-listener_config_provide-sensor2-sensor_config_use_duration: 6.699562072753906e-05
+      total_instruction_conn_3-listener2-listener_service_provide-sensor2-sensor_service_use_duration: 6.508827209472656e-05
+      total_event_sleeping_duration: 1.3828277587890625e-05
+    update:
+      total_event_uptime_duration: 48.349743127822876
+      total_event_update_duration: 48.34027409553528
+      total_instruction_wait_1-system_True_duration: 43.41390633583069
+      total_event_uptime_wait_all_duration: 12.273532629013062
+      total_instruction_waitall_4_duration: 12.273467779159546
+      total_behavior_deploy-listener2_duration: 4.925577402114868
+      total_instruction_wait_3-listener2_duration: 4.925548553466797
+      total_transition_run_duration: 2.6788454055786133
+      total_behavior_update-listener2_duration: 2.340833902359009
+      total_transition_configure_duration: 2.2123019695281982
+      total_transition_interrupt_duration: 1.993222951889038
+      total_event_saving_state_duration: 0.0010013580322265625
+      total_event_loading_state_duration: 0.0007071495056152344
+      total_instruction_push_b_0-listener2-update_duration: 0.0002079010009765625
+      total_instruction_push_b_2-listener2-deploy_duration: 0.00015020370483398438
+      total_event_sleeping_duration: 2.2649765014648438e-05
+  sensor2:
+    deploy:
+      total_event_uptime_duration: 22.104697942733765
+      total_event_deploy_duration: 22.098518133163452
+      total_instruction_wait_4-sensor2_duration: 22.094812870025635
+      total_behavior_deploy-sensor2_duration: 22.094470977783203
+      total_transition_provision1_duration: 8.720069408416748
+      total_transition_provision0_duration: 6.1019299030303955
+      total_transition_configure_duration: 5.246803283691406
+      total_transition_install_duration: 4.680901050567627
+      total_transition_provision2_duration: 2.0784010887145996
+      total_transition_run_duration: 2.027712106704712
+      total_event_uptime_wait_all_duration: 0.30852580070495605
+      total_instruction_waitall_5_duration: 0.3084588050842285
+      total_event_saving_state_duration: 0.001096963882446289
+      total_instruction_add_0-sensor2-Sensor_duration: 0.00019359588623046875
+      total_instruction_conn_1-sensor2-sensor_config_use-listener2-listener_config_provide_duration: 0.00011801719665527344
+      total_event_loading_state_duration: 9.489059448242188e-05
+      total_instruction_push_b_3-sensor2-deploy_duration: 7.05718994140625e-05
+      total_instruction_conn_2-sensor2-sensor_service_use-listener2-listener_service_provide_duration: 6.67572021484375e-05
+      total_event_sleeping_duration: 1.430511474609375e-05
+    update:
+      total_event_uptime_duration: 60.30679154396057
+      total_event_update_duration: 60.300095319747925
+      total_instruction_wait_1-listener2_True_duration: 48.30060696601868
+      total_behavior_deploy-sensor2_duration: 11.996166706085205
+      total_instruction_wait_3-sensor2_duration: 11.996166706085205
+      total_transition_configure_duration: 5.2413694858551025
+      total_transition_install_duration: 4.680832386016846
+      total_behavior_pause-sensor2_duration: 2.1477088928222656
+      total_transition_pause_duration: 2.133558511734009
+      total_transition_run_duration: 2.0259852409362793
+      total_event_uptime_wait_all_duration: 0.307558536529541
+      total_instruction_waitall_4_duration: 0.3074042797088623
+      total_instruction_push_b_0-sensor2-pause_duration: 0.0028524398803710938
+      total_event_saving_state_duration: 0.0012652873992919922
+      total_event_loading_state_duration: 0.0006597042083740234
+      total_instruction_push_b_2-sensor2-deploy_duration: 0.0001239776611328125
+      total_event_sleeping_duration: 1.2636184692382812e-05
+  listener3:
+    deploy:
+      total_event_uptime_duration: 16.409968376159668
+      total_event_deploy_duration: 16.40113115310669
+      total_instruction_wait_5-listener3_duration: 16.40009832382202
+      total_behavior_deploy-listener3_duration: 16.399755001068115
+      total_transition_configure_duration: 5.191274166107178
+      total_transition_start_duration: 4.25052809715271
+      total_event_uptime_wait_all_duration: 3.154059886932373
+      total_instruction_waitall_6_duration: 3.1539947986602783
+      total_transition_run_duration: 2.003324031829834
+      total_event_saving_state_duration: 0.0011048316955566406
+      total_instruction_add_0-listener3-Listener_duration: 0.00015926361083984375
+      total_instruction_conn_1-listener3-listener_service_use-system-system_service_provide_duration: 0.00011205673217773438
+      total_event_loading_state_duration: 9.441375732421875e-05
+      total_instruction_push_b_4-listener3-deploy_duration: 7.176399230957031e-05
+      total_instruction_conn_2-listener3-listener_config_provide-sensor3-sensor_config_use_duration: 6.794929504394531e-05
+      total_instruction_conn_3-listener3-listener_service_provide-sensor3-sensor_service_use_duration: 6.580352783203125e-05
+      total_event_sleeping_duration: 1.3828277587890625e-05
+    update:
+      total_event_uptime_duration: 50.606979846954346
+      total_event_update_duration: 50.60011386871338
+      total_instruction_wait_1-system_True_duration: 43.36958312988281
+      total_behavior_deploy-listener3_duration: 7.22706937789917
+      total_instruction_wait_3-listener3_duration: 7.22706937789917
+      total_behavior_update-listener3_duration: 6.918818712234497
+      total_transition_interrupt_duration: 6.578024625778198
+      total_event_uptime_wait_all_duration: 5.289722442626953
+      total_instruction_waitall_4_duration: 5.289657115936279
+      total_transition_configure_duration: 5.196499824523926
+      total_transition_run_duration: 1.998081922531128
+      total_event_saving_state_duration: 0.001013040542602539
+      total_event_loading_state_duration: 0.0007092952728271484
+      total_instruction_push_b_0-listener3-update_duration: 0.0002396106719970703
+      total_instruction_push_b_2-listener3-deploy_duration: 0.00011610984802246094
+      total_event_sleeping_duration: 2.193450927734375e-05
+  sensor3:
+    deploy:
+      total_event_uptime_duration: 19.39294147491455
+      total_event_deploy_duration: 19.38643527030945
+      total_instruction_wait_4-sensor3_duration: 19.38282012939453
+      total_behavior_deploy-sensor3_duration: 19.38243007659912
+      total_transition_provision2_duration: 6.084014654159546
+      total_transition_provision0_duration: 4.48028826713562
+      total_transition_provision1_duration: 4.3368611335754395
+      total_transition_run_duration: 2.6088993549346924
+      total_transition_install_duration: 1.1974730491638184
+      total_transition_configure_duration: 1.0572760105133057
+      total_event_uptime_wait_all_duration: 0.3063693046569824
+      total_instruction_waitall_5_duration: 0.30629634857177734
+      total_event_saving_state_duration: 0.0011250972747802734
+      total_event_sleeping_duration: 0.0007500648498535156
+      total_instruction_add_0-sensor3-Sensor_duration: 0.00019693374633789062
+      total_instruction_conn_1-sensor3-sensor_config_use-listener3-listener_config_provide_duration: 0.00012445449829101562
+      total_event_loading_state_duration: 9.72747802734375e-05
+      total_instruction_push_b_3-sensor3-deploy_duration: 7.677078247070312e-05
+      total_instruction_conn_2-sensor3-sensor_service_use-listener3-listener_service_provide_duration: 7.62939453125e-05
+    update:
+      total_event_uptime_duration: 55.73139929771423
+      total_event_update_duration: 55.724632024765015
+      total_instruction_wait_1-listener3_True_duration: 50.778282165527344
+      total_instruction_wait_3-sensor3_duration: 4.9429004192352295
+      total_behavior_deploy-sensor3_duration: 4.942895889282227
+      total_transition_run_duration: 2.6087894439697266
+      total_behavior_pause-sensor3_duration: 2.146420955657959
+      total_transition_pause_duration: 2.133446455001831
+      total_transition_install_duration: 1.2049915790557861
+      total_transition_configure_duration: 1.0640513896942139
+      total_event_uptime_wait_all_duration: 0.3068060874938965
+      total_instruction_waitall_4_duration: 0.30673789978027344
+      total_instruction_push_b_0-sensor3-pause_duration: 0.003053903579711914
+      total_event_saving_state_duration: 0.0013432502746582031
+      total_event_loading_state_duration: 0.0006759166717529297
+      total_instruction_push_b_2-sensor3-deploy_duration: 0.00011086463928222656
+      total_event_sleeping_duration: 2.0503997802734375e-05
+  listener4:
+    deploy:
+      total_event_uptime_duration: 20.37235927581787
+      total_event_deploy_duration: 20.363593339920044
+      total_instruction_wait_5-listener4_duration: 20.362675666809082
+      total_behavior_deploy-listener4_duration: 20.36232566833496
+      total_event_uptime_wait_all_duration: 17.96973991394043
+      total_instruction_waitall_6_duration: 17.969674825668335
+      total_transition_run_duration: 6.165931224822998
+      total_transition_start_duration: 4.996457099914551
+      total_transition_configure_duration: 3.2793662548065186
+      total_event_saving_state_duration: 0.0010530948638916016
+      total_instruction_add_0-listener4-Listener_duration: 0.00019669532775878906
+      total_instruction_conn_1-listener4-listener_service_use-system-system_service_provide_duration: 0.00010251998901367188
+      total_event_loading_state_duration: 9.274482727050781e-05
+      total_instruction_push_b_4-listener4-deploy_duration: 7.510185241699219e-05
+      total_instruction_conn_2-listener4-listener_config_provide-sensor4-sensor_config_use_duration: 6.604194641113281e-05
+      total_instruction_conn_3-listener4-listener_service_provide-sensor4-sensor_service_use_duration: 6.461143493652344e-05
+      total_event_sleeping_duration: 1.52587890625e-05
+    update:
+      total_event_uptime_duration: 52.60525941848755
+      total_event_update_duration: 52.598331451416016
+      total_instruction_wait_1-system_True_duration: 43.11205792427063
+      total_event_uptime_wait_all_duration: 26.59285545349121
+      total_instruction_waitall_4_duration: 26.59277629852295
+      total_behavior_update-listener4_duration: 15.345010757446289
+      total_transition_interrupt_duration: 15.006614923477173
+      total_behavior_deploy-listener4_duration: 9.482918739318848
+      total_instruction_wait_3-listener4_duration: 9.482908964157104
+      total_transition_run_duration: 6.162285804748535
+      total_transition_configure_duration: 3.286773681640625
+      total_event_saving_state_duration: 0.0010385513305664062
+      total_event_loading_state_duration: 0.0007078647613525391
+      total_instruction_push_b_0-listener4-update_duration: 0.00023746490478515625
+      total_instruction_push_b_2-listener4-deploy_duration: 0.00010943412780761719
+      total_event_sleeping_duration: 1.33514404296875e-05
+  sensor4:
+    deploy:
+      total_event_uptime_duration: 38.08360147476196
+      total_event_deploy_duration: 38.07723331451416
+      total_instruction_wait_4-sensor4_duration: 38.073349475860596
+      total_behavior_deploy-sensor4_duration: 38.07296800613403
+      total_transition_configure_duration: 21.952464818954468
+      total_transition_provision2_duration: 5.511411905288696
+      total_transition_provision0_duration: 5.151086091995239
+      total_transition_install_duration: 2.5186750888824463
+      total_transition_run_duration: 1.808884620666504
+      total_transition_provision1_duration: 1.7831461429595947
+      total_event_uptime_wait_all_duration: 0.30738306045532227
+      total_instruction_waitall_5_duration: 0.30730390548706055
+      total_event_saving_state_duration: 0.0011303424835205078
+      total_instruction_add_0-sensor4-Sensor_duration: 0.00019979476928710938
+      total_instruction_conn_1-sensor4-sensor_config_use-listener4-listener_config_provide_duration: 0.0001270771026611328
+      total_event_loading_state_duration: 9.965896606445312e-05
+      total_instruction_push_b_3-sensor4-deploy_duration: 8.344650268554688e-05
+      total_instruction_conn_2-sensor4-sensor_service_use-listener4-listener_service_provide_duration: 7.843971252441406e-05
+      total_event_sleeping_duration: 2.1696090698242188e-05
+    update:
+      total_event_uptime_duration: 79.13583064079285
+      total_event_update_duration: 79.12623739242554
+      total_instruction_wait_1-listener4_True_duration: 52.791648864746094
+      total_instruction_wait_3-sensor4_duration: 26.333937883377075
+      total_behavior_deploy-sensor4_duration: 26.333932876586914
+      total_transition_configure_duration: 21.95805072784424
+      total_behavior_pause-sensor4_duration: 18.281287670135498
+      total_transition_pause_duration: 18.270281314849854
+      total_transition_install_duration: 2.5187690258026123
+      total_transition_run_duration: 1.8074111938476562
+      total_event_uptime_wait_all_duration: 0.306926965713501
+      total_instruction_waitall_4_duration: 0.3068416118621826
+      total_event_saving_state_duration: 0.0012519359588623047
+      total_event_loading_state_duration: 0.0006883144378662109
+      total_instruction_push_b_0-sensor4-pause_duration: 0.00019240379333496094
+      total_instruction_push_b_2-sensor4-deploy_duration: 0.00011587142944335938
+      total_event_sleeping_duration: 2.6702880859375e-05
+  listener5:
+    deploy:
+      total_event_uptime_duration: 16.68603277206421
+      total_event_deploy_duration: 16.677269458770752
+      total_instruction_wait_5-listener5_duration: 16.676357984542847
+      total_behavior_deploy-listener5_duration: 16.675947666168213
+      total_event_uptime_wait_all_duration: 7.3897340297698975
+      total_instruction_waitall_6_duration: 7.389663219451904
+      total_transition_configure_duration: 4.8710644245147705
+      total_transition_run_duration: 2.3292198181152344
+      total_transition_start_duration: 2.118354558944702
+      total_event_saving_state_duration: 0.001016855239868164
+      total_instruction_add_0-listener5-Listener_duration: 0.0001595020294189453
+      total_instruction_conn_1-listener5-listener_service_use-system-system_service_provide_duration: 0.00010848045349121094
+      total_event_loading_state_duration: 9.226799011230469e-05
+      total_instruction_push_b_4-listener5-deploy_duration: 6.842613220214844e-05
+      total_instruction_conn_2-listener5-listener_config_provide-sensor5-sensor_config_use_duration: 6.604194641113281e-05
+      total_instruction_conn_3-listener5-listener_service_provide-sensor5-sensor_service_use_duration: 6.461143493652344e-05
+      total_event_sleeping_duration: 1.8358230590820312e-05
+    update:
+      total_event_uptime_duration: 50.281142234802246
+      total_event_update_duration: 50.27429938316345
+      total_instruction_wait_1-system_True_duration: 43.03352880477905
+      total_event_uptime_wait_all_duration: 10.548649072647095
+      total_instruction_waitall_4_duration: 10.548581838607788
+      total_instruction_wait_3-listener5_duration: 7.23750901222229
+      total_behavior_deploy-listener5_duration: 7.237499952316284
+      total_transition_configure_duration: 4.871147632598877
+      total_behavior_update-listener5_duration: 3.86657977104187
+      total_transition_interrupt_duration: 3.835812568664551
+      total_transition_run_duration: 2.333787679672241
+      total_instruction_push_b_0-listener5-update_duration: 0.002855539321899414
+      total_event_saving_state_duration: 0.0010442733764648438
+      total_event_loading_state_duration: 0.0006735324859619141
+      total_instruction_push_b_2-listener5-deploy_duration: 0.000133514404296875
+      total_event_sleeping_duration: 2.3603439331054688e-05
+  sensor5:
+    deploy:
+      total_event_uptime_duration: 23.855164766311646
+      total_event_deploy_duration: 23.846359491348267
+      total_instruction_wait_4-sensor5_duration: 23.84518337249756
+      total_behavior_deploy-sensor5_duration: 23.844675540924072
+      total_transition_run_duration: 6.758068561553955
+      total_transition_provision0_duration: 2.4186418056488037
+      total_transition_configure_duration: 1.9782121181488037
+      total_transition_provision2_duration: 1.9578220844268799
+      total_transition_install_duration: 1.2174723148345947
+      total_transition_provision1_duration: 1.096888780593872
+      total_event_uptime_wait_all_duration: 0.005020856857299805
+      total_instruction_waitall_5_duration: 0.0049381256103515625
+      total_event_saving_state_duration: 0.0011034011840820312
+      total_instruction_add_0-sensor5-Sensor_duration: 0.00028514862060546875
+      total_instruction_conn_1-sensor5-sensor_config_use-listener5-listener_config_provide_duration: 0.0001239776611328125
+      total_instruction_push_b_3-sensor5-deploy_duration: 0.00011754035949707031
+      total_event_loading_state_duration: 9.369850158691406e-05
+      total_instruction_conn_2-sensor5-sensor_service_use-listener5-listener_service_provide_duration: 9.298324584960938e-05
+      total_event_sleeping_duration: 1.8358230590820312e-05
+    update:
+      total_event_uptime_duration: 60.59054255485535
+      total_event_update_duration: 60.58080315589905
+      total_instruction_wait_1-listener5_True_duration: 50.5674934387207
+      total_instruction_wait_3-sensor5_duration: 10.012636661529541
+      total_behavior_deploy-sensor5_duration: 10.012635707855225
+      total_transition_run_duration: 6.7628772258758545
+      total_behavior_pause-sensor5_duration: 5.941131353378296
+      total_transition_pause_duration: 5.927161931991577
+      total_transition_configure_duration: 1.9782516956329346
+      total_transition_install_duration: 1.2226934432983398
+      total_event_uptime_wait_all_duration: 0.3070061206817627
+      total_instruction_waitall_4_duration: 0.30693769454956055
+      total_event_saving_state_duration: 0.0010521411895751953
+      total_event_loading_state_duration: 0.0006704330444335938
+      total_instruction_push_b_0-sensor5-pause_duration: 0.0001952648162841797
+      total_instruction_push_b_2-sensor5-deploy_duration: 0.00012087821960449219
+      total_event_sleeping_duration: 4.410743713378906e-05
+  listener6:
+    deploy:
+      total_event_uptime_duration: 15.271715879440308
+      total_event_deploy_duration: 15.265549659729004
+      total_instruction_wait_5-listener6_duration: 15.261858940124512
+      total_behavior_deploy-listener6_duration: 15.261483430862427
+      total_transition_configure_duration: 11.52274489402771
+      total_event_uptime_wait_all_duration: 6.41036057472229
+      total_instruction_waitall_6_duration: 6.4102783203125
+      total_transition_run_duration: 1.1833508014678955
+      total_transition_start_duration: 1.0924100875854492
+      total_instruction_add_0-listener6-Listener_duration: 0.0029823780059814453
+      total_event_saving_state_duration: 0.001215219497680664
+      total_event_loading_state_duration: 9.751319885253906e-05
+      total_instruction_conn_1-listener6-listener_service_use-system-system_service_provide_duration: 9.34600830078125e-05
+      total_instruction_push_b_4-listener6-deploy_duration: 7.724761962890625e-05
+      total_instruction_conn_2-listener6-listener_config_provide-sensor6-sensor_config_use_duration: 7.319450378417969e-05
+      total_instruction_conn_3-listener6-listener_service_provide-sensor6-sensor_service_use_duration: 6.794929504394531e-05
+      total_event_sleeping_duration: 1.4066696166992188e-05
+    update:
+      total_event_uptime_duration: 55.87100863456726
+      total_event_update_duration: 55.864161014556885
+      total_instruction_wait_1-system_True_duration: 43.135746240615845
+      total_instruction_wait_3-listener6_duration: 12.725027322769165
+      total_behavior_deploy-listener6_duration: 12.7250235080719
+      total_transition_configure_duration: 11.526310443878174
+      total_event_uptime_wait_all_duration: 9.139751195907593
+      total_instruction_waitall_4_duration: 9.139671802520752
+      total_behavior_update-listener6_duration: 3.3702454566955566
+      total_transition_interrupt_duration: 3.3346798419952393
+      total_transition_run_duration: 1.164458990097046
+      total_instruction_push_b_0-listener6-update_duration: 0.0028891563415527344
+      total_event_saving_state_duration: 0.0010535717010498047
+      total_event_loading_state_duration: 0.000701904296875
+      total_instruction_push_b_2-listener6-deploy_duration: 0.00011920928955078125
+      total_event_sleeping_duration: 1.430511474609375e-05
+  sensor6:
+    deploy:
+      total_event_uptime_duration: 21.714415311813354
+      total_event_deploy_duration: 21.708247184753418
+      total_instruction_wait_4-sensor6_duration: 21.704603672027588
+      total_behavior_deploy-sensor6_duration: 21.70424509048462
+      total_transition_provision0_duration: 5.621527910232544
+      total_transition_configure_duration: 4.240466594696045
+      total_transition_run_duration: 3.0143415927886963
+      total_transition_provision2_duration: 2.5883984565734863
+      total_transition_install_duration: 1.6679155826568604
+      total_transition_provision1_duration: 1.3275172710418701
+      total_event_uptime_wait_all_duration: 0.006678342819213867
+      total_instruction_waitall_5_duration: 0.006606340408325195
+      total_event_saving_state_duration: 0.001146554946899414
+      total_instruction_add_0-sensor6-Sensor_duration: 0.0002703666687011719
+      total_instruction_conn_1-sensor6-sensor_config_use-listener6-listener_config_provide_duration: 0.00020766258239746094
+      total_event_loading_state_duration: 9.417533874511719e-05
+      total_instruction_push_b_3-sensor6-deploy_duration: 6.985664367675781e-05
+      total_instruction_conn_2-sensor6-sensor_service_use-listener6-listener_service_provide_duration: 6.794929504394531e-05
+      total_event_sleeping_duration: 5.507469177246094e-05
+    update:
+      total_event_uptime_duration: 64.86534905433655
+      total_event_update_duration: 64.85585474967957
+      total_instruction_wait_1-listener6_True_duration: 55.88753008842468
+      total_behavior_deploy-sensor6_duration: 8.967501401901245
+      total_instruction_wait_3-sensor6_duration: 8.967481136322021
+      total_behavior_pause-sensor6_duration: 4.372853994369507
+      total_transition_pause_duration: 4.364173889160156
+      total_transition_configure_duration: 4.240401268005371
+      total_transition_run_duration: 3.009359121322632
+      total_transition_install_duration: 1.6685917377471924
+      total_event_uptime_wait_all_duration: 0.30782341957092285
+      total_instruction_waitall_4_duration: 0.3077554702758789
+      total_event_saving_state_duration: 0.001093149185180664
+      total_event_loading_state_duration: 0.0007076263427734375
+      total_instruction_push_b_0-sensor6-pause_duration: 0.00026679039001464844
+      total_instruction_push_b_2-sensor6-deploy_duration: 0.00013875961303710938
+      total_event_sleeping_duration: 2.6226043701171875e-05
+  listener7:
+    deploy:
+      total_event_uptime_duration: 16.54042077064514
+      total_event_deploy_duration: 16.5314998626709
+      total_instruction_wait_5-listener7_duration: 16.530381202697754
+      total_behavior_deploy-listener7_duration: 16.529995441436768
+      total_event_uptime_wait_all_duration: 8.865302562713623
+      total_instruction_waitall_6_duration: 8.865232706069946
+      total_transition_run_duration: 2.308497428894043
+      total_transition_configure_duration: 1.7679939270019531
+      total_transition_start_duration: 1.5329794883728027
+      total_event_saving_state_duration: 0.0010182857513427734
+      total_instruction_add_0-listener7-Listener_duration: 0.00021004676818847656
+      total_instruction_conn_1-listener7-listener_service_use-system-system_service_provide_duration: 0.00012183189392089844
+      total_event_loading_state_duration: 9.298324584960938e-05
+      total_instruction_push_b_4-listener7-deploy_duration: 8.606910705566406e-05
+      total_instruction_conn_2-listener7-listener_config_provide-sensor7-sensor_config_use_duration: 7.581710815429688e-05
+      total_instruction_conn_3-listener7-listener_service_provide-sensor7-sensor_service_use_duration: 7.390975952148438e-05
+      total_event_sleeping_duration: 1.4066696166992188e-05
+    update:
+      total_event_uptime_duration: 47.15474343299866
+      total_event_update_duration: 47.14799737930298
+      total_instruction_wait_1-system_True_duration: 43.01110863685608
+      total_event_uptime_wait_all_duration: 13.385541915893555
+      total_instruction_waitall_4_duration: 13.385475397109985
+      total_behavior_deploy-listener7_duration: 4.133517265319824
+      total_instruction_wait_3-listener7_duration: 4.1335108280181885
+      total_transition_run_duration: 2.324319362640381
+      total_transition_configure_duration: 1.7731363773345947
+      total_behavior_update-listener7_duration: 1.3821079730987549
+      total_transition_interrupt_duration: 1.032578945159912
+      total_event_saving_state_duration: 0.001010894775390625
+      total_event_loading_state_duration: 0.0006721019744873047
+      total_instruction_push_b_0-listener7-update_duration: 0.00044536590576171875
+      total_instruction_push_b_2-listener7-deploy_duration: 0.0001277923583984375
+      total_event_sleeping_duration: 2.5510787963867188e-05
+  sensor7:
+    deploy:
+      total_event_uptime_duration: 25.39795184135437
+      total_event_deploy_duration: 25.389010906219482
+      total_instruction_wait_4-sensor7_duration: 25.388030767440796
+      total_behavior_deploy-sensor7_duration: 25.38767981529236
+      total_transition_provision2_duration: 12.188037872314453
+      total_transition_install_duration: 6.022188663482666
+      total_transition_run_duration: 3.7498867511749268
+      total_transition_configure_duration: 3.365358352661133
+      total_transition_provision1_duration: 1.9977648258209229
+      total_transition_provision0_duration: 1.3075361251831055
+      total_event_uptime_wait_all_duration: 0.30767250061035156
+      total_instruction_waitall_5_duration: 0.3076050281524658
+      total_event_saving_state_duration: 0.0010986328125
+      total_instruction_add_0-sensor7-Sensor_duration: 0.0002505779266357422
+      total_instruction_conn_1-sensor7-sensor_config_use-listener7-listener_config_provide_duration: 0.00012254714965820312
+      total_event_loading_state_duration: 9.5367431640625e-05
+      total_instruction_push_b_3-sensor7-deploy_duration: 7.081031799316406e-05
+      total_instruction_conn_2-sensor7-sensor_service_use-listener7-listener_service_provide_duration: 6.604194641113281e-05
+      total_event_sleeping_duration: 5.221366882324219e-05
+    update:
+      total_event_uptime_duration: 60.47316908836365
+      total_event_update_duration: 60.46629738807678
+      total_instruction_wait_1-listener7_True_duration: 47.25709056854248
+      total_instruction_wait_3-sensor7_duration: 13.205940961837769
+      total_behavior_deploy-sensor7_duration: 13.20593547821045
+      total_behavior_pause-sensor7_duration: 8.501874446868896
+      total_transition_pause_duration: 8.49062442779541
+      total_transition_install_duration: 6.022239685058594
+      total_transition_run_duration: 3.7498791217803955
+      total_transition_configure_duration: 3.373936176300049
+      total_event_uptime_wait_all_duration: 0.30643177032470703
+      total_instruction_waitall_4_duration: 0.3063631057739258
+      total_instruction_push_b_0-sensor7-pause_duration: 0.002836942672729492
+      total_event_saving_state_duration: 0.0012564659118652344
+      total_event_loading_state_duration: 0.0006995201110839844
+      total_instruction_push_b_2-sensor7-deploy_duration: 0.00011396408081054688
+      total_event_sleeping_duration: 1.5974044799804688e-05
+  listener8:
+    deploy:
+      total_event_uptime_duration: 17.83145761489868
+      total_event_deploy_duration: 17.82544231414795
+      total_instruction_wait_5-listener8_duration: 17.821786165237427
+      total_behavior_deploy-listener8_duration: 17.821403741836548
+      total_event_uptime_wait_all_duration: 4.872284412384033
+      total_instruction_waitall_6_duration: 4.872217178344727
+      total_transition_run_duration: 3.541195869445801
+      total_transition_configure_duration: 1.4875195026397705
+      total_transition_start_duration: 1.282576322555542
+      total_event_saving_state_duration: 0.0010461807250976562
+      total_instruction_add_0-listener8-Listener_duration: 0.0002455711364746094
+      total_instruction_conn_1-listener8-listener_service_use-system-system_service_provide_duration: 0.0001289844512939453
+      total_event_loading_state_duration: 9.226799011230469e-05
+      total_instruction_push_b_4-listener8-deploy_duration: 7.176399230957031e-05
+      total_instruction_conn_2-listener8-listener_config_provide-sensor8-sensor_config_use_duration: 6.580352783203125e-05
+      total_instruction_conn_3-listener8-listener_service_provide-sensor8-sensor_service_use_duration: 6.270408630371094e-05
+      total_event_sleeping_duration: 1.4066696166992188e-05
+    update:
+      total_event_uptime_duration: 48.332892417907715
+      total_event_update_duration: 48.32306098937988
+      total_instruction_wait_1-system_True_duration: 43.2650990486145
+      total_behavior_update-listener8_duration: 8.647053003311157
+      total_transition_interrupt_duration: 8.617348909378052
+      total_event_uptime_wait_all_duration: 8.12491226196289
+      total_instruction_waitall_4_duration: 8.124844551086426
+      total_behavior_deploy-listener8_duration: 5.057270288467407
+      total_instruction_wait_3-listener8_duration: 5.0572590827941895
+      total_transition_run_duration: 3.529730796813965
+      total_transition_configure_duration: 1.4878013134002686
+      total_event_saving_state_duration: 0.0010113716125488281
+      total_event_loading_state_duration: 0.0006783008575439453
+      total_instruction_push_b_0-listener8-update_duration: 0.0002124309539794922
+      total_instruction_push_b_2-listener8-deploy_duration: 0.00011944770812988281
+      total_event_sleeping_duration: 1.430511474609375e-05
+  sensor8:
+    deploy:
+      total_event_uptime_duration: 22.372657775878906
+      total_event_deploy_duration: 22.363485097885132
+      total_instruction_wait_4-sensor8_duration: 22.362470865249634
+      total_behavior_deploy-sensor8_duration: 22.36209511756897
+      total_transition_run_duration: 4.300486326217651
+      total_transition_provision0_duration: 3.5447192192077637
+      total_transition_provision1_duration: 2.513857841491699
+      total_transition_configure_duration: 2.017775774002075
+      total_transition_install_duration: 1.5276036262512207
+      total_transition_provision2_duration: 1.3275160789489746
+      total_event_uptime_wait_all_duration: 0.004568576812744141
+      total_instruction_waitall_5_duration: 0.004502058029174805
+      total_event_saving_state_duration: 0.0010836124420166016
+      total_instruction_add_0-sensor8-Sensor_duration: 0.000209808349609375
+      total_instruction_conn_1-sensor8-sensor_config_use-listener8-listener_config_provide_duration: 0.00013017654418945312
+      total_event_loading_state_duration: 9.870529174804688e-05
+      total_instruction_push_b_3-sensor8-deploy_duration: 7.05718994140625e-05
+      total_instruction_conn_2-sensor8-sensor_service_use-listener8-listener_service_provide_duration: 6.67572021484375e-05
+      total_event_sleeping_duration: 1.5735626220703125e-05
+    update:
+      total_event_uptime_duration: 56.299537897109985
+      total_event_update_duration: 56.292563676834106
+      total_instruction_wait_1-listener8_True_duration: 48.398189306259155
+      total_instruction_wait_3-sensor8_duration: 7.890859365463257
+      total_behavior_deploy-sensor8_duration: 7.890848159790039
+      total_transition_run_duration: 4.2980732917785645
+      total_behavior_pause-sensor8_duration: 4.072190523147583
+      total_transition_pause_duration: 4.055356025695801
+      total_transition_configure_duration: 2.018211603164673
+      total_transition_install_duration: 1.5276196002960205
+      total_event_uptime_wait_all_duration: 0.3070094585418701
+      total_instruction_waitall_4_duration: 0.3069303035736084
+      total_event_saving_state_duration: 0.0011086463928222656
+      total_event_loading_state_duration: 0.0006961822509765625
+      total_instruction_push_b_0-sensor8-pause_duration: 0.0002522468566894531
+      total_instruction_push_b_2-sensor8-deploy_duration: 0.00010800361633300781
+      total_event_sleeping_duration: 1.4066696166992188e-05
+  listener9:
+    deploy:
+      total_event_uptime_wait_all_duration: 20.060891151428223
+      total_instruction_waitall_6_duration: 20.060823440551758
+      total_event_uptime_duration: 17.2470543384552
+      total_event_deploy_duration: 17.23810911178589
+      total_instruction_wait_5-listener9_duration: 17.237170934677124
+      total_behavior_deploy-listener9_duration: 17.236819982528687
+      total_transition_start_duration: 4.49599027633667
+      total_transition_run_duration: 3.254734754562378
+      total_transition_configure_duration: 1.4828691482543945
+      total_event_saving_state_duration: 0.0010313987731933594
+      total_instruction_add_0-listener9-Listener_duration: 0.00019598007202148438
+      total_instruction_conn_1-listener9-listener_service_use-system-system_service_provide_duration: 0.00010657310485839844
+      total_event_loading_state_duration: 9.822845458984375e-05
+      total_instruction_push_b_4-listener9-deploy_duration: 7.367134094238281e-05
+      total_instruction_conn_2-listener9-listener_config_provide-sensor9-sensor_config_use_duration: 6.771087646484375e-05
+      total_instruction_conn_3-listener9-listener_service_provide-sensor9-sensor_service_use_duration: 6.508827209472656e-05
+      total_event_sleeping_duration: 4.863739013671875e-05
+    update:
+      total_event_uptime_duration: 47.846380949020386
+      total_event_update_duration: 47.83643698692322
+      total_instruction_wait_1-system_True_duration: 43.07165002822876
+      total_event_uptime_wait_all_duration: 22.986101865768433
+      total_instruction_waitall_4_duration: 22.986026525497437
+      total_instruction_wait_3-listener9_duration: 4.763986825942993
+      total_behavior_deploy-listener9_duration: 4.763977289199829
+      total_transition_run_duration: 3.2594504356384277
+      total_transition_configure_duration: 1.4746534824371338
+      total_behavior_update-listener9_duration: 1.3866255283355713
+      total_transition_interrupt_duration: 1.343430757522583
+      total_event_saving_state_duration: 0.0011839866638183594
+      total_event_loading_state_duration: 0.0006697177886962891
+      total_instruction_push_b_0-listener9-update_duration: 0.0002491474151611328
+      total_instruction_push_b_2-listener9-deploy_duration: 0.00011992454528808594
+      total_event_sleeping_duration: 1.2874603271484375e-05
+  sensor9:
+    deploy:
+      total_event_uptime_duration: 37.13788890838623
+      total_event_deploy_duration: 37.1317458152771
+      total_instruction_wait_4-sensor9_duration: 37.12810778617859
+      total_behavior_deploy-sensor9_duration: 37.12776589393616
+      total_transition_run_duration: 19.65574288368225
+      total_transition_provision1_duration: 7.753769159317017
+      total_transition_provision0_duration: 6.3822808265686035
+      total_transition_configure_duration: 1.8080108165740967
+      total_transition_provision2_duration: 1.5475831031799316
+      total_transition_install_duration: 1.3023264408111572
+      total_event_uptime_wait_all_duration: 0.30833959579467773
+      total_instruction_waitall_5_duration: 0.3082733154296875
+      total_event_saving_state_duration: 0.0010962486267089844
+      total_instruction_add_0-sensor9-Sensor_duration: 0.0002193450927734375
+      total_event_loading_state_duration: 9.799003601074219e-05
+      total_instruction_conn_1-sensor9-sensor_config_use-listener9-listener_config_provide_duration: 8.440017700195312e-05
+      total_instruction_push_b_3-sensor9-deploy_duration: 7.390975952148438e-05
+      total_instruction_conn_2-sensor9-sensor_service_use-listener9-listener_service_provide_duration: 6.937980651855469e-05
+      total_event_sleeping_duration: 1.430511474609375e-05
+    update:
+      total_event_uptime_duration: 70.83882594108582
+      total_event_update_duration: 70.83190417289734
+      total_instruction_wait_1-listener9_True_duration: 48.0001106262207
+      total_instruction_wait_3-sensor9_duration: 22.828370094299316
+      total_behavior_deploy-sensor9_duration: 22.828288793563843
+      total_transition_run_duration: 19.66072678565979
+      total_behavior_pause-sensor9_duration: 9.840772151947021
+      total_transition_pause_duration: 9.831466436386108
+      total_transition_configure_duration: 1.8079047203063965
+      total_transition_install_duration: 1.3110575675964355
+      total_event_uptime_wait_all_duration: 0.005284309387207031
+      total_instruction_waitall_4_duration: 0.005212306976318359
+      total_event_saving_state_duration: 0.0010464191436767578
+      total_event_loading_state_duration: 0.0007617473602294922
+      total_instruction_push_b_0-sensor9-pause_duration: 0.0004372596740722656
+      total_instruction_push_b_2-sensor9-deploy_duration: 0.00011515617370605469
+      total_event_sleeping_duration: 1.2636184692382812e-05
+  listener10:
+    deploy: {}
+    update: {}
+  sensor10:
+    deploy: {}
+    update: {}
+  listener11:
+    deploy: {}
+    update: {}
+  sensor11:
+    deploy: {}
+    update: {}
+  listener12:
+    deploy: {}
+    update: {}
+  sensor12:
+    deploy: {}
+    update: {}
+  listener13:
+    deploy: {}
+    update: {}
+  sensor13:
+    deploy: {}
+    update: {}
+  listener14:
+    deploy: {}
+    update: {}
+  sensor14:
+    deploy: {}
+    update: {}
+expe_details:
+  global_finished_reconf: true
+  details:
+    deploy:
+      database:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      listener3:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      sensor3:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      listener1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      sensor1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      sensor6:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      listener6:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      listener2:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      sensor2:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      sensor8:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      listener8:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      system:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      sensor5:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      listener5:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      listener0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      sensor0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      listener7:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      sensor7:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      listener9:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      sensor9:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      listener4:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      sensor4:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+    update:
+      database:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      listener3:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      sensor3:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      system:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      listener8:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      sensor8:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      listener1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      sensor1:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      listener2:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      sensor2:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      listener7:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      listener0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      sensor0:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      sensor7:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      listener5:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      sensor5:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      listener6:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      sensor6:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      sensor9:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      listener9:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      listener4:
+        finished_reconfiguration: true
+        rounds_reconf: 1
+      sensor4:
+        finished_reconfiguration: true
+        rounds_reconf: 1
