@@ -1,4 +1,4 @@
-# Results for SANNER24
+# Results for SANER24
 
 ## Plan inference
 The repository "planner_cp_files/" contains the MiniZinc models and the associated generated plans for the various reconfiguration cases.
